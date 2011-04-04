@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class FEFile</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class FEFile</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is the FileUpload FormElement which builds a  input field of type=&quot;file&quot;.  This automagically  handles the case of a confirmation page.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Dave Brondsema &lt;<a href="mailto:dave@brondsema.net">dave@brondsema.net</a>&gt;</li>
+				<li><span class="field">copyright:</span> LGPL - See LICENCE</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_form---form_elements---FEFile.inc.html">/form/form_elements/FEFile.inc</a> (line <span class="field">27</span>)
+		</p>
+		
+				
+		<pre><a href="../../phpHtmlLib/FormProcessing/FormElement.html">FormElement</a>
+   |
+   --<a href="../../phpHtmlLib/FormProcessing/FEText.html">FEText</a>
+      |
+      --FEFile</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_files_info" title="details" class="var-name">$_files_info</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_max_size" title="details" class="var-name">$_max_size</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_temp_dir" title="details" class="var-name">$_temp_dir</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_valid_types" title="details" class="var-name">$_valid_types</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_valid_type" title="details" class="method-name">add_valid_type</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$mime_type</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../phpHtmlLib/INPUTtag.html">INPUTtag</a></span>
+										<a href="#get_confirm_element" title="details" class="method-name">get_confirm_element</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#get_element" title="details" class="method-name">get_element</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#get_file_info" title="details" class="method-name">get_file_info</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">integer</span>
+										<a href="#get_max_size" title="details" class="method-name">get_max_size</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$max_size</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_pre_confirm_value" title="details" class="method-name">get_pre_confirm_value</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_temp_dir" title="details" class="method-name">get_temp_dir</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#get_value" title="details" class="method-name">get_value</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_value_text" title="details" class="method-name">get_value_text</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_max_size" title="details" class="method-name">set_max_size</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$max_size</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_temp_dir" title="details" class="method-name">set_temp_dir</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#validate" title="details" class="method-name">validate</a>
+											(<span class="var-type"><a href="../../phpHtmlLib/FormProcessing/FormValidation.html">FormValidation</a></span>&nbsp;<span class="var-name">&$_FormValidation</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_populate_file_info" title="details" class="method-name">_populate_file_info</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_pre_confirm" title="details" class="method-name">_pre_confirm</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_files_info" id="$_files_info"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_files_info</span>
+			 = <span class="var-default">array('name' =&gt; '',<br />                             'type' =&gt; '',<br />                             'size' =&gt; '',<br />                             'tmp_name' =&gt; '')</span>			(line <span class="line-number">34</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The $_FILES information about  the submitted file.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_max_size" id="$_max_size"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_max_size</span>
+						(line <span class="line-number">55</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">max size in bytes determined by user</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_temp_dir" id="$_temp_dir"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_temp_dir</span>
+			 = <span class="var-default"> &quot;/tmp&quot;</span>			(line <span class="line-number">43</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The place where we temporarily save</p>
+<p class="description"><p>the file during confirmation</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_valid_types" id="$_valid_types"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_valid_types</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">49</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Array listing mime types to check for</p>
+<p class="description"><p>during validation</p></p>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FormElement.html">FormElement</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onBlurJS">FormElement::$onBlurJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onChangeJS">FormElement::$onChangeJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onClickJS">FormElement::$onClickJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onFocusJS">FormElement::$onFocusJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onSubmitJS">FormElement::$onSubmitJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_attributes">FormElement::$_attributes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_element_name">FormElement::$_element_name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_errors">FormElement::$_errors</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_error_message">FormElement::$_error_message</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_form_name">FormElement::$_form_name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_has_error">FormElement::$_has_error</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_has_form_on_submit">FormElement::$_has_form_on_submit</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_is_disabled">FormElement::$_is_disabled</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_is_readonly">FormElement::$_is_readonly</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_is_required">FormElement::$_is_required</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_label_colon_flag">FormElement::$_label_colon_flag</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_label_text">FormElement::$_label_text</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_required_field_marker">FormElement::$_required_field_marker</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_slave_elements">FormElement::$_slave_elements</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_stripslashes">FormElement::$_stripslashes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_style_attributes">FormElement::$_style_attributes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_validation_enabled">FormElement::$_validation_enabled</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_value">FormElement::$_value</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodadd_valid_type" id="add_valid_type"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_valid_type</span> (line <span class="line-number">305</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is so the user can create a list of mime types  to allow</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_valid_type
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$mime_type</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mime_type</span><span class="var-description">: a mime type to check for</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_confirm_element" id="get_confirm_element"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_confirm_element</span> (line <span class="line-number">294</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method returns the hidden version of this  element for a confirmation page.</p>
+<p class="description"><p>NOTE: This is called by the FormProcessor only.  It shouldn't be called manually.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of type hidden</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../phpHtmlLib/INPUTtag.html">INPUTtag</a></span>
+		<span class="method-name">
+			get_confirm_element
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_confirm_element">FormElement::get_confirm_element()</a></dt>
+						<dd>This method returns the hidden version of this  element for a confirmation page.</dd>
+					</dl>
+			
+	</div>
+<a name="methodget_element" id="get_element"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_element</span> (line <span class="line-number">63</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function builds and returns the  form element object</p>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			get_element
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/FormProcessing/FEText.html#methodget_element">FEText::get_element()</a></dt>
+						<dd>This function builds and returns the  form element object</dd>
+					</dl>
+			
+	</div>
+<a name="methodget_file_info" id="get_file_info"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_file_info</span> (line <span class="line-number">216</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function will return this file's portion of the $_FILES array</p>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_file_info
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_max_size" id="get_max_size"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_max_size</span> (line <span class="line-number">324</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This allows the user to get the max size of the file  (if any has been set)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> value of $_max_size if any</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">integer</span>
+		<span class="method-name">
+			get_max_size
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$max_size</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$max_size</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_pre_confirm_value" id="get_pre_confirm_value"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_pre_confirm_value</span> (line <span class="line-number">205</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is so we can save the file information  in a hidden form field during confirmation  page.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_pre_confirm_value
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_temp_dir" id="get_temp_dir"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_temp_dir</span> (line <span class="line-number">238</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is so the user can get the temp directory  where the file was saved during confirmation  (if any)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the new temp dir.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_temp_dir
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_value" id="get_value"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_value</span> (line <span class="line-number">164</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function will return the  elements value</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			get_value
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_value">FormElement::get_value()</a></dt>
+						<dd>This function will return the  elements value</dd>
+					</dl>
+			
+	</div>
+<a name="methodget_value_text" id="get_value_text"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_value_text</span> (line <span class="line-number">188</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> - the text associated</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_value_text
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">0</span><span class="var-description">: - the value to look up</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_value_text">FormElement::get_value_text()</a></dt>
+						<dd>This provides a method</dd>
+					</dl>
+			
+	</div>
+<a name="methodset_max_size" id="set_max_size"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_max_size</span> (line <span class="line-number">314</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This allows the user to set the max size of the file</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_max_size
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$max_size</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$max_size</span><span class="var-description">: max size in bytes</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_temp_dir" id="set_temp_dir"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_temp_dir</span> (line <span class="line-number">227</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is so the user can set the temp directory  where the file will be saved during confirmation  (if any)</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_temp_dir
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$dir</span><span class="var-description">: the new temp dir.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodvalidate" id="validate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">validate</span> (line <span class="line-number">82</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method validates the data  for this Form Element.</p>
+<p class="description"><p>It validates file size and partial uploads..</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			validate
+		</span>
+					(<span class="var-type"><a href="../../phpHtmlLib/FormProcessing/FormValidation.html">FormValidation</a></span>&nbsp;<span class="var-name">&$_FormValidation</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../phpHtmlLib/FormProcessing/FormValidation.html">FormValidation</a></span>
+				<span class="var-name">&$_FormValidation</span><span class="var-description">: object.</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodvalidate">FormElement::validate()</a></dt>
+						<dd>This function performs the actual validation  It is called only if the validation is required by  this element</dd>
+					</dl>
+			
+	</div>
+<a name="method_populate_file_info" id="_populate_file_info"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_populate_file_info</span> (line <span class="line-number">278</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method re-populates the $this-&gt;_files_info  because the form had a confirmation page,  and the user accepted the confirmation.</p>
+<p class="description"><p>This is so we can re populate the local private var  so we can get access at the file data on disk.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_populate_file_info
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_pre_confirm" id="_pre_confirm"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_pre_confirm</span> (line <span class="line-number">252</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The function that allows us to save the  temp file someplace we can use it after  a confirmation has been accepted.</p>
+<p class="description"><p>NOTE: if the user doesn't confirm, then        this could leave files in /tmp</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_pre_confirm
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FEText.html">FEText</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FEText.html#methodFEText">FEText::FEText()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FEText.html#methodget_element">FEText::get_element()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FormElement.html">FormElement</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodFormElement">FormElement::FormElement()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodbuild_id_name">FormElement::build_id_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodcreate_element_name">FormElement::create_element_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodenable_validation">FormElement::enable_validation()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodform_tag_onsubmit">FormElement::form_tag_onsubmit()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_attribute">FormElement::get_attribute()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_confirm_element">FormElement::get_confirm_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_element">FormElement::get_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_element_name">FormElement::get_element_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_errors">FormElement::get_errors()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_error_message">FormElement::get_error_message()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_form_element">FormElement::get_form_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_init_value">FormElement::get_init_value()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_label">FormElement::get_label()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_label_text">FormElement::get_label_text()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_required_symbol">FormElement::get_required_symbol()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_slave_elements">FormElement::get_slave_elements()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_tabindex">FormElement::get_tabindex()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_value">FormElement::get_value()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_value_text">FormElement::get_value_text()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodhas_error">FormElement::has_error()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodis_disabled">FormElement::is_disabled()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodis_readonly">FormElement::is_readonly()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodis_required">FormElement::is_required()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodjavascript">FormElement::javascript()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonBlur">FormElement::onBlur()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonChange">FormElement::onChange()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonClick">FormElement::onClick()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonFocus">FormElement::onFocus()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonSubmit">FormElement::onSubmit()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_attribute">FormElement::set_attribute()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_colon_flag">FormElement::set_colon_flag()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_data_all_slaves">FormElement::set_data_all_slaves()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_disabled">FormElement::set_disabled()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_element_name">FormElement::set_element_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_error_message">FormElement::set_error_message()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_form_name">FormElement::set_form_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_label_text">FormElement::set_label_text()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onBlur">FormElement::set_onBlur()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onChange">FormElement::set_onChange()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onClick">FormElement::set_onClick()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onFocus">FormElement::set_onFocus()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onSubmit">FormElement::set_onSubmit()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_readonly">FormElement::set_readonly()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_required">FormElement::set_required()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_required_symbol">FormElement::set_required_symbol()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_slave_data">FormElement::set_slave_data()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_slave_elements">FormElement::set_slave_elements()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_stripslashes">FormElement::set_stripslashes()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_style_attribute">FormElement::set_style_attribute()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_tabindex">FormElement::set_tabindex()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_title">FormElement::set_title()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_value">FormElement::set_value()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodvalidate">FormElement::validate()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#method_build_element_attributes">FormElement::_build_element_attributes()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#method_build_javascript">FormElement::_build_javascript()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#method_do_validation">FormElement::_do_validation()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#method_sanitize_string">FormElement::_sanitize_string()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 28 Jan 2011 08:52:54 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

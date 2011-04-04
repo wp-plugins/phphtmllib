@@ -1,0 +1,1649 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class FormProcessor</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class FormProcessor</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is the main engine for the processing</p>
+<p class="description"><p>of Forms.  It builds the form tag, and calls  the appropriate FormContent methods to build  the FormElement's and validation, as well as  backend processing to do the action after the  data has been validated.</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Walter A. Boring IV &lt;<a href="mailto:waboring@newsblob.com">waboring@newsblob.com</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_form---FormProcessor.inc.html">/form/FormProcessor.inc</a> (line <span class="field">31</span>)
+		</p>
+		
+				
+		<pre><a href="../../phpHtmlLib/Container.html">Container</a>
+   |
+   --FormProcessor</pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../../phpHtmlLib/FormProcessing/FormWizard.html">FormWizard</a></td>
+					<td>
+											This is a magic container that allows you  to chain together multiple FormContent objects  to automatically create a Wizard process.
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_auto_show_errors" title="details" class="var-name">$_auto_show_errors</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_confirmed" title="details" class="var-name">$_confirmed</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_confirmed_successful" title="details" class="var-name">$_confirmed_successful</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_FormValidation" title="details" class="var-name">$_FormValidation</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_form_attributes" title="details" class="var-name">$_form_attributes</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_form_content" title="details" class="var-name">$_form_content</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_form_submit_action" title="details" class="var-name">$_form_submit_action</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_form_success_render" title="details" class="var-name">$_form_success_render</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_has_errors" title="details" class="var-name">$_has_errors</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																														
+				<div class="method-definition">
+											<span class="method-result">FormProcessor</span>
+										<a href="#FormProcessor" title="details" class="method-name">FormProcessor</a>
+											(<span class="var-type"><a href="../../phpHtmlLib/FormProcessing/FormContent.html">FormContent</a></span>&nbsp;<span class="var-name">&$form_content</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$form_name</span> = <span class="var-default">&quot;myform&quot;</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$form_action</span> = <span class="var-default">NULL</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">BOOLEAN</span>
+										<a href="#can_validate" title="details" class="method-name">can_validate</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#do_validation" title="details" class="method-name">do_validation</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_action" title="details" class="method-name">get_action</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#get_auto_error_display" title="details" class="method-name">get_auto_error_display</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#get_error_array" title="details" class="method-name">get_error_array</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">object</span>
+										<a href="#get_error_display_object" title="details" class="method-name">&amp;get_error_display_object</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_form_action" title="details" class="method-name">get_form_action</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_form_enctype" title="details" class="method-name">get_form_enctype</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_form_method" title="details" class="method-name">get_form_method</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_form_name" title="details" class="method-name">get_form_name</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_form_target" title="details" class="method-name">get_form_target</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_onsubmit" title="details" class="method-name">get_onsubmit</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#has_errors" title="details" class="method-name">has_errors</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#is_action_successful" title="details" class="method-name">is_action_successful</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#render" title="details" class="method-name">render</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$indent_level</span> = <span class="var-default">0</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$output_debug</span> = <span class="var-default">0</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#render_confirm" title="details" class="method-name">render_confirm</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$indent_level</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$output_debug</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">raw</span>
+										<a href="#render_error" title="details" class="method-name">render_error</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$indent_level</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$output_debug</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">2</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">3</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">raw</span>
+										<a href="#render_form" title="details" class="method-name">render_form</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$indent_level</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$output_debug</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$obj</span> = <span class="var-default">NULL</span>], <span class="var-type">the</span>&nbsp;<span class="var-name">FormContent->form()</span>, <span class="var-type">object -</span>&nbsp;<span class="var-name">3</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setup_validation" title="details" class="method-name">setup_validation</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_auto_error_display" title="details" class="method-name">set_auto_error_display</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_form_action" title="details" class="method-name">set_form_action</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$action</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_form_attribute" title="details" class="method-name">set_form_attribute</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_form_enctype" title="details" class="method-name">set_form_enctype</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$enctype</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_form_method" title="details" class="method-name">set_form_method</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$method</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_form_name" title="details" class="method-name">set_form_name</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_form_target" title="details" class="method-name">set_form_target</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$target</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">none</span>
+										<a href="#set_onsubmit" title="details" class="method-name">set_onsubmit</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$js</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_render_form_after_success" title="details" class="method-name">set_render_form_after_success</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_add_confirm_data" title="details" class="method-name">_add_confirm_data</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_add_hidden_fields" title="details" class="method-name">_add_hidden_fields</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../phpHtmlLib/FORMtag.html">FORMtag</a></span>
+										<a href="#_build_form_tag" title="details" class="method-name">_build_form_tag</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_build_javascript" title="details" class="method-name">_build_javascript</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">none</span>
+										<a href="#_init_form_content" title="details" class="method-name">_init_form_content</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_pre_confirm" title="details" class="method-name">_pre_confirm</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_process_action" title="details" class="method-name">_process_action</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_process_form" title="details" class="method-name">_process_form</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_set_action" title="details" class="method-name">_set_action</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_set_confirmed_success" title="details" class="method-name">_set_confirmed_success</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#__hidden_fields" title="details" class="method-name">__hidden_fields</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_auto_show_errors" id="$_auto_show_errors"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_auto_show_errors</span>
+			 = <span class="var-default"> TRUE</span>			(line <span class="line-number">99</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This tells us to show or not to  show the form errors autmatically.</p>
+<p class="description"><p>The user of the FormProcessor  may want to deal with errors manually</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_confirmed" id="$_confirmed"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_confirmed</span>
+			 = <span class="var-default"> FALSE</span>			(line <span class="line-number">65</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag to let us know the form  has been confirmed.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_confirmed_successful" id="$_confirmed_successful"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_confirmed_successful</span>
+			 = <span class="var-default"> FALSE</span>			(line <span class="line-number">91</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The form was processed and passed</p>
+<p class="description"><p>the confirmation if any, and  it was successfull ?</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_FormValidation" id="$_FormValidation"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_FormValidation</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">78</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is the FormValidation object</p>
+<p class="description"><p>used to validate the form elements</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_form_attributes" id="$_form_attributes"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_form_attributes</span>
+			 = <span class="var-default">array(&quot;method&quot; =&gt; &quot;post&quot;,<br />                                  &quot;action&quot; =&gt; &quot;&quot;,<br />                                  &quot;name&quot; =&gt; &quot;myform&quot;,<br />                                  &quot;target&quot; =&gt; &quot;&quot;,<br />                                  &quot;onsubmit&quot; =&gt; &quot;&quot;,<br />                                  &quot;style&quot; =&gt; &quot;margin: 0px 0px 0px 0px;&quot;)</span>			(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This array holds the FORMtag</p>
+<p class="description"><p>attributes for this form</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_form_content" id="$_form_content"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_form_content</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">51</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This holds the FormContent Object  that knows how to render the  form.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_form_submit_action" id="$_form_submit_action"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_form_submit_action</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">84</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The action that was taken</p>
+<p class="description"><p>for the form</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_form_success_render" id="$_form_success_render"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_form_success_render</span>
+			 = <span class="var-default"> TRUE</span>			(line <span class="line-number">72</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag to let us know if we should</p>
+<p class="description"><p>render the form after it was  successfully processed</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_has_errors" id="$_has_errors"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_has_errors</span>
+			 = <span class="var-default"> FALSE</span>			(line <span class="line-number">59</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This flag lets us know there  were errors during processing or  validating the form.</p>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodFormProcessor" id="FormProcessor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor FormProcessor</span> (line <span class="line-number">108</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The constructor for the FormProcessor</p>
+	
+	<div class="method-signature">
+		<span class="method-result">FormProcessor</span>
+		<span class="method-name">
+			FormProcessor
+		</span>
+					(<span class="var-type"><a href="../../phpHtmlLib/FormProcessing/FormContent.html">FormContent</a></span>&nbsp;<span class="var-name">&$form_content</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$form_name</span> = <span class="var-default">&quot;myform&quot;</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$form_action</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../phpHtmlLib/FormProcessing/FormContent.html">FormContent</a></span>
+				<span class="var-name">&$form_content</span><span class="var-description">: object</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$form_name</span><span class="var-description">: the form name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$form_action</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcan_validate" id="can_validate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">can_validate</span> (line <span class="line-number">417</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method lets us turn on/off the  ability to do validation for the form</p>
+	
+	<div class="method-signature">
+		<span class="method-result">BOOLEAN</span>
+		<span class="method-name">
+			can_validate
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddo_validation" id="do_validation"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">do_validation</span> (line <span class="line-number">240</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method walks the FormContent's visible elements</p>
+<p class="description"><p>and calls the validation function for the element</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			do_validation
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_action" id="get_action"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_action</span> (line <span class="line-number">643</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is used to get the action that was  processed by the form</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_action
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_auto_error_display" id="get_auto_error_display"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_auto_error_display</span> (line <span class="line-number">474</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This gets the current value of the flag  that tells us to show form errors automatically  or not.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			get_auto_error_display
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_error_array" id="get_error_array"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_error_array</span> (line <span class="line-number">503</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method returns an array of errors that  happened in the form.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_error_array
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_error_display_object" id="get_error_display_object"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_error_display_object</span> (line <span class="line-number">488</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method allows us to get access to the  errors display object that is generated by  the form content.  This is the display  object that is meant to be rendered directly.</p>
+<p class="description"><p>If there are no errors. we will return NULL</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">object</span>
+		<span class="method-name">
+			&amp;get_error_display_object
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_form_action" id="get_form_action"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_form_action</span> (line <span class="line-number">603</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to get  the form action</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> (POST or GET)</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_form_action
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_form_enctype" id="get_form_enctype"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_form_enctype</span> (line <span class="line-number">622</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to get  the form enctype value</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_form_enctype
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_form_method" id="get_form_method"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_form_method</span> (line <span class="line-number">584</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to get  the form method</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> (POST or GET)</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_form_method
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_form_name" id="get_form_name"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_form_name</span> (line <span class="line-number">540</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to get  the form name</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_form_name
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_form_target" id="get_form_target"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_form_target</span> (line <span class="line-number">560</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to get  the form target</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_form_target
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_onsubmit" id="get_onsubmit"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_onsubmit</span> (line <span class="line-number">667</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the current value of the form tag's  onsubmit value</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_onsubmit
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodhas_errors" id="has_errors"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">has_errors</span> (line <span class="line-number">513</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This returns the flag that tells us that  the form has errors during processing</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			has_errors
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodis_action_successful" id="is_action_successful"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_action_successful</span> (line <span class="line-number">441</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is used to test to see if the form action  was processed succesfully.</p>
+<p class="description"><p>This is usefull for external entities to determine  if the form was processed, and it was successful.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			is_action_successful
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodrender" id="render"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">render</span> (line <span class="line-number">262</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method is called to render the form's html</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			render
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$indent_level</span> = <span class="var-default">0</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$output_debug</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$indent_level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$output_debug</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/Container.html#methodrender">Container::render()</a></dt>
+						<dd>This function is compatible with the  rest of the phpHtmllib API spec.</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../phpHtmlLib/FormProcessing/FormWizard.html#methodrender">FormWizard::render()</a>
+								: This function renders the
+							</li>
+				</ul>
+	</div>
+<a name="methodrender_confirm" id="render_confirm"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">render_confirm</span> (line <span class="line-number">359</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function renders the confirmation  page.  This page sits in between the  front end form, and the action handler.</p>
+<p class="description"><p>This only gets called after a form  and its data has been successfully  validated.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the raw html</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			render_confirm
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$indent_level</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$output_debug</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$indent_level</span><span class="var-description">: - $indent_level</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$output_debug</span><span class="var-description">: - $output_debug</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../phpHtmlLib/FormProcessing/FormWizard.html#methodrender_confirm">FormWizard::render_confirm()</a>
+								: This function renders the confirmation  page.  This page sits in between the  front end form, and the action handler.
+							</li>
+				</ul>
+	</div>
+<a name="methodrender_error" id="render_error"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">render_error</span> (line <span class="line-number">388</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This renders the error table  and then the form with the fields</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> html</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">raw</span>
+		<span class="method-name">
+			render_error
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$indent_level</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$output_debug</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">2</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">3</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">2</span><span class="var-description">: - $indent_level</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">3</span><span class="var-description">: - $output_debug</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$indent_level</span><span class="var-description">: - the form field vlues.</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$output_debug</span><span class="var-description">: - array of errors.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrender_form" id="render_form"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">render_form</span> (line <span class="line-number">308</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This renders the form</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> html</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">raw</span>
+		<span class="method-name">
+			render_form
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$indent_level</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$output_debug</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$obj</span> = <span class="var-default">NULL</span>], <span class="var-type">the</span>&nbsp;<span class="var-name">FormContent->form()</span>, <span class="var-type">object -</span>&nbsp;<span class="var-name">3</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">the</span>
+				<span class="var-name">FormContent->form()</span><span class="var-description">: object</span>			</li>
+					<li>
+				<span class="var-type">object -</span>
+				<span class="var-name">3</span><span class="var-description">: the form errors object.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$output_debug</span><span class="var-description">: - $indent_level</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$obj</span><span class="var-description">: - $output_debug</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$indent_level</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetup_validation" id="setup_validation"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setup_validation</span> (line <span class="line-number">140</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to setup  the validation object and the  form errors object that is to be  used by this form.</p>
+<p class="description"><p>You can override this method to  use a different FormErrors object  for localization.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setup_validation
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../phpHtmlLib/FormProcessing/FormWizard.html#methodsetup_validation">FormWizard::setup_validation()</a>
+								: This function is used to setup  the validation object and the  form errors object that is to be  used by this form.
+							</li>
+				</ul>
+	</div>
+<a name="methodset_auto_error_display" id="set_auto_error_display"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_auto_error_display</span> (line <span class="line-number">463</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This sets the flag that tells this class  to automatically call the form contents  form errors and display it or not</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_auto_error_display
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$flag</span><span class="var-description">: - show errors?</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_form_action" id="set_form_action"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_form_action</span> (line <span class="line-number">593</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the form action</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_form_action
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$action</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$action</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_form_attribute" id="set_form_attribute"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_form_attribute</span> (line <span class="line-number">680</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set a random attribute on the form tag.</p>
+<p class="description"><p>You should know what you are doing as this  might invalidate the output html with the  W3C validator.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_form_attribute
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span><span class="var-description">: the key</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: the value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_form_enctype" id="set_form_enctype"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_form_enctype</span> (line <span class="line-number">612</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the form enctype</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_form_enctype
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$enctype</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$enctype</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_form_method" id="set_form_method"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_form_method</span> (line <span class="line-number">570</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set the  form method</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_form_method
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$method</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$method</span><span class="var-description">: (POST or GET)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_form_name" id="set_form_name"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_form_name</span> (line <span class="line-number">530</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set the  form name</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_form_name
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_form_target" id="set_form_target"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_form_target</span> (line <span class="line-number">550</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set the  form target</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_form_target
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$target</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$target</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_onsubmit" id="set_onsubmit"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_onsubmit</span> (line <span class="line-number">657</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the onsubmit attribute to the form  NOTE: The FormContent child can automatically  set this value depending on the FormElement  children it contains.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">none</span>
+		<span class="method-name">
+			set_onsubmit
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$js</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$js</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_render_form_after_success" id="set_render_form_after_success"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_render_form_after_success</span> (line <span class="line-number">429</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function turns on the ability to</p>
+<p class="description"><p>render the form after the success  of the action.  Normally this feature  is off</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_render_form_after_success
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$flag</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_add_confirm_data" id="_add_confirm_data"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_add_confirm_data</span> (line <span class="line-number">763</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This adds all of the submitted data as</p>
+<p class="description"><p>hidden form fields</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_add_confirm_data
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_add_hidden_fields" id="_add_hidden_fields"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_add_hidden_fields</span> (line <span class="line-number">785</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function adds the form content's</p>
+<p class="description"><p>hidden form fields to the  form automatically</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_add_hidden_fields
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_build_form_tag" id="_build_form_tag"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_form_tag</span> (line <span class="line-number">720</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">this function builds the FORMtag object  and its attributes.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> object.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../phpHtmlLib/FORMtag.html">FORMtag</a></span>
+		<span class="method-name">
+			_build_form_tag
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../phpHtmlLib/FormProcessing/FormWizard.html#method_build_form_tag">FormWizard::_build_form_tag()</a>
+								: Override this so that we can place the  toolbar first inside the form tag.  We also  have to make sure the onsubmit stuff is working properly.
+							</li>
+				</ul>
+	</div>
+<a name="method_build_javascript" id="_build_javascript"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_javascript</span> (line <span class="line-number">821</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method is used to build any Javascript  that is used by the form and/or the form elements  used in the form.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_build_javascript
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_init_form_content" id="_init_form_content"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_init_form_content</span> (line <span class="line-number">695</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method initializes the FormContent  during processing.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">none</span>
+		<span class="method-name">
+			_init_form_content
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_pre_confirm" id="_pre_confirm"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_pre_confirm</span> (line <span class="line-number">220</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method calls the FormContent</p>
+<p class="description"><p>to let it do any data munging before the  confirmation page is rendered</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_pre_confirm
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_process_action" id="_process_action"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_process_action</span> (line <span class="line-number">210</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is responsible for  processing the form action  after validation, and form confirmation  happens.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_process_action
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_process_form" id="_process_form"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_process_form</span> (line <span class="line-number">149</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method does the logic of</p>
+<p class="description"><p>doing the form processing</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_process_form
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../phpHtmlLib/FormProcessing/FormWizard.html#method_process_form">FormWizard::_process_form()</a>
+								: This method does the logic of
+							</li>
+				</ul>
+	</div>
+<a name="method_set_action" id="_set_action"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_set_action</span> (line <span class="line-number">632</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is used to set the action</p>
+<p class="description"><p>submitted by the user</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_set_action
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_set_confirmed_success" id="_set_confirmed_success"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_set_confirmed_success</span> (line <span class="line-number">452</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This flag sets the flag that tells  if we successfully confirmed the form,  and processed the action</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_set_confirmed_success
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$flag</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method__hidden_fields" id="__hidden_fields"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">__hidden_fields</span> (line <span class="line-number">798</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method adds the processor specific  hidden fields.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__hidden_fields
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../phpHtmlLib/FormProcessing/FormWizard.html#method__hidden_fields">FormWizard::__hidden_fields()</a>
+							</li>
+				</ul>
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/Container.html">Container</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodContainer">Container::Container()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodadd">Container::add()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodadd_reference">Container::add_reference()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodcount_content">Container::count_content()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodget_element">Container::get_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodget_indent_flag">Container::get_indent_flag()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodpush">Container::push()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodpush_reference">Container::push_reference()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodrender">Container::render()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodreset_content">Container::reset_content()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodset_collapse">Container::set_collapse()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodset_indent_flag">Container::set_indent_flag()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 28 Jan 2011 08:53:07 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

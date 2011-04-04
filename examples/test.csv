@@ -1,0 +1,21 @@
+//This file is a test file for the
+//CSVFILEDataListSource object
+#another test line here should be ignored
+
+FName,LName,Email
+Joe,Bowler,joe@bowl.org
+John,Doe,john@doe.net
+
+Testing,c123,123@test.net
+Testing,d456,456@test.net
+Testing,e1234,1234@test.net
+Testing,f789,789@test.net
+linus,torvalds,theman@earth.net
+Ed,Fardos,edfardos@yahoo.com
+Jack,meoff,jack@houseoffun.com
+Hemna,what?,hemna@what.uh.nu
+Billy,Gates,bill@moron.net
+Homer,Simpson,homer@doh.net
+Bart,Simpson,bart@breaksthings.com
+Maggie,Simpson,maggie@baby.net
+Walter,Boring IV,waboring@newsblob.com

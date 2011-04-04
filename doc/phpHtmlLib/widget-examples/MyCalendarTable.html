@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class MyCalendarTable</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class MyCalendarTable</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-vars">Vars</a>
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is a widget class that can build and  render calendar data in a nicely formated table.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Mike Walsh &lt;<a href="mailto:mike_walsh@mindspring.com">mike_walsh@mindspring.com</a>&gt;</li>
+				<li><span class="field">author:</span> David Wilkinson &lt;<a href="mailto:davidw@cascade.org.uk">davidw@cascade.org.uk</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_examples---widget20.php.html">/examples/widget20.php</a> (line <span class="field">30</span>)
+		</p>
+		
+				
+		<pre><a href="../../phpHtmlLib/Container.html">Container</a>
+   |
+   --<a href="../../phpHtmlLib/BaseWidget.html">BaseWidget</a>
+      |
+      --<a href="../../phpHtmlLib/calendar/CalendarTable.html">CalendarTable</a>
+         |
+         --MyCalendarTable</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-vars">Vars</a>
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getCalendarLink" title="details" class="method-name">getCalendarLink</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$month</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$year</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getDateLink" title="details" class="method-name">getDateLink</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$day</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$month</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$year</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/calendar/CalendarTable.html">CalendarTable</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#var$dayNames">CalendarTable::$dayNames</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#var$daysInMonth">CalendarTable::$daysInMonth</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#var$monthNames">CalendarTable::$monthNames</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#var$monthsPerRow">CalendarTable::$monthsPerRow</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#var$startDay">CalendarTable::$startDay</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#var$startMonth">CalendarTable::$startMonth</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#var$_image_path">CalendarTable::$_image_path</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#var$_nextImage">CalendarTable::$_nextImage</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#var$_nextText">CalendarTable::$_nextText</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#var$_prevImage">CalendarTable::$_prevImage</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#var$_prevText">CalendarTable::$_prevText</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#var$_useButtons">CalendarTable::$_useButtons</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/BaseWidget.html">BaseWidget</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/BaseWidget.html#var$title">BaseWidget::$title</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/BaseWidget.html#var$width">BaseWidget::$width</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/BaseWidget.html#var$_image_prefix">BaseWidget::$_image_prefix</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-vars">Vars</a>
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodgetCalendarLink" id="getCalendarLink"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCalendarLink</span> (line <span class="line-number">32</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getCalendarLink
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$month</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$year</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$month</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$year</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetCalendarLink">CalendarTable::getCalendarLink()</a></dt>
+						<dd>Return the URL to link to in order to display a calendar for a  given month/year.  You must override this method if you want to  activate the &quot;forward&quot; and &quot;back&quot; feature of the calendar.</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetDateLink" id="getDateLink"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDateLink</span> (line <span class="line-number">40</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getDateLink
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$day</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$month</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$year</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$day</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$month</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$year</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetDateLink">CalendarTable::getDateLink()</a></dt>
+						<dd>Return the URL to link to  for a given date.  You must override  this method if you want to activate the date linking feature of  the calendar.</dd>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/calendar/CalendarTable.html">CalendarTable</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodCalendarTable">CalendarTable::CalendarTable()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodadjustDate">CalendarTable::adjustDate()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetCalendarLink">CalendarTable::getCalendarLink()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetCurrentMonthView">CalendarTable::getCurrentMonthView()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetCurrentYearView">CalendarTable::getCurrentYearView()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetDateLink">CalendarTable::getDateLink()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetDayNames">CalendarTable::getDayNames()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetDaysInMonth">CalendarTable::getDaysInMonth()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetMonth">CalendarTable::getMonth()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetMonthNames">CalendarTable::getMonthNames()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetMonthView">CalendarTable::getMonthView()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetNextLink">CalendarTable::getNextLink()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetPrevLink">CalendarTable::getPrevLink()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetStartDay">CalendarTable::getStartDay()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetStartMonth">CalendarTable::getStartMonth()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetYear">CalendarTable::getYear()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodgetYearView">CalendarTable::getYearView()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodsetDayNames">CalendarTable::setDayNames()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodsetMonthNames">CalendarTable::setMonthNames()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodsetMonthsPerRow">CalendarTable::setMonthsPerRow()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodsetStartDay">CalendarTable::setStartDay()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodsetStartMonth">CalendarTable::setStartMonth()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodset_image_path">CalendarTable::set_image_path()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodset_next_image_name">CalendarTable::set_next_image_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methodset_prev_image_name">CalendarTable::set_prev_image_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methoduseButtonNav">CalendarTable::useButtonNav()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/calendar/CalendarTable.html#methoduseTextNav">CalendarTable::useTextNav()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/BaseWidget.html">BaseWidget</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodget_align">BaseWidget::get_align()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodget_css">BaseWidget::get_css()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodget_javascript">BaseWidget::get_javascript()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodget_title">BaseWidget::get_title()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodget_width">BaseWidget::get_width()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodset_align">BaseWidget::set_align()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodset_image_path_prefix">BaseWidget::set_image_path_prefix()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodset_title">BaseWidget::set_title()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodset_width">BaseWidget::set_width()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/Container.html">Container</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodContainer">Container::Container()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodadd">Container::add()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodadd_reference">Container::add_reference()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodcount_content">Container::count_content()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodget_element">Container::get_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodget_indent_flag">Container::get_indent_flag()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodpush">Container::push()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodpush_reference">Container::push_reference()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodrender">Container::render()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodreset_content">Container::reset_content()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodset_collapse">Container::set_collapse()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodset_indent_flag">Container::set_indent_flag()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 28 Jan 2011 08:53:26 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

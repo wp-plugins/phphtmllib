@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class FECountryListMaster</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class FECountryListMaster</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A simple class to be the master. It contains a list of countries and the acceptable states for each county.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Sumedh Thakar &lt;<a href="mailto:sumedh_thakar@yahoo.com">sumedh_thakar@yahoo.com</a>&gt;</li>
+				<li><span class="field">copyright:</span> LGPL - See LICENCE</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_examples---form4.php.html">/examples/form4.php</a> (line <span class="field">42</span>)
+		</p>
+		
+				
+		<pre><a href="../../phpHtmlLib/FormProcessing/FormElement.html">FormElement</a>
+   |
+   --<a href="../../phpHtmlLib/FormProcessing/FEBoxElement.html">FEBoxElement</a>
+      |
+      --<a href="../../phpHtmlLib/FormProcessing/FEDataList.html">FEDataList</a>
+         |
+         --<a href="../../phpHtmlLib/FormProcessing/FEListBox.html">FEListBox</a>
+            |
+            --<a href="../../phpHtmlLib/FormProcessing/FEListBoxMaster.html">FEListBoxMaster</a>
+               |
+               --FECountryListMaster</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_countries" title="details" class="var-name">$_countries</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																						
+				<div class="method-definition">
+											<span class="method-result">FECountryListMaster</span>
+										<a href="#FECountryListMaster" title="details" class="method-name">FECountryListMaster</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$label</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$required</span> = <span class="var-default">TRUE</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$width</span> = <span class="var-default">NULL</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$height</span> = <span class="var-default">NULL</span>])
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_countries" id="$_countries"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_countries</span>
+			 = <span class="var-default">array(&quot;Select Country&quot;,<br />                         &quot;Hungary&quot; ,<br />                         &quot;Iceland&quot; ,<br />                         &quot;India&quot; =&gt; array(&quot;code&quot; =&gt; &quot;IN&quot;,<br />                                &quot;slave&quot; =&gt; array(&quot;Select State&quot; =&gt; &quot;&quot;,<br />                                                &quot;Andhra Pradesh&quot; =&gt; &quot;Andhra Pradesh&quot;,<br />                                                &quot;Andaman and Nicobar Islands&quot; =&gt; &quot;Andaman and Nicobar Islands&quot;,<br />                                                &quot;Maharashtra&quot; =&gt; &quot;Maharashtra&quot;,<br />                                                &quot;Manipur&quot; =&gt; &quot;Manipur&quot;,<br />                                                &quot;Uttar Pradesh&quot; =&gt; &quot;Uttar Pradesh&quot;,<br />                                                &quot;Uttaranchal&quot; =&gt; &quot;Uttaranchal&quot;,<br />                                                &quot;West Bengal&quot; =&gt; &quot;West Bengal&quot;,<br />                                           )),&quot;Italy&quot;,&quot;Jamaica&quot;,&quot;Japan&quot;,&quot;Jersey, C.I.&quot;,&quot;Jordan&quot;,&quot;Kazakhstan&quot;,&quot;Kenya&quot;,&quot;United Kingdom&quot;,&quot;United States of America&quot;=&gt;array(&quot;code&quot;=&gt;&quot;US&quot;,&quot;slave&quot;=&gt;array(&quot;Select State&quot;=&gt;&quot;&quot;,&quot;Alabama&quot;=&gt;&quot;Alabama&quot;,&quot;California&quot;=&gt;&quot;California&quot;,&quot;Colorado&quot;=&gt;&quot;Colorado&quot;,&quot;Guam&quot;=&gt;&quot;Guam&quot;,&quot;American Samoa&quot;=&gt;&quot;American Samoa&quot;,&quot;Palau&quot;=&gt;&quot;Palau&quot;,)),&quot;Uruguay&quot;,&quot;Uzbekistan&quot;,&quot;Zimbabwe&quot;)</span>			(line <span class="line-number">51</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The states array format &quot;United States&quot; =&gt; array (&quot;code&quot; =&gt; &quot;US&quot;,</p>
+<p class="description"><p>&quot;slave&quot; =&gt; Array(&quot;California&quot; =&gt; &quot;CA&quot;)                                                   )  if a seperate &quot;code&quot; value is not given then the array key (country name) is used</p></p>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FEListBoxMaster.html">FEListBoxMaster</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FEListBoxMaster.html#var$mdata">FEListBoxMaster::$mdata</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FEDataList.html">FEDataList</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FEDataList.html#var$_data_list">FEDataList::$_data_list</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FEDataList.html#var$_disabled_items">FEDataList::$_disabled_items</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FEBoxElement.html">FEBoxElement</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FEBoxElement.html#var$_height">FEBoxElement::$_height</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FEBoxElement.html#var$_width">FEBoxElement::$_width</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FormElement.html">FormElement</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onBlurJS">FormElement::$onBlurJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onChangeJS">FormElement::$onChangeJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onClickJS">FormElement::$onClickJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onFocusJS">FormElement::$onFocusJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onSubmitJS">FormElement::$onSubmitJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_attributes">FormElement::$_attributes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_element_name">FormElement::$_element_name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_errors">FormElement::$_errors</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_error_message">FormElement::$_error_message</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_form_name">FormElement::$_form_name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_has_error">FormElement::$_has_error</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_has_form_on_submit">FormElement::$_has_form_on_submit</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_is_disabled">FormElement::$_is_disabled</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_is_readonly">FormElement::$_is_readonly</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_is_required">FormElement::$_is_required</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_label_colon_flag">FormElement::$_label_colon_flag</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_label_text">FormElement::$_label_text</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_required_field_marker">FormElement::$_required_field_marker</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_slave_elements">FormElement::$_slave_elements</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_stripslashes">FormElement::$_stripslashes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_style_attributes">FormElement::$_style_attributes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_validation_enabled">FormElement::$_validation_enabled</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_value">FormElement::$_value</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodFECountryListMaster" id="FECountryListMaster"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor FECountryListMaster</span> (line <span class="line-number">98</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The constructor</p>
+	
+	<div class="method-signature">
+		<span class="method-result">FECountryListMaster</span>
+		<span class="method-name">
+			FECountryListMaster
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$label</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$required</span> = <span class="var-default">TRUE</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$width</span> = <span class="var-default">NULL</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$height</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$label</span><span class="var-description">: text label for the element</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$required</span><span class="var-description">: is this a required element?</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$width</span><span class="var-description">: element width in characters, pixels (px), percentage (%) or elements (em)</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$height</span><span class="var-description">: element height in px</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FEListBoxMaster.html">FEListBoxMaster</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FEListBoxMaster.html#methodjavascript">FEListBoxMaster::javascript()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FEListBoxMaster.html#methodonChange">FEListBoxMaster::onChange()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FEListBoxMaster.html#methodset_list_data">FEListBoxMaster::set_list_data()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FEListBoxMaster.html#methodset_slave_data">FEListBoxMaster::set_slave_data()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FEListBox.html">FEListBox</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FEListBox.html#methodget_element">FEListBox::get_element()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FEDataList.html">FEDataList</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FEDataList.html#methodFEDataList">FEDataList::FEDataList()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FEDataList.html#methoddisable_item">FEDataList::disable_item()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FEDataList.html#methodget_value_text">FEDataList::get_value_text()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FEDataList.html#methodset_list_data">FEDataList::set_list_data()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FEDataList.html#methodvalidate">FEDataList::validate()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FEBoxElement.html">FEBoxElement</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FEBoxElement.html#methodFEBoxElement">FEBoxElement::FEBoxElement()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FormElement.html">FormElement</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodFormElement">FormElement::FormElement()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodbuild_id_name">FormElement::build_id_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodcreate_element_name">FormElement::create_element_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodenable_validation">FormElement::enable_validation()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodform_tag_onsubmit">FormElement::form_tag_onsubmit()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_attribute">FormElement::get_attribute()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_confirm_element">FormElement::get_confirm_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_element">FormElement::get_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_element_name">FormElement::get_element_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_errors">FormElement::get_errors()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_error_message">FormElement::get_error_message()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_form_element">FormElement::get_form_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_init_value">FormElement::get_init_value()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_label">FormElement::get_label()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_label_text">FormElement::get_label_text()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_required_symbol">FormElement::get_required_symbol()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_slave_elements">FormElement::get_slave_elements()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_tabindex">FormElement::get_tabindex()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_value">FormElement::get_value()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_value_text">FormElement::get_value_text()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodhas_error">FormElement::has_error()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodis_disabled">FormElement::is_disabled()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodis_readonly">FormElement::is_readonly()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodis_required">FormElement::is_required()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodjavascript">FormElement::javascript()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonBlur">FormElement::onBlur()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonChange">FormElement::onChange()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonClick">FormElement::onClick()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonFocus">FormElement::onFocus()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonSubmit">FormElement::onSubmit()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_attribute">FormElement::set_attribute()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_colon_flag">FormElement::set_colon_flag()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_data_all_slaves">FormElement::set_data_all_slaves()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_disabled">FormElement::set_disabled()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_element_name">FormElement::set_element_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_error_message">FormElement::set_error_message()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_form_name">FormElement::set_form_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_label_text">FormElement::set_label_text()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onBlur">FormElement::set_onBlur()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onChange">FormElement::set_onChange()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onClick">FormElement::set_onClick()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onFocus">FormElement::set_onFocus()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onSubmit">FormElement::set_onSubmit()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_readonly">FormElement::set_readonly()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_required">FormElement::set_required()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_required_symbol">FormElement::set_required_symbol()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_slave_data">FormElement::set_slave_data()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_slave_elements">FormElement::set_slave_elements()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_stripslashes">FormElement::set_stripslashes()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_style_attribute">FormElement::set_style_attribute()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_tabindex">FormElement::set_tabindex()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_title">FormElement::set_title()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_value">FormElement::set_value()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodvalidate">FormElement::validate()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#method_build_element_attributes">FormElement::_build_element_attributes()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#method_build_javascript">FormElement::_build_javascript()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#method_do_validation">FormElement::_do_validation()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#method_sanitize_string">FormElement::_sanitize_string()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 28 Jan 2011 08:53:04 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

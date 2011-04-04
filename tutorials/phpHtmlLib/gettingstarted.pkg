@@ -1,0 +1,218 @@
+<refentry id="{@id}">
+  <refnamediv>
+    <refname>Getting Started</refname>
+    <refpurpose>how to begin with phpHtmlLib package</refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <refsynopsisdivinfo>
+      <author>
+    by Walter A. Boring IV
+        <authorblurb>{@link mailto:waboring@3gstech.com}</authorblurb>
+      </author>
+      <copyright>&copy; September 2005, Walter A. Boring IV</copyright>
+      <releaseinfo>phpHtmlLib 2.6.0</releaseinfo>
+    </refsynopsisdivinfo>
+  </refsynopsisdiv>
+ {@toc}
+  <refsect1 id="{@id installing}">
+    <title>Installing</title>
+    <orderedlist>
+      <listitem>
+        <para>For most people that use Linux with Apache, the install will be
+    very easy.  You just need to copy the untared package directory phphtmllib-2.6.0
+    to somewhere in your DOCUMENT_ROOT, where phphtmllib is located what the
+    the actual top level directory name is are not important.
+        </para>
+        <para>Once phpHtmlLib is installed, you need to tell your scripts how
+    to find it.  To do this, you must define two constants:
+          <para>Windows (it is a good idea to escape backslashes on Windows)</para>
+          <example><![CDATA[<?php
+        define("PHPHTMLLIB_ABSPATH",
+            "C:\\inetpub\\wwwroot\\extlib\\phphtmllib_2.6.0");
+        define("PHPHTMLLIB_RELPATH", "/extlib/phphtmllib_2.6.0");
+?>]]>
+          </example>
+          <para>Unix/Linux</para>
+          <example><![CDATA[<?php
+        define("PHPHTMLLIB_ABSPATH",
+            "/var/www/html/extlib/phphtmllib_2.6.0");
+        define("PHPHTMLLIB_RELPATH", "/extlib/phphtmllib_2.6.0");
+?>]]>
+          </example>
+        </para>
+      </listitem>
+      <listitem>
+        <para>Then you just include the main include file inside phphtmllib.
+          <example><![CDATA[<?php
+        include_once(PHPHTMLLIB_ABSPATH . "/includes.inc") ;
+?>]]>
+          </example>
+        </para>
+      </listitem>
+      <listitem>
+        <para>phpHtmlLib is now installed</para>
+      </listitem>
+    </orderedlist>
+  </refsect1>
+  <refsect1 id="{@id impatient}">
+    <title>Overview for the impatient</title>
+    <para>You can't wait to read the full documentation and tutorials, so you write few lines
+    of code as below ...
+    </para>
+    <para>
+      <unorderedlist>
+        <listitem>
+          <para>From the shell move the phphtmllib directory to your DOCUMENT_ROOT</para>
+        </listitem>
+        <listitem>
+          <para>Create an include script.</para>
+          <para>
+            <para>Windows (it is a good idea to escape backslashes on Windows)</para>
+            <example><![CDATA[<?php
+        define("PHPHTMLLIB_ABSPATH",
+            "C:\\inetpub\\wwwroot\\extlib\\phphtmllib_2.6.0");
+        define("PHPHTMLLIB_RELPATH", "/extlib/phphtmllib_2.6.0");
+        include_once(PHPHTMLLIB_ABSPATH . "/includes.inc") ;
+?>]]>
+            </example>
+            <para>Unix/Linux</para>
+            <example><![CDATA[<?php
+        define("PHPHTMLLIB_ABSPATH",
+            "/var/www/html/extlib/phphtmllib_2.6.0");
+        define("PHPHTMLLIB_RELPATH", "/extlib/phphtmllib_2.6.0");
+include_once(PHPHTMLLIB_ABSPATH . "/includes.inc") ;
+?>]]>
+            </example>
+          </para>
+        </listitem>
+        <listitem>
+          <para>phpHtmlLib is now installed and ready to be used.</para>
+        </listitem>
+      </unorderedlist>
+    </para>
+  </refsect1>
+  <refsect1 id="{@id intro}">
+    <title>Introduction</title>
+    <para>
+    I have tried to make the phpHtmlLib fairly easy to install
+  and to use on anyone's current running site.  There are a few assumptions
+  I've made, but it shouldn't be a problem for 99% of the folks out there.
+  If you encounter any issues, please let me know.  I welcome any and all
+ feedback.
+    </para>
+  </refsect1>
+  <refsect1 id="{@id pkg-overview}">
+    <title>Package Overview</title>
+    <para>
+    phpHtmlLib provides 3 main classes to help you build Tags:
+    </para>
+    <refsect2 id="{@id class-bar}">
+      <title>Global Classes</title>
+      <para>
+        <unorderedlist>
+          <listitem>Container
+            <para>This class is nothing more then a container widget.  It lets you
+      add data into it, and it will render each item indented properly
+      so it works with the rest of the libs.
+            </para>
+          </listitem>
+          <listitem>XMLTagClass
+            <para>This class is a child of the Container class and is for building and rendering
+      an XML tag. This class is the base class for the HTMLTagClass.
+            </para>
+          </listitem>
+          <listitem>HTMLTagClass
+            <para>Base class for all HTML Tag classes. Tag class renders an html tag, its
+       attributes, the content (if any), and close tag (if needed).
+            </para>
+          </listitem>
+        </unorderedlist>
+      </para>
+    </refsect2>
+    <refsect2 id="{@id class-dm}">
+      <title>Document/Page Classes</title>
+      <para>
+        <unorderedlist>
+          <listitem>XMLDocumentClass
+            <para>This class lets you build a complete xml document and render it.</para>
+          </listitem>
+          <listitem>HTMLPageClass
+            <para>class the constructs and renders an entire HTML/XHTML document.</para>
+          </listitem>
+          <listitem>PageWidget
+            <para>This child class of the HTMLPageClass is used to build content
+          for an entire page.  It uses the HTMLPageClass widget from phphtmllib
+          to render the final output.</para>
+          </listitem>
+        </unorderedlist>
+      </para>
+    </refsect2>
+    <refsect2 id="{@id class-ui}">
+      <title>HTML Widgets</title>
+      <para>
+        <unorderedlist>
+          <listitem>BaseWidget
+            <para>this is the base widget class, that all widgets
+       are based off of.  It provides some basic members and methods.
+            </para>
+          </listitem>
+          <listitem>CSSBuilder
+            <para>This class is a widget for constructing and rendering css.
+      It exports API's for adding classes, ids and their attributes.
+      It can render as either a stand alone foo.css type of file, with the appropriate
+      httpd header, or as part of a
+              style tag's content that lives as part of an html
+      document.
+            </para>
+          </listitem>
+            <listitem>CSSContainer
+            <para>This class is a container for CSSBuilder objects.
+            It is meant to make the theming of many CSSBuilder objects easy to manage.
+            </para>
+          </listitem>
+        </unorderedlist>
+      </para>
+    </refsect2>
+    <refsect2 id="{@id class-forms}">
+      <title>HTML Forms</title>
+      <para>
+        <unorderedlist>
+          <listitem>FormContent
+            <para>
+            This class is used to build and render the form.  It builds a form
+            by creating FormElement objects which have automatic validation. It
+            leaves the layout of the form up to the child class. It has a
+            mechanism in place to automagically show a confirmation 'page'
+            after the data has been submitted and validated. It also provides a
+            hook for any 'back end' validation of data. Finally, it provides a
+            function for handling the action of the form, which only gets call
+            after ALL validation has passed.
+            </para>
+          </listitem>
+          <listitem>FormProcessor
+            <para>
+            This is the main engine for the processing of forms. It builds the
+            form tag, and calls the appropriate FormContent methods to build
+            the FormElement's and validation, as well as backend processing to
+            do the action after the data has been validated.
+            </para>
+          </listitem>
+            <listitem>FormValidation
+            <para>
+            This is the base validation class that contains some basic
+            FormElement validation methods.  You will find that this class is
+            rarely accessed directly.
+            </para>
+          </listitem>
+            <listitem>FormElement
+            <para>
+            This is the base FormElement object. It can be single form field
+            such as a text input field, or a complex object.  All of the FE*
+            classes are derived from this class.
+            </para>
+          </listitem>
+        </unorderedlist>
+      </para>
+    </refsect2>
+  </refsect1>
+</refentry>

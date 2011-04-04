@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class BBCodeForm</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class BBCodeForm</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-vars">Vars</a>
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is the Class that handles the building  of the Form itself.  It creates the Form Elements  inside the form_init_elements() method.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Walter A. Boring IV &lt;<a href="mailto:waboring@buildabetterweb.com">waboring@buildabetterweb.com</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_examples---form10.php.html">/examples/form10.php</a> (line <span class="field">112</span>)
+		</p>
+		
+				
+		<pre><a href="../../phpHtmlLib/FormProcessing/FormContent.html">FormContent</a>
+   |
+   --<a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html">StandardFormContent</a>
+      |
+      --BBCodeForm</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-vars">Vars</a>
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#confirm_action" title="details" class="method-name">confirm_action</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#form_action" title="details" class="method-name">form_action</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#form_backend_validation" title="details" class="method-name">form_backend_validation</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#form_content" title="details" class="method-name">form_content</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#form_init_data" title="details" class="method-name">form_init_data</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#form_init_elements" title="details" class="method-name">form_init_elements</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html">StandardFormContent</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#var$action_label">StandardFormContent::$action_label</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#var$cancel_label">StandardFormContent::$cancel_label</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#var$_allow_actions">StandardFormContent::$_allow_actions</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#var$_form_title">StandardFormContent::$_form_title</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#var$_infotable">StandardFormContent::$_infotable</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#var$_wizard_id">StandardFormContent::$_wizard_id</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FormContent.html">FormContent</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_action_counter">FormContent::$_action_counter</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_action_message">FormContent::$_action_message</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_cancel_action">FormContent::$_cancel_action</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_default_label_css">FormContent::$_default_label_css</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_elements">FormContent::$_elements</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_error_label_css">FormContent::$_error_label_css</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_file_elements">FormContent::$_file_elements</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_FormValidation">FormContent::$_FormValidation</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_form_action_elements_on_submit">FormContent::$_form_action_elements_on_submit</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_form_errors_title">FormContent::$_form_errors_title</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_form_errors_width">FormContent::$_form_errors_width</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_form_name">FormContent::$_form_name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_form_on_submit">FormContent::$_form_on_submit</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_has_confirm">FormContent::$_has_confirm</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_has_file_element">FormContent::$_has_file_element</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_hidden_elements">FormContent::$_hidden_elements</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_is_readonly">FormContent::$_is_readonly</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_label_colon_flag">FormContent::$_label_colon_flag</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_required_field_marker">FormContent::$_required_field_marker</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_required_field_text">FormContent::$_required_field_text</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_stripslashes">FormContent::$_stripslashes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#var$_width">FormContent::$_width</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-vars">Vars</a>
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodconfirm_action" id="confirm_action"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">confirm_action</span> (line <span class="line-number">267</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method is called ONLY after ALL validation has  passed.  This is the method that allows you to  do something with the data, say insert/update records  in the DB.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			confirm_action
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodconfirm_action">StandardFormContent::confirm_action()</a></dt>
+						<dd>This method is responsible for handling the  confirmation page's Confirm action.</dd>
+					</dl>
+			
+	</div>
+<a name="methodform_action" id="form_action"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">form_action</span> (line <span class="line-number">285</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method handles the form action.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE = success                  FALSE = failed.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			form_action
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodform_action">StandardFormContent::form_action()</a></dt>
+						<dd>This method handles the form action.</dd>
+					</dl>
+			
+	</div>
+<a name="methodform_backend_validation" id="form_backend_validation"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">form_backend_validation</span> (line <span class="line-number">255</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method gets called after the FormElement data has  passed the validation.  This enables you to validate the  data against some backend mechanism, say a DB.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			form_backend_validation
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodform_backend_validation">FormContent::form_backend_validation()</a></dt>
+						<dd>This method is called after the FormElements</dd>
+					</dl>
+			
+	</div>
+<a name="methodform_content" id="form_content"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">form_content</span> (line <span class="line-number">228</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is the method that builds the layout of where the  FormElements will live.  You can lay it out any way  you like.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			form_content
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodform_content">StandardFormContent::form_content()</a></dt>
+						<dd>Child class MUST override this  to provide the form fields</dd>
+					</dl>
+			
+	</div>
+<a name="methodform_init_data" id="form_init_data"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">form_init_data</span> (line <span class="line-number">150</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method is called only the first time the form  page is hit.  This enables u to query a DB and  pre populate the FormElement objects with data.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			form_init_data
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodform_init_data">FormContent::form_init_data()</a></dt>
+						<dd>This method is called by the</dd>
+					</dl>
+			
+	</div>
+<a name="methodform_init_elements" id="form_init_elements"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">form_init_elements</span> (line <span class="line-number">120</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method gets called EVERY time the object is  created.  It is used to build all of the  FormElement objects used in this Form.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			form_init_elements
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodform_init_elements">FormContent::form_init_elements()</a></dt>
+						<dd>This method is what is called to  build the list of FormElements that  will be used by this form.</dd>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html">StandardFormContent</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodStandardFormContent">StandardFormContent::StandardFormContent()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodadd_form_block">StandardFormContent::add_form_block()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodbuild_form_block">StandardFormContent::build_form_block()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodconfirm_action">StandardFormContent::confirm_action()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodform">StandardFormContent::form()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodform_action">StandardFormContent::form_action()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodform_confirm">StandardFormContent::form_confirm()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodform_content">StandardFormContent::form_content()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodform_content_buttons">StandardFormContent::form_content_buttons()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodget_wizard_id">StandardFormContent::get_wizard_id()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodset_action_label">StandardFormContent::set_action_label()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodset_cancel_label">StandardFormContent::set_cancel_label()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodset_form_title">StandardFormContent::set_form_title()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#methodset_wizard_id">StandardFormContent::set_wizard_id()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#method_div_wrapper">StandardFormContent::_div_wrapper()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/StandardFormContent.html#method_form_content_table">StandardFormContent::_form_content_table()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FormContent.html">FormContent</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodFormContent">FormContent::FormContent()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodadd_action">FormContent::add_action()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodadd_action_element">FormContent::add_action_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodadd_cancel">FormContent::add_cancel()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodadd_element">FormContent::add_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodadd_error">FormContent::add_error()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodadd_hidden_action">FormContent::add_hidden_action()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodadd_hidden_element">FormContent::add_hidden_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodadd_image_action">FormContent::add_image_action()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodbuild_confirm_table">FormContent::build_confirm_table()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodelement_exists">FormContent::element_exists()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodelement_form">FormContent::element_form()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodelement_label">FormContent::element_label()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodform">FormContent::form()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodform_action">FormContent::form_action()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodform_backend_validation">FormContent::form_backend_validation()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodform_confirm">FormContent::form_confirm()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodform_errors">FormContent::form_errors()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodform_init_data">FormContent::form_init_data()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodform_init_elements">FormContent::form_init_elements()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodform_success">FormContent::form_success()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodget_action">FormContent::get_action()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodget_action_element">FormContent::get_action_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodget_all_element_values">FormContent::get_all_element_values()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodget_default_css">FormContent::get_default_css()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodget_element">FormContent::get_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodget_element_value">FormContent::get_element_value()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodget_error_array">FormContent::get_error_array()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodget_form_errors_width">FormContent::get_form_errors_width()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodget_form_name">FormContent::get_form_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodget_form_tabindex">FormContent::get_form_tabindex()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodget_hidden_element_value">FormContent::get_hidden_element_value()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodget_required_marker">FormContent::get_required_marker()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodhas_confirm">FormContent::has_confirm()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodhidden_element_label">FormContent::hidden_element_label()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodis_readonly">FormContent::is_readonly()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodjavascript">FormContent::javascript()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodpre_confirm">FormContent::pre_confirm()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_action">FormContent::set_action()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_action_message">FormContent::set_action_message()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_cancel_action">FormContent::set_cancel_action()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_colon_flag">FormContent::set_colon_flag()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_confirm">FormContent::set_confirm()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_default_css">FormContent::set_default_css()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_element_value">FormContent::set_element_value()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_error_css">FormContent::set_error_css()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_form_errors_title">FormContent::set_form_errors_title()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_form_errors_width">FormContent::set_form_errors_width()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_form_name">FormContent::set_form_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_form_tabindex">FormContent::set_form_tabindex()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_form_width">FormContent::set_form_width()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_hidden_element_value">FormContent::set_hidden_element_value()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_readonly">FormContent::set_readonly()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_required_marker">FormContent::set_required_marker()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_required_text">FormContent::set_required_text()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#methodset_stripslashes">FormContent::set_stripslashes()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#method_pre_confirm">FormContent::_pre_confirm()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#method_set_validation_object">FormContent::_set_validation_object()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormContent.html#method_test_element">FormContent::_test_element()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 28 Jan 2011 08:53:06 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

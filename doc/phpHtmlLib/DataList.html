@@ -1,0 +1,3765 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class DataList</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class DataList</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This object is the base class that can be</p>
+<p class="description"><p>used to build a widget that shows lists of  data from any source via the DataListSource  object.  It fetches/builds/gets its data  from the DataListSource object, which can  be written to support any data source  (MySQL, Oracle, comma delimited file, xml, etc.)</p><p>This base class MUST be extended by a child to  actually render the list.  The job of the DataList  class is to provide the basic API and abstraction  mechanism to handling searching, showing, sorting  lists of data.</p><p>Each column of data is associated with a title and a  name.  The title is what is shown to the user for that  column.  The name is the mapping between the column and  the DataListSource.  Each column can be marked  as sortable and searchable.  If a column is sortable,  the title is a link that can be clicked on to sort.  The sorting is done in the DataListSource object (  via the sql query, or sort() functions depending on the  data source itself)</p><p>The DataList object will build the title, the search block  (if any), the datalist controls (the links/imges for  first, prev, next, last, all).  Then the data columns/labels.  Then it will fetch each of the rows of data to display  from the DataListSource.</p><p>The logic of the output calls follows in the order:</p><p>title  search table/block  datalist controls (first, prev, next, last, all)  data columns/labels  data rows x through y</p><p>REQUIREMENTS:   You must use/define a DataListSource object.   You MUST override/extend the following methods:</p><p>* get_data_source() - used to set the DataListSource                          by this class.   * user_setup() - used to set the columns to show and any                    options used by the DataList class and                    DataListSource object.</p><p>UI ABSTRACTION METHODS   These methods allow for some level of abstraction for   the layout/look/feel of the actual list of data.</p><p>* gui_init() - the function gives the child class a chance                  to do any building of the objects that will                  hold the search area, column headers and the                  rows of data.</p><p>* child_build_column_header() - This method is responsible                                   for building and inserting                                   the column header title into                                   the UI object.</p><p>* child_add_row_cell() - This function is responsible for adding                            the cell in the current row.  The method                            is responsible for keeping track of the                            location in its UI object for the current                            row.</p><p>* child_get_gui() - This method returns the entire UI in 1 object                       or container.  At this point the entire UI                       has been constructed, the entire list of data                       has been walked and inserted.</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Walter A. Boring IV &lt;<a href="mailto:waboring@newsblob.com">waboring@newsblob.com</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_widgets---data_list---DataList.inc.html">/widgets/data_list/DataList.inc</a> (line <span class="field">118</span>)
+		</p>
+		
+				
+		<pre><a href="../phpHtmlLib/Container.html">Container</a>
+   |
+   --<a href="../phpHtmlLib/BaseWidget.html">BaseWidget</a>
+      |
+      --DataList</pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../phpHtmlLib/SimpleGUIDataList.html">SimpleGUIDataList</a></td>
+					<td>
+											This object is the base class that can be
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../phpHtmlLib/DefaultGUIDatalist.html">DefaultGUIDatalist</a></td>
+					<td>
+											This class is the Default phpHtmlLib GUI interface  child of the DataList class.  This child simply does  the job of rendering the html/layout for a DataList.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../phpHtmlLib/ListAction.html">ListAction</a></td>
+					<td>
+											A class for showing a list of items  to preform an action on
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																																																																																																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_advanced_search_flag" title="details" class="var-name">$_advanced_search_flag</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_clean_string" title="details" class="var-name">$_clean_string</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_columns" title="details" class="var-name">$_columns</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../phpHtmlLib/DataListSource.html">DataListSource</a></span>
+					<a href="#$_datasource" title="details" class="var-name">$_datasource</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_debug" title="details" class="var-name">$_debug</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_default_orderby" title="details" class="var-name">$_default_orderby</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_default_reverseorder" title="details" class="var-name">$_default_reverseorder</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_default_rows_per_page" title="details" class="var-name">$_default_rows_per_page</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_form_attributes" title="details" class="var-name">$_form_attributes</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_form_render_flag" title="details" class="var-name">$_form_render_flag</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_global_prefix" title="details" class="var-name">$_global_prefix</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_image_path" title="details" class="var-name">$_image_path</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_max_rows" title="details" class="var-name">$_max_rows</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_not_found_message" title="details" class="var-name">$_not_found_message</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_num_columns" title="details" class="var-name">$_num_columns</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_num_pages" title="details" class="var-name">$_num_pages</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_save_vars" title="details" class="var-name">$_save_vars</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_search_flag" title="details" class="var-name">$_search_flag</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_search_table" title="details" class="var-name">$_search_table</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_show_all_rows" title="details" class="var-name">$_show_all_rows</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_show_results_flag" title="details" class="var-name">$_show_results_flag</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_simple_search_modifier" title="details" class="var-name">$_simple_search_modifier</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_vars" title="details" class="var-name">$_vars</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+				<div class="method-definition">
+											<span class="method-result">DataList</span>
+										<a href="#DataList" title="details" class="method-name">DataList</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$width</span> = <span class="var-default">&quot;100%&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$default_orderby</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$default_reverseorder</span> = <span class="var-default">FALSE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#add_header_item" title="details" class="method-name">add_header_item</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$label</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$size</span> = <span class="var-default">100</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$data_name</span> = <span class="var-default">NULL</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$sortable</span> = <span class="var-default">FALSE</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$searchable</span> = <span class="var-default">FALSE</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$align</span> = <span class="var-default">&quot;left&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$sortorder</span> = <span class="var-default">&quot;&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$max_text_length</span> = <span class="var-default">NULL</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#advanced_search_disable" title="details" class="method-name">advanced_search_disable</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#advanced_search_enable" title="details" class="method-name">advanced_search_enable</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#build_base_url" title="details" class="method-name">build_base_url</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#build_column_item" title="details" class="method-name">build_column_item</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$row_data</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$col_name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../phpHtmlLib/Atag.html">Atag</a></span>
+										<a href="#build_column_url" title="details" class="method-name">build_column_url</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$col_name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">Container</span>
+										<a href="#build_gui" title="details" class="method-name">build_gui</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#build_orderby_querystring" title="details" class="method-name">build_orderby_querystring</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#build_reverseorder_querystring" title="details" class="method-name">build_reverseorder_querystring</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#build_searchfield_querystring" title="details" class="method-name">build_searchfield_querystring</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#build_searchvalue_querystring" title="details" class="method-name">build_searchvalue_querystring</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#build_state_vars_query_string" title="details" class="method-name">build_state_vars_query_string</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$offset</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$expandrows_flag</span> = <span class="var-default">FALSE</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$expandrows_value</span> = <span class="var-default">0</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">Object</span>
+										<a href="#build_tool_link" title="details" class="method-name">build_tool_link</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$which</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#child_add_row_cell" title="details" class="method-name">child_add_row_cell</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$obj</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$col_name</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$last_in_row_flag</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#child_build_column_header" title="details" class="method-name">child_build_column_header</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$col_data</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$col_count</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">Container</span>
+										<a href="#child_build_search_table" title="details" class="method-name">child_build_search_table</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">Container</span>
+										<a href="#child_get_gui" title="details" class="method-name">child_get_gui</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#data_prefetch" title="details" class="method-name">data_prefetch</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#do_action" title="details" class="method-name">do_action</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#expandrows" title="details" class="method-name">expandrows</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#filter_column_string" title="details" class="method-name">filter_column_string</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#get_cleanstring" title="details" class="method-name">get_cleanstring</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#get_current_page" title="details" class="method-name">get_current_page</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_data_source" title="details" class="method-name">get_data_source</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#get_default_num_rows" title="details" class="method-name">get_default_num_rows</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_form_action" title="details" class="method-name">get_form_action</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_form_method" title="details" class="method-name">get_form_method</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_form_name" title="details" class="method-name">get_form_name</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">bool</span>
+										<a href="#get_form_render" title="details" class="method-name">get_form_render</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_form_target" title="details" class="method-name">get_form_target</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_global_prefix" title="details" class="method-name">get_global_prefix</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_image_path" title="details" class="method-name">get_image_path</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#get_last_page" title="details" class="method-name">get_last_page</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#get_max_rows" title="details" class="method-name">get_max_rows</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_not_found_message" title="details" class="method-name">get_not_found_message</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#get_num_pages" title="details" class="method-name">get_num_pages</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_page_info" title="details" class="method-name">get_page_info</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#get_showall" title="details" class="method-name">get_showall</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_simple_search_modifier" title="details" class="method-name">get_simple_search_modifier</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#gui_init" title="details" class="method-name">gui_init</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#is_advanced_search_enabled" title="details" class="method-name">is_advanced_search_enabled</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#is_search_enabled" title="details" class="method-name">is_search_enabled</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#numrows" title="details" class="method-name">numrows</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#offset" title="details" class="method-name">offset</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string.</span>
+										<a href="#orderby" title="details" class="method-name">orderby</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">none</span>
+										<a href="#pre_query_sanity_check" title="details" class="method-name">pre_query_sanity_check</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#render" title="details" class="method-name">render</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$indent_level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$output_debug</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string.</span>
+										<a href="#reverseorder" title="details" class="method-name">reverseorder</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#search_disable" title="details" class="method-name">search_disable</a>
+											(<span class="var-type">boolean</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#search_enable" title="details" class="method-name">search_enable</a>
+											(<span class="var-type">boolean</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#search_field" title="details" class="method-name">search_field</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#search_type" title="details" class="method-name">search_type</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#search_value" title="details" class="method-name">search_value</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#search_value_filter" title="details" class="method-name">search_value_filter</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setup_columns" title="details" class="method-name">setup_columns</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_cleanstring" title="details" class="method-name">set_cleanstring</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_data_source" title="details" class="method-name">set_data_source</a>
+											(<span class="var-type"><a href="../phpHtmlLib/DataListSource.html">DataListSource</a></span>&nbsp;<span class="var-name">$datasource</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">none</span>
+										<a href="#set_debug" title="details" class="method-name">set_debug</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$level</span> = <span class="var-default">FALSE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_default_num_rows" title="details" class="method-name">set_default_num_rows</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$num_rows</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_expandrows" title="details" class="method-name">set_expandrows</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_form_action" title="details" class="method-name">set_form_action</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$action</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_form_method" title="details" class="method-name">set_form_method</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$method</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_form_name" title="details" class="method-name">set_form_name</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_form_render" title="details" class="method-name">set_form_render</a>
+											(<span class="var-type">bool</span>&nbsp;<span class="var-name">$flag</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_form_target" title="details" class="method-name">set_form_target</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$target</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_global_prefix" title="details" class="method-name">set_global_prefix</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$prefix</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#set_image_path" title="details" class="method-name">set_image_path</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$path</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_max_rows" title="details" class="method-name">set_max_rows</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$max</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_not_found_message" title="details" class="method-name">set_not_found_message</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$mesg</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_numrows" title="details" class="method-name">set_numrows</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$new_numrows</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_offset" title="details" class="method-name">set_offset</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$new_offset</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_orderby" title="details" class="method-name">set_orderby</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$orderby</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_reverseorder" title="details" class="method-name">set_reverseorder</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$new_value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_save_vars" title="details" class="method-name">set_save_vars</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$vars</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_search_type" title="details" class="method-name">set_search_type</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_showall" title="details" class="method-name">set_showall</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_show_results" title="details" class="method-name">set_show_results</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_simple_search_modifier" title="details" class="method-name">set_simple_search_modifier</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$modifier</span> = <span class="var-default">SEARCH_ALL</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#simple_search_modifier_value" title="details" class="method-name">simple_search_modifier_value</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#user_setup" title="details" class="method-name">user_setup</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">Container</span>
+										<a href="#_build_default_vars" title="details" class="method-name">_build_default_vars</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#_build_save_vars" title="details" class="method-name">_build_save_vars</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../phpHtmlLib/INPUTtag.html">INPUTtag</a></span>
+										<a href="#_build_simple_search_modifier" title="details" class="method-name">_build_simple_search_modifier</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_build_tool_url" title="details" class="method-name">_build_tool_url</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$offset</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$expandrows_flag</span> = <span class="var-default">FALSE</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$expandrows_value</span> = <span class="var-default">0</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_check_datasource" title="details" class="method-name">_check_datasource</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$function_name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#_clean_string" title="details" class="method-name">_clean_string</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$obj</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$col_name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_filter_column_string" title="details" class="method-name">_filter_column_string</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">the</span>
+										<a href="#_get" title="details" class="method-name">_get</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$default_value</span> = <span class="var-default">NULL</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#_get_searchable_fields" title="details" class="method-name">_get_searchable_fields</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../phpHtmlLib/SCRIPTtag.html">SCRIPTtag</a></span>
+										<a href="#_javascript" title="details" class="method-name">_javascript</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_save_mozilla_nav_link" title="details" class="method-name">_save_mozilla_nav_link</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$which</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_set" title="details" class="method-name">_set</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#_show_results" title="details" class="method-name">_show_results</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_advanced_search_flag" id="$_advanced_search_flag"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_advanced_search_flag</span>
+			 = <span class="var-default"> FALSE</span>			(line <span class="line-number">197</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag to let us know that</p>
+<p class="description"><p>advanced search is enabled</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_clean_string" id="$_clean_string"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_clean_string</span>
+			 = <span class="var-default"> TRUE</span>			(line <span class="line-number">281</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">flag indicating if we should scrub the data</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_columns" id="$_columns"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_columns</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">230</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The column descriptions  for the data we are working on</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_datasource" id="$_datasource"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../phpHtmlLib/DataListSource.html">DataListSource</a></span>
+			<span class="var-name">$_datasource</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">268</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Holds our reference/copy of the  DataListSource object which is used to  access the data that this object uses</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> object</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_debug" id="$_debug"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_debug</span>
+			 = <span class="var-default"> FALSE</span>			(line <span class="line-number">288</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">debugging flag for debugging queries.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_default_orderby" id="$_default_orderby"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_default_orderby</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">177</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Holds the db column name that  we want to order by default.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_default_reverseorder" id="$_default_reverseorder"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_default_reverseorder</span>
+			 = <span class="var-default"> &quot;false&quot;</span>			(line <span class="line-number">183</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Holds a flag to let us know to</p>
+<p class="description"><p>reverse order the column by default</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_default_rows_per_page" id="$_default_rows_per_page"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_default_rows_per_page</span>
+			 = <span class="var-default"> 10</span>			(line <span class="line-number">134</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The number of rows of data  to show per &quot;page&quot;.</p>
+<p class="description"><p>The default is 20.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_form_attributes" id="$_form_attributes"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_form_attributes</span>
+			 = <span class="var-default">array(&quot;method&quot; =&gt; &quot;get&quot;,<br />                                  &quot;target&quot; =&gt; &quot;&quot;,<br />                                  &quot;action&quot; =&gt; &quot;&quot;,<br />                                  &quot;name&quot; =&gt; &quot;datalist&quot;)</span>			(line <span class="line-number">242</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This holds the form attributes</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_form_render_flag" id="$_form_render_flag"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_form_render_flag</span>
+			 = <span class="var-default"> FALSE</span>			(line <span class="line-number">251</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Build everything inside a form?</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_global_prefix" id="$_global_prefix"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_global_prefix</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">155</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">prefix for all list variable  names, so we can potentially  have more then 1 list per page.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_image_path" id="$_image_path"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_image_path</span>
+			 = <span class="var-default"> PHPHTMLLIB_WIDGET_IMAGEPATH </span>			(line <span class="line-number">276</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This stores the base path to where the  tool link images live.  This lets you  specify a new path to where your images  live.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_max_rows" id="$_max_rows"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_max_rows</span>
+			 = <span class="var-default"> 200</span>			(line <span class="line-number">141</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The max number of rows to  show when the user does the  &quot;EXPAND&quot; command.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_not_found_message" id="$_not_found_message"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_not_found_message</span>
+			 = <span class="var-default"> &quot;No data was found&quot;</span>			(line <span class="line-number">294</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is the message displayed when no data</p>
+<p class="description"><p>was retrieved from the database</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_num_columns" id="$_num_columns"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_num_columns</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">235</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Keeps track of the # of columns we have</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_num_pages" id="$_num_pages"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_num_pages</span>
+			 = <span class="var-default">1</span>			(line <span class="line-number">126</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This value holds the number  of pages of data we have  to display.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_save_vars" id="$_save_vars"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_save_vars</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">221</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This holds a list of  name=&gt;value vars that the  caller/child wants to propogate  automatically.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_search_flag" id="$_search_flag"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_search_flag</span>
+			 = <span class="var-default"> FALSE</span>			(line <span class="line-number">190</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag to let us know that search  is enabled.</p>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpHtmlLib/DefaultGUIDatalist.html#var$_search_flag">DefaultGUIDatalist::$_search_flag</a>
+								: Flag to let us know that search
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$_search_table" id="$_search_table"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_search_table</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">212</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Holds the object block that is the</p>
+<p class="description"><p>search UI</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_show_all_rows" id="$_show_all_rows"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_show_all_rows</span>
+			 = <span class="var-default"> FALSE</span>			(line <span class="line-number">148</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag to tell us to show every  row that comes from the DB or not.</p>
+<p class="description"><p>By default this is off.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_show_results_flag" id="$_show_results_flag"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_show_results_flag</span>
+			 = <span class="var-default"> TRUE</span>			(line <span class="line-number">258</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">flag to let us know if we want to show  the results or not.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_simple_search_modifier" id="$_simple_search_modifier"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_simple_search_modifier</span>
+			 = <span class="var-default"> FALSE</span>			(line <span class="line-number">205</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag to enable simple search modifyer.</p>
+<p class="description"><p>IF enabled it will add a select that adds  the &quot;beings with&quot;, &quot;contains&quot; options for  a simple search.</p></p>
+	
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpHtmlLib/DefaultGUIDatalist.html#var$_simple_search_modifier">DefaultGUIDatalist::$_simple_search_modifier</a>
+								: Flag to enable simple search modifyer.
+							</li>
+				</ul>
+		
+
+</div>
+<a name="var$_vars" id="$_vars"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_vars</span>
+			 = <span class="var-default">array(&quot;offsetVar&quot; =&gt; &quot;offset&quot;,<br />                       &quot;orderbyVar&quot; =&gt; &quot;orderby&quot;,<br />                       &quot;reverseorderVar&quot; =&gt; &quot;reverseorder&quot;,<br />                       &quot;numrowsVar&quot; =&gt; &quot;numrows&quot;,<br />                       &quot;expandrowsVar&quot; =&gt; &quot;expandrows&quot;,<br />                       &quot;search_fieldVar&quot; =&gt; &quot;search_field&quot;,<br />                       &quot;search_valueVar&quot; =&gt; &quot;search_value&quot;,<br />                       &quot;search_typeVar&quot; =&gt; &quot;search_type&quot;,<br />                       &quot;simple_search_modifierVar&quot; =&gt; &quot;simple_search_modifier&quot;)</span>			(line <span class="line-number">163</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Holds an array of all the  form vars we need for this  class to work.</p>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../phpHtmlLib/BaseWidget.html">BaseWidget</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpHtmlLib/BaseWidget.html#var$title">BaseWidget::$title</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpHtmlLib/BaseWidget.html#var$width">BaseWidget::$width</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpHtmlLib/BaseWidget.html#var$_image_prefix">BaseWidget::$_image_prefix</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodDataList" id="DataList"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor DataList</span> (line <span class="line-number">305</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The constructor</p>
+	
+	<div class="method-signature">
+		<span class="method-result">DataList</span>
+		<span class="method-name">
+			DataList
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$width</span> = <span class="var-default">&quot;100%&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$default_orderby</span> = <span class="var-default">''</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$default_reverseorder</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$title</span><span class="var-description">: - the title of the data list</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$width</span><span class="var-description">: - the overall width</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$default_orderby</span><span class="var-description">: - the column to use as the default sorting order</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$default_reverseorder</span><span class="var-description">: - sort the default column in reverse order?</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_header_item" id="add_header_item"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_header_item</span> (line <span class="line-number">628</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function adds a header item to the column headers  from a list of parameters.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> a single header array</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			add_header_item
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$label</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$size</span> = <span class="var-default">100</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$data_name</span> = <span class="var-default">NULL</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$sortable</span> = <span class="var-default">FALSE</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$searchable</span> = <span class="var-default">FALSE</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$align</span> = <span class="var-default">&quot;left&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$sortorder</span> = <span class="var-default">&quot;&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$max_text_length</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$label</span><span class="var-description">: - $label - the label to use for                           the column header.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$size</span><span class="var-description">: - $size - the size for the table column.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$data_name</span><span class="var-description">: - $dbfield - the db field associated                             with this label from the query.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$sortable</span><span class="var-description">: - $sortable - flag to make this column sortable.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$searchable</span><span class="var-description">: - $searchable - flag to make this column searchable.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$align</span><span class="var-description">: - header align value.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sortorder</span><span class="var-description">: - the sort order</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$max_text_length</span><span class="var-description">: - the maximum # of characters to allow in the cell.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadvanced_search_disable" id="advanced_search_disable"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">advanced_search_disable</span> (line <span class="line-number">734</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Disable the advanced search</p>
+<p class="description"><p>capability</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			advanced_search_disable
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodadvanced_search_enable" id="advanced_search_enable"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">advanced_search_enable</span> (line <span class="line-number">724</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enable the advanced search</p>
+<p class="description"><p>capability  NOTE: Child class MUST        extend the        _build_advanced_search_table</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			advanced_search_enable
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodbuild_base_url" id="build_base_url"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">build_base_url</span> (line <span class="line-number">1453</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This builds the base url used  by the column headers as well  as the page tool links.</p>
+<p class="description"><p>it basically builds:  $_SELF?$_GET</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			build_base_url
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodbuild_column_item" id="build_column_item"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">build_column_item</span> (line <span class="line-number">1222</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is the basic function for letting us  do a mapping between the column name in  the header, to the value found in the DB.</p>
+<p class="description"><p>NOTE: this function is meant to be overridden        so that you can push whatever you want.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - either a HTMLTag object, or raw text.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			build_column_item
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$row_data</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$col_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$row_data</span><span class="var-description">: - $row_data - the entire data for the row</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$col_name</span><span class="var-description">: - $col_name - the name of the column header                              for this row to render.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbuild_column_url" id="build_column_url"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">build_column_url</span> (line <span class="line-number">1778</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This builds a url for a particular  column header.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> object;</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../phpHtmlLib/Atag.html">Atag</a></span>
+		<span class="method-name">
+			build_column_url
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$col_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$col_name</span><span class="var-description">: - $col_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbuild_gui" id="build_gui"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">build_gui</span> (line <span class="line-number">431</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is responsible for calling the child  class's methods for building the GUI container.</p>
+<p class="description"><p>This function builds the search area, the  title, page controls, the column headers,  and walks the rows of data and adds them</p><p>A child class can override this method to  move the placement of the search box  relative to the data list.  By default  the search area comes above the table  for the data list and page controls</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">Container</span>
+		<span class="method-name">
+			build_gui
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpHtmlLib/DefaultGUIDatalist.html#methodbuild_gui">DefaultGUIDatalist::build_gui()</a>
+								: Override the parent's method so we can wrap  everything in a div to hold it all together  when we change the alignment
+							</li>
+				</ul>
+	</div>
+<a name="methodbuild_orderby_querystring" id="build_orderby_querystring"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">build_orderby_querystring</span> (line <span class="line-number">1054</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This builds a query string var for the  orderby value.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - &quot;orderby=(thevalue)&quot;</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			build_orderby_querystring
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodbuild_reverseorder_querystring" id="build_reverseorder_querystring"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">build_reverseorder_querystring</span> (line <span class="line-number">1085</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This builds a query string var for the  reverseorder value.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - &quot;orderby=(thevalue)&quot;</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			build_reverseorder_querystring
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodbuild_searchfield_querystring" id="build_searchfield_querystring"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">build_searchfield_querystring</span> (line <span class="line-number">1126</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This builds a query string var for the  searchfield value.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - &quot;orderby=(thevalue)&quot;</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			build_searchfield_querystring
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodbuild_searchvalue_querystring" id="build_searchvalue_querystring"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">build_searchvalue_querystring</span> (line <span class="line-number">1147</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This builds a query string var for the  searchfield value.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - &quot;orderby=(thevalue)&quot;</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			build_searchvalue_querystring
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodbuild_state_vars_query_string" id="build_state_vars_query_string"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">build_state_vars_query_string</span> (line <span class="line-number">1633</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">this function is used to build a sub query string</p>
+<p class="description"><p>of all of the query string vars to save the  state of the DBItemList.  This is used for pages  that want to come back to the list at the same state</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - name=value&amp; pairs</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			build_state_vars_query_string
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$offset</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$expandrows_flag</span> = <span class="var-default">FALSE</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$expandrows_value</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$offset</span><span class="var-description">: - the offset for the link</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$expandrows_flag</span><span class="var-description">: - add the expandrows value to the url</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$expandrows_value</span><span class="var-description">: - the expandrows value to use if the flag is on</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbuild_tool_link" id="build_tool_link"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">build_tool_link</span> (line <span class="line-number">1499</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function builds the 'tool' images that  allow  you to walk through the data list itself.</p>
+<p class="description"><p>It provides image links for  first - go to the first page in the data list  prev - go to the previous page in the data list  next - go to the next page in the data list  last - go to the last page in the data list  all - show the rest of the list from the current offset</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">Object</span>
+		<span class="method-name">
+			build_tool_link
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$which</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$which</span><span class="var-description">: - which tool image to build</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodchild_add_row_cell" id="child_add_row_cell"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">child_add_row_cell</span> (line <span class="line-number">566</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method is supposed to be written by  the child class to add the cell data to the  current row in the UI</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			child_add_row_cell
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$obj</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$col_name</span>, <span class="var-type">boolean</span>&nbsp;<span class="var-name">$last_in_row_flag</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$obj</span><span class="var-description">: - the object/string/entity that                 should get put into the column row cell.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$col_name</span><span class="var-description">: - the name/title of the column that the                  object will live in</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$last_in_row_flag</span><span class="var-description">: - flag that tells the function if this is                   is the last cell for the current row.</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpHtmlLib/SimpleGUIDataList.html#methodchild_add_row_cell">SimpleGUIDataList::child_add_row_cell()</a>
+							</li>
+					<li>
+				<a href="../phpHtmlLib/DefaultGUIDatalist.html#methodchild_add_row_cell">DefaultGUIDatalist::child_add_row_cell()</a>
+							</li>
+					<li>
+				<a href="../phpHtmlLib/ListAction.html#methodchild_add_row_cell">ListAction::child_add_row_cell()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodchild_build_column_header" id="child_build_column_header"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">child_build_column_header</span> (line <span class="line-number">546</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method is supposed to be written by  the child class to build and add the column  title to the UI</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			child_build_column_header
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$col_data</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$col_count</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$title</span><span class="var-description">: - the title of the column</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$col_data</span><span class="var-description">: - the column data ( from $this-&gt;_columns )</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$col_count</span><span class="var-description">: - the column #</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpHtmlLib/SimpleGUIDataList.html#methodchild_build_column_header">SimpleGUIDataList::child_build_column_header()</a>
+							</li>
+					<li>
+				<a href="../phpHtmlLib/DefaultGUIDatalist.html#methodchild_build_column_header">DefaultGUIDatalist::child_build_column_header()</a>
+							</li>
+					<li>
+				<a href="../phpHtmlLib/ListAction.html#methodchild_build_column_header">ListAction::child_build_column_header()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methodchild_build_search_table" id="child_build_search_table"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">child_build_search_table</span> (line <span class="line-number">593</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function builds the search  block that lives above the results</p>
+	
+	<div class="method-signature">
+		<span class="method-result">Container</span>
+		<span class="method-name">
+			child_build_search_table
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpHtmlLib/DefaultGUIDatalist.html#methodchild_build_search_table">DefaultGUIDatalist::child_build_search_table()</a>
+								: This builds the table that holds the search  capability.
+							</li>
+				</ul>
+	</div>
+<a name="methodchild_get_gui" id="child_get_gui"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">child_get_gui</span> (line <span class="line-number">580</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is called after all of the data has  been added to the UI object.  It just returns the  container that is the entire UI for the DataList</p>
+	
+	<div class="method-signature">
+		<span class="method-result">Container</span>
+		<span class="method-name">
+			child_get_gui
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpHtmlLib/SimpleGUIDataList.html#methodchild_get_gui">SimpleGUIDataList::child_get_gui()</a>
+							</li>
+					<li>
+				<a href="../phpHtmlLib/DefaultGUIDatalist.html#methodchild_get_gui">DefaultGUIDatalist::child_get_gui()</a>
+							</li>
+					<li>
+				<a href="../phpHtmlLib/ListAction.html#methodchild_get_gui">ListAction::child_get_gui()</a>
+							</li>
+				</ul>
+	</div>
+<a name="methoddata_prefetch" id="data_prefetch"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">data_prefetch</span> (line <span class="line-number">879</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set up any</p>
+<p class="description"><p>data that needs to be munged before the  data is fetched from the DataListSource</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			data_prefetch
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddo_action" id="do_action"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">do_action</span> (line <span class="line-number">489</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method is called prior to get_data_source  and user_setup() to allow you to do some generic  action on data.  By default this does nothing.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			do_action
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodexpandrows" id="expandrows"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">expandrows</span> (line <span class="line-number">1190</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns the current value of the expandrows  flag.  This tells us if they want the entire  list of data back from the DB.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the current value</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			expandrows
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodfilter_column_string" id="filter_column_string"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">filter_column_string</span> (line <span class="line-number">1836</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This does some magic filtering on the data  that we display in a column.  This helps  to prevent nast data that may have html  tags in it.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the cleaned/filtered data</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			filter_column_string
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$data</span><span class="var-description">: - the column data u want to filter</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_cleanstring" id="get_cleanstring"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_cleanstring</span> (line <span class="line-number">847</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">return the value of the clean string flag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			get_cleanstring
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_current_page" id="get_current_page"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_current_page</span> (line <span class="line-number">1691</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function returns the current  page that the item list is on.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			get_current_page
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_data_source" id="get_data_source"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_data_source</span> (line <span class="line-number">501</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is called automatically by  the DataList constructor.  It must be  extended by the child class to actually  set the DataListSource object.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_data_source
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_default_num_rows" id="get_default_num_rows"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_default_num_rows</span> (line <span class="line-number">805</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function gets the current default  number of rows to display setting.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			get_default_num_rows
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_form_action" id="get_form_action"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_form_action</span> (line <span class="line-number">1330</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to get  the form action</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> (POST or GET)</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_form_action
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_form_method" id="get_form_method"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_form_method</span> (line <span class="line-number">1311</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to get  the form method</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> (POST or GET)</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_form_method
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_form_name" id="get_form_name"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_form_name</span> (line <span class="line-number">1267</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to get  the form name</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_form_name
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_form_render" id="get_form_render"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_form_render</span> (line <span class="line-number">1348</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return the state of the form render</p>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			get_form_render
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_form_target" id="get_form_target"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_form_target</span> (line <span class="line-number">1287</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to get  the form target</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_form_target
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_global_prefix" id="get_global_prefix"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_global_prefix</span> (line <span class="line-number">671</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns the current variable prefix  string being used.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - current global prefix</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_global_prefix
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_image_path" id="get_image_path"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_image_path</span> (line <span class="line-number">1671</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function returns the path to the  images used in this class</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_image_path
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_last_page" id="get_last_page"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_last_page</span> (line <span class="line-number">1723</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This calculates the last page #  for this list of items</p>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			get_last_page
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_max_rows" id="get_max_rows"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_max_rows</span> (line <span class="line-number">815</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This returns the Maximum # of rows to  display when in expand mode</p>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			get_max_rows
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_not_found_message" id="get_not_found_message"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_not_found_message</span> (line <span class="line-number">1368</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to get the  message displayed when no data is found</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_not_found_message
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_num_pages" id="get_num_pages"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_num_pages</span> (line <span class="line-number">1702</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function returns the #  of pages that are available  for this list of items.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			get_num_pages
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_page_info" id="get_page_info"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_page_info</span> (line <span class="line-number">1734</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function builds the string  that describes the current page  out of n pages the list is showing</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> (ie. 1 to 10 of 25)</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_page_info
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_showall" id="get_showall"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_showall</span> (line <span class="line-number">867</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This returns the value of the show all rows  flag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			get_showall
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_simple_search_modifier" id="get_simple_search_modifier"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_simple_search_modifier</span> (line <span class="line-number">784</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">gets the value of the search modifier  flag.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_simple_search_modifier
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgui_init" id="gui_init"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">gui_init</span> (line <span class="line-number">528</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A subclass can override this function  to setup the class variables after  the constructor.  The constructor  automatically calls this function.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			gui_init
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpHtmlLib/SimpleGUIDataList.html#methodgui_init">SimpleGUIDataList::gui_init()</a>
+								: Initialize the gui layout
+							</li>
+					<li>
+				<a href="../phpHtmlLib/DefaultGUIDatalist.html#methodgui_init">DefaultGUIDatalist::gui_init()</a>
+								: This function builds the base layout
+							</li>
+					<li>
+				<a href="../phpHtmlLib/ListAction.html#methodgui_init">ListAction::gui_init()</a>
+								: Initialize the gui layout
+							</li>
+				</ul>
+	</div>
+<a name="methodis_advanced_search_enabled" id="is_advanced_search_enabled"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_advanced_search_enabled</span> (line <span class="line-number">744</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This returns the status of the  advanced search flag.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			is_advanced_search_enabled
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodis_search_enabled" id="is_search_enabled"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_search_enabled</span> (line <span class="line-number">712</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">get the status of the search  ability.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			is_search_enabled
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodnumrows" id="numrows"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">numrows</span> (line <span class="line-number">1096</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function returns the number of rows  that the query found.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the number of rows</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			numrows
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodoffset" id="offset"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">offset</span> (line <span class="line-number">1010</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function returns the current value  of the offset variable. This is an offset  into the query return data set.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the current value.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			offset
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodorderby" id="orderby"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">orderby</span> (line <span class="line-number">1034</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function returns the value of the  current orderby variable.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string.</span>
+		<span class="method-name">
+			orderby
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodpre_query_sanity_check" id="pre_query_sanity_check"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">pre_query_sanity_check</span> (line <span class="line-number">920</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method is used to do a sanity check on the data  that is about to be passed to the query for security  reasons and data type checks.</p>
+<p class="description"><p>This function is responsible for detecting any invalid  values and setting them to their defaults if they are  bogus to protect the query</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">none</span>
+		<span class="method-name">
+			pre_query_sanity_check
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodrender" id="render"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">render</span> (line <span class="line-number">353</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function renders the final</p>
+<p class="description"><p>widget</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			render
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$indent_level</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$output_debug</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$indent_level</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$output_debug</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../phpHtmlLib/Container.html#methodrender">Container::render()</a></dt>
+						<dd>This function is compatible with the  rest of the phpHtmllib API spec.</dd>
+					</dl>
+			
+	</div>
+<a name="methodreverseorder" id="reverseorder"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">reverseorder</span> (line <span class="line-number">1065</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function returns the current value of  the reverse order member variable.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string.</span>
+		<span class="method-name">
+			reverseorder
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsearch_disable" id="search_disable"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">search_disable</span> (line <span class="line-number">702</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Disable the search ability.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			search_disable
+		</span>
+					(<span class="var-type">boolean</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">0</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsearch_enable" id="search_enable"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">search_enable</span> (line <span class="line-number">690</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enable the search ability.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			search_enable
+		</span>
+					(<span class="var-type">boolean</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">0</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsearch_field" id="search_field"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">search_field</span> (line <span class="line-number">1116</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns the current value of  the search field name</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			search_field
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsearch_type" id="search_type"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">search_type</span> (line <span class="line-number">1168</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns the type of search being used</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			search_type
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsearch_value" id="search_value"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">search_value</span> (line <span class="line-number">1137</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns the current value of  te search field value.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			search_value
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsearch_value_filter" id="search_value_filter"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">search_value_filter</span> (line <span class="line-number">1936</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to make safe  any query string value that is used</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			search_value_filter
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetup_columns" id="setup_columns"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setup_columns</span> (line <span class="line-number">941</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setup_columns
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodset_cleanstring" id="set_cleanstring"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_cleanstring</span> (line <span class="line-number">837</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method sets the flag to tell us if we want to clean the data</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_cleanstring
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$flag</span><span class="var-description">: TRUE = clean it</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_data_source" id="set_data_source"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_data_source</span> (line <span class="line-number">681</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set the  DataListSource object for this instance</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_data_source
+		</span>
+					(<span class="var-type"><a href="../phpHtmlLib/DataListSource.html">DataListSource</a></span>&nbsp;<span class="var-name">$datasource</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpHtmlLib/DataListSource.html">DataListSource</a></span>
+				<span class="var-name">$datasource</span><span class="var-description">: object</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_debug" id="set_debug"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_debug</span> (line <span class="line-number">1948</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set the debug  level.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">none</span>
+		<span class="method-name">
+			set_debug
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$level</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$level</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_default_num_rows" id="set_default_num_rows"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_default_num_rows</span> (line <span class="line-number">795</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function sets the default # of rows  per page to display.  By default its 10.</p>
+<p class="description"><p>This lets the user override this value.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_default_num_rows
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$num_rows</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$num_rows</span><span class="var-description">: - the # of rows to use.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_expandrows" id="set_expandrows"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_expandrows</span> (line <span class="line-number">1204</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This sets the expandrows.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_expandrows
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$flag</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_form_action" id="set_form_action"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_form_action</span> (line <span class="line-number">1320</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the form action</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_form_action
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$action</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$action</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_form_method" id="set_form_method"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_form_method</span> (line <span class="line-number">1297</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set the  form method</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_form_method
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$method</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$method</span><span class="var-description">: (POST or GET)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_form_name" id="set_form_name"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_form_name</span> (line <span class="line-number">1257</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set the  form name</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_form_name
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_form_render" id="set_form_render"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_form_render</span> (line <span class="line-number">1339</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets whether to the output into a form</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_form_render
+		</span>
+					(<span class="var-type">bool</span>&nbsp;<span class="var-name">$flag</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$flag</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_form_target" id="set_form_target"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_form_target</span> (line <span class="line-number">1277</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set the  form target</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_form_target
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$target</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$target</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_global_prefix" id="set_global_prefix"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_global_prefix</span> (line <span class="line-number">657</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function sets a prefix for all  variables that are used in the item list  table on a page.  This allows you to have  multiple itemlists on a single html page.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_global_prefix
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$prefix</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$prefix</span><span class="var-description">: - the prefix for all vars.</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpHtmlLib/DefaultGUIDatalist.html#methodset_global_prefix">DefaultGUIDatalist::set_global_prefix()</a>
+								: This function sets a prefix for all  variables that are used in the item list  table on a page.  This allows you to have  multiple itemlists on a single html page.
+							</li>
+				</ul>
+	</div>
+<a name="methodset_image_path" id="set_image_path"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_image_path</span> (line <span class="line-number">1681</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function returns the path to the  images used in this class</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			set_image_path
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$path</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$path</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_max_rows" id="set_max_rows"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_max_rows</span> (line <span class="line-number">827</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This sets the maximum # of rows to  display when in expand mode</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_max_rows
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$max</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$max</span><span class="var-description">: - new # of maximum rows               to display when in 'expand' mode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_not_found_message" id="set_not_found_message"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_not_found_message</span> (line <span class="line-number">1358</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set the  message displayed when no data is found</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_not_found_message
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$mesg</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mesg</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_numrows" id="set_numrows"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_numrows</span> (line <span class="line-number">1106</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function sets the # of rows to display  per page.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_numrows
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$new_numrows</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$new_numrows</span><span class="var-description">: - the # of rows</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_offset" id="set_offset"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_offset</span> (line <span class="line-number">1024</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set/change  the offset for this list.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_offset
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$new_offset</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$new_offset</span><span class="var-description">: - the new offset.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_orderby" id="set_orderby"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_orderby</span> (line <span class="line-number">1043</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is used to reset the orderby</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_orderby
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$orderby</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$orderby</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_reverseorder" id="set_reverseorder"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_reverseorder</span> (line <span class="line-number">1075</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function sets the reverse order flag  to a new value.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_reverseorder
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$new_value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$new_value</span><span class="var-description">: - the new value.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_save_vars" id="set_save_vars"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_save_vars</span> (line <span class="line-number">1422</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function sets the save variables  that the user/child wants to automatically  propogate</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_save_vars
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$vars</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$vars</span><span class="var-description">: - name=&gt;value pairs of the data                 that they want to propogate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_search_type" id="set_search_type"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_search_type</span> (line <span class="line-number">1178</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function sets the search type</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_search_type
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: - the search type                  &quot;simple&quot; or &quot;advanced&quot;</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_showall" id="set_showall"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_showall</span> (line <span class="line-number">857</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method sets the flag to tell us  to show every row found in the DataListSource.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_showall
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$flag</span><span class="var-description">: TRUE = show all rows</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_show_results" id="set_show_results"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_show_results</span> (line <span class="line-number">1379</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set the value  of the _show_results_flag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_show_results
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$flag</span><span class="var-description">: - TRUE to show the results</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_simple_search_modifier" id="set_simple_search_modifier"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_simple_search_modifier</span> (line <span class="line-number">769</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the simple search modifyer  flag.</p>
+<p class="description"><p>NOTE: by default all the modifiers        are enabled.  You can limit the        modifiers by passing in the        string of defines of which ones        you want enabled.</p><p>MODIFIERS:           SEARCH_BEGINS_WITH           SEARCH_CONTAINS       SEARCH_EXACT       SEARCH_ENDS_WITH</p><p>ie. SEARCH_BEGINS_WITH.SEARCH_EXACT            will enable ONLY the            &quot;begins with&quot; and &quot;exact&quot; modifiers.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_simple_search_modifier
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$modifier</span> = <span class="var-default">SEARCH_ALL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$modifier</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsimple_search_modifier_value" id="simple_search_modifier_value"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">simple_search_modifier_value</span> (line <span class="line-number">1158</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">returns the current value of the  simple search modifier</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			simple_search_modifier_value
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoduser_setup" id="user_setup"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">user_setup</span> (line <span class="line-number">514</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A subclass can override this function  to setup the class variables after  the constructor.  The constructor  automatically calls this function.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			user_setup
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_build_default_vars" id="_build_default_vars"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_default_vars</span> (line <span class="line-number">1434</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function builds the list of</p>
+<p class="description"><p>default hidden form vars for when  the datalist is being rendered  as a POST</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">Container</span>
+		<span class="method-name">
+			_build_default_vars
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpHtmlLib/DefaultGUIDatalist.html#method_build_default_vars">DefaultGUIDatalist::_build_default_vars()</a>
+							</li>
+				</ul>
+	</div>
+<a name="method_build_save_vars" id="_build_save_vars"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_save_vars</span> (line <span class="line-number">1406</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">this method builds some hidden  form fields to automatically  be placed inside the form.</p>
+<p class="description"><p>This method returns a list of  hidden form fields if we are a POST.  It returns a portion of a query string  If we are a GET.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> depending on form method</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			_build_save_vars
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_build_simple_search_modifier" id="_build_simple_search_modifier"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_simple_search_modifier</span> (line <span class="line-number">1901</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This builds the simple search modifier  select box.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> object.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../phpHtmlLib/INPUTtag.html">INPUTtag</a></span>
+		<span class="method-name">
+			_build_simple_search_modifier
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_build_tool_url" id="_build_tool_url"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_tool_url</span> (line <span class="line-number">1600</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to build the url  for a tool link.</p>
+<p class="description"><p>(first, prev, next, last, all)</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_build_tool_url
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$offset</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$expandrows_flag</span> = <span class="var-default">FALSE</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$expandrows_value</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$offset</span><span class="var-description">: - the offset for the link</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$expandrows_flag</span><span class="var-description">: - add the expandrows value to the url</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$expandrows_value</span><span class="var-description">: - the expandrows value to use if the flag is on</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_check_datasource" id="_check_datasource"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_check_datasource</span> (line <span class="line-number">961</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">general DataListSource object checker.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_check_datasource
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$function_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$function_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_clean_string" id="_clean_string"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_clean_string</span> (line <span class="line-number">1852</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to make sure that the string we are  placing in a cell has been &quot;cleaned&quot;</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the cleaned string or object</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			_clean_string
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$obj</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$col_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$obj</span><span class="var-description">: - the cell object.  It can be a string.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$col_name</span><span class="var-description">: - the name of the column this object/string                  will live</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_filter_column_string" id="_filter_column_string"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_filter_column_string</span> (line <span class="line-number">1242</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This does some magic filtering on the data  that we display in a column.  This helps  to prevent nast data that may have html  tags in it.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the cleaned/filtered data</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_filter_column_string
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$data</span><span class="var-description">: - the column data u want to filter</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_get" id="_get"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_get</span> (line <span class="line-number">984</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Function used to get the current  value of one of the control vars  for this class</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> current value or default if not set</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">the</span>
+		<span class="method-name">
+			_get
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$default_value</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - the name we want to get</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$default_value</span><span class="var-description">: - the default value if not set</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_get_searchable_fields" id="_get_searchable_fields"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_get_searchable_fields</span> (line <span class="line-number">1883</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method gets the array of  searchable header fields (columns)</p>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			_get_searchable_fields
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_javascript" id="_javascript"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_javascript</span> (line <span class="line-number">607</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function provides a way to automatically  add javascript to this object.</p>
+<p class="description"><p>This function is meant to be extended by the  child class.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> object</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../phpHtmlLib/SCRIPTtag.html">SCRIPTtag</a></span>
+		<span class="method-name">
+			_javascript
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpHtmlLib/DefaultGUIDatalist.html#method_javascript">DefaultGUIDatalist::_javascript()</a>
+								: This function returns any Javascript required  for this widget
+							</li>
+				</ul>
+	</div>
+<a name="method_save_mozilla_nav_link" id="_save_mozilla_nav_link"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_save_mozilla_nav_link</span> (line <span class="line-number">1660</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function stores the url for each of the tool  urls, so we can push these out for mozilla.</p>
+<p class="description"><p>Mozilla has a nice navigation bar feature that  lets you program first, prev, next, last links</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_save_mozilla_nav_link
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$which</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$which</span><span class="var-description">: - which tool link</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: - the url for that link</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_set" id="_set"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_set</span> (line <span class="line-number">999</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set the  value of the control var</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_set
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - the name we want to get</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$value</span><span class="var-description">: - the new value for it.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_show_results" id="_show_results"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_show_results</span> (line <span class="line-number">1390</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to let render() know  that we should show the results or not.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			_show_results
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../phpHtmlLib/BaseWidget.html">BaseWidget</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodget_align">BaseWidget::get_align()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodget_css">BaseWidget::get_css()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodget_javascript">BaseWidget::get_javascript()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodget_title">BaseWidget::get_title()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodget_width">BaseWidget::get_width()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodset_align">BaseWidget::set_align()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodset_image_path_prefix">BaseWidget::set_image_path_prefix()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodset_title">BaseWidget::set_title()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodset_width">BaseWidget::set_width()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../phpHtmlLib/Container.html">Container</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodContainer">Container::Container()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodadd">Container::add()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodadd_reference">Container::add_reference()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodcount_content">Container::count_content()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodget_element">Container::get_element()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodget_indent_flag">Container::get_indent_flag()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodpush">Container::push()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodpush_reference">Container::push_reference()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodrender">Container::render()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodreset_content">Container::reset_content()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodset_collapse">Container::set_collapse()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodset_indent_flag">Container::set_indent_flag()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 28 Jan 2011 08:52:51 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

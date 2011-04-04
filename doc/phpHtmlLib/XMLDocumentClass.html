@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class XMLDocumentClass</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class XMLDocumentClass</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This class lets you build a complete  xml document and render it.</p>
+<p class="description"><p>It automatically creates the root xml tag  that will contain all of the content.  The name of the tag is the first parameter to  the constructor.  You can add/change the attributes  to the root tag via the set_root_attributes() or  the set_root_attribute() methods.</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Walter A. Boring IV &lt;<a href="mailto:waboring@newsblob.com">waboring@newsblob.com</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_widgets---xml---XMLDocumentClass.inc.html">/widgets/xml/XMLDocumentClass.inc</a> (line <span class="field">29</span>)
+		</p>
+		
+				
+		<pre><a href="../phpHtmlLib/Container.html">Container</a>
+   |
+   --XMLDocumentClass</pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../phpHtmlLib/WMLDocumentClass.html">WMLDocumentClass</a></td>
+					<td>
+											This class lets you build a complete  WML document and render it
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../phpHtmlLib/SVGDocumentClass.html">SVGDocumentClass</a></td>
+					<td>
+											This class lets you build a complete  SVG document.
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$dtd" title="details" class="var-name">$dtd</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$root_name" title="details" class="var-name">$root_name</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_doctype_links" title="details" class="var-name">$_doctype_links</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$_doctype_source" title="details" class="var-name">$_doctype_source</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_http_content_type" title="details" class="var-name">$_http_content_type</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../phpHtmlLib/XMLTagClass.html">XMLTagClass</a></span>
+					<a href="#$_root_tag" title="details" class="var-name">$_root_tag</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$_show_char_encoding" title="details" class="var-name">$_show_char_encoding</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_show_http_header" title="details" class="var-name">$_show_http_header</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_xml_obj" title="details" class="var-name">$_xml_obj</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">object</span>
+					<a href="#$_xml_stylesheet_container" title="details" class="var-name">$_xml_stylesheet_container</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																														
+				<div class="method-definition">
+											<span class="method-result">XMLDocumentClass</span>
+										<a href="#XMLDocumentClass" title="details" class="method-name">XMLDocumentClass</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$root_name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$dtd</span> = <span class="var-default">NULL</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$root_attributes</span> = <span class="var-default">array()</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add" title="details" class="method-name">add</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$content</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_reference" title="details" class="method-name">add_reference</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$content</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$content</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_xml_stylesheet_link" title="details" class="method-name">add_xml_stylesheet_link</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$href</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#dump_http_header" title="details" class="method-name">dump_http_header</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_doctype_source" title="details" class="method-name">get_doctype_source</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_encoding" title="details" class="method-name">get_encoding</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_http_content_type" title="details" class="method-name">get_http_content_type</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#get_root_attributes" title="details" class="method-name">get_root_attributes</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_root_name" title="details" class="method-name">get_root_name</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#push" title="details" class="method-name">push</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$content</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#push_reference" title="details" class="method-name">push_reference</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">&$content</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#render" title="details" class="method-name">render</a>
+											([<span class="var-type">int</span>&nbsp;<span class="var-name">$indent_level</span> = <span class="var-default">0</span>], <span class="var-type">int</span>&nbsp;<span class="var-name">1</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#reset_content" title="details" class="method-name">reset_content</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$content</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_doctype_link" title="details" class="method-name">set_doctype_link</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$link</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_doctype_source" title="details" class="method-name">set_doctype_source</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_encoding" title="details" class="method-name">set_encoding</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_http_content_type" title="details" class="method-name">set_http_content_type</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;application/xml&quot;</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_root_attribute" title="details" class="method-name">set_root_attribute</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_root_attributes" title="details" class="method-name">set_root_attributes</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$attributes</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_root_name" title="details" class="method-name">set_root_name</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$root_name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$doc_name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#show_character_encoding" title="details" class="method-name">show_character_encoding</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#show_http_header" title="details" class="method-name">show_http_header</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_build_doctype" title="details" class="method-name">_build_doctype</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_build_root_tag" title="details" class="method-name">_build_root_tag</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_build_xml_stylesheet_container" title="details" class="method-name">_build_xml_stylesheet_container</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../phpHtmlLib/XMLtag.html">XMLtag</a></span>
+										<a href="#_create_xml_obj" title="details" class="method-name">_create_xml_obj</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_render_header" title="details" class="method-name">_render_header</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$dtd" id="$dtd"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$dtd</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">69</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Holds the url of dtd</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$root_name" id="$root_name"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$root_name</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">76</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Holds the name of the root xml</p>
+<p class="description"><p>element as well as the DOCTYPE  document_element attribute</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_doctype_links" id="$_doctype_links"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_doctype_links</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">105</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This contains the doctype links</p>
+<p class="description"><p>attributes.  There can be a maximum  of 2 according to the XML spec</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_doctype_source" id="$_doctype_source"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_doctype_source</span>
+			 = <span class="var-default"> &quot;SYSTEM&quot;</span>			(line <span class="line-number">98</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">the DOCTYPE source attribute</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_http_content_type" id="$_http_content_type"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_http_content_type</span>
+			 = <span class="var-default"> &quot;application/xml&quot;</span>			(line <span class="line-number">111</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The http content-type</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_root_tag" id="$_root_tag"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../phpHtmlLib/XMLTagClass.html">XMLTagClass</a></span>
+			<span class="var-name">$_root_tag</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">83</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The root xml tag for all data</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> object</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_show_char_encoding" id="$_show_char_encoding"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$_show_char_encoding</span>
+			 = <span class="var-default"> TRUE</span>			(line <span class="line-number">64</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">this is a hack to show the  character encoding or not.</p>
+<p class="description"><p>DEFAULT: on</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_show_http_header" id="$_show_http_header"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_show_http_header</span>
+			 = <span class="var-default"> FALSE</span>			(line <span class="line-number">55</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This flag tells if we should  output the header content type.</p>
+<p class="description"><p>this is usefull for folks using  this class for output not destined  for a browser.</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_xml_obj" id="$_xml_obj"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_xml_obj</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">37</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">holds the xml tag object that</p>
+<p class="description"><p>all content will be wrapped in</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_xml_stylesheet_container" id="$_xml_stylesheet_container"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">object</span>
+			<span class="var-name">$_xml_stylesheet_container</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">119</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The container for all the  xml-stylesheet tags</p>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodXMLDocumentClass" id="XMLDocumentClass"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor XMLDocumentClass</span> (line <span class="line-number">130</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The constructor</p>
+	
+	<div class="method-signature">
+		<span class="method-result">XMLDocumentClass</span>
+		<span class="method-name">
+			XMLDocumentClass
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$root_name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$dtd</span> = <span class="var-default">NULL</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$root_attributes</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$root_name</span><span class="var-description">: - the root xml tag's name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$dtd</span><span class="var-description">: - the link path to the DTD (if any)</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$root_attributes</span><span class="var-description">: - the root tag's attributes</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd" id="add"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add</span> (line <span class="line-number">210</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">we override this class to make sure  we push all content inside the  local _xml_obj tag</p>
+<p class="description"><p>push content onto content stack  adds content to tag as a FIFO.  You can have n number of parameters.  each one will get added in succession to the content.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$content</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$content</span><span class="var-description">: - either string, or tag object.</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../phpHtmlLib/Container.html#methodadd">Container::add()</a></dt>
+						<dd>add content onto content stack</dd>
+					</dl>
+			
+	</div>
+<a name="methodadd_reference" id="add_reference"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_reference</span> (line <span class="line-number">252</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">we override this class to make sure  we push all content inside the  local _xml_obj tag</p>
+<p class="description"><p>push content onto content stack  adds content to tag as a FIFO  You can only add 1 element at a time, and  it will be added as a reference.  So you can't do  push_reference(&quot;something&quot;);, since &quot;something&quot; is a  static.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_reference
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$content</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$content</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$content</span><span class="var-description">: - either string, or tag object.                              the tag object gets stored as a                              reference to the original, so you                              can push it, then modify it later.</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$content</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../phpHtmlLib/Container.html#methodadd_reference">Container::add_reference()</a></dt>
+						<dd>Add content onto content stack  so you can change the item later.</dd>
+					</dl>
+			
+	</div>
+<a name="methodadd_xml_stylesheet_link" id="add_xml_stylesheet_link"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_xml_stylesheet_link</span> (line <span class="line-number">282</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to add a new  xml-stylesheet tag to the top  portion of the document.</p>
+<p class="description"><p>This will automatically get added  after the xml tag and before the  &lt;!DOCTYPE &gt; tag</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_xml_stylesheet_link
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$href</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$href</span><span class="var-description">: - the href for the stylesheet link</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddump_http_header" id="dump_http_header"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">dump_http_header</span> (line <span class="line-number">460</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to output the http  header for this document.</p>
+<p class="description"><p>It makes a call to php's Header() to  set the Content-type</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			dump_http_header
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_doctype_source" id="get_doctype_source"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_doctype_source</span> (line <span class="line-number">496</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function returns the current  DOCTYPE tag's source attribute</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_doctype_source
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_encoding" id="get_encoding"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_encoding</span> (line <span class="line-number">346</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function gets the current encoding type</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the current encoding type                   for the xml</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_encoding
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_http_content_type" id="get_http_content_type"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_http_content_type</span> (line <span class="line-number">449</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function returns the current  value of the http header content type</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_http_content_type
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_root_attributes" id="get_root_attributes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_root_attributes</span> (line <span class="line-number">396</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to get the  root xml tag's attributes</p>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			get_root_attributes
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_root_name" id="get_root_name"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_root_name</span> (line <span class="line-number">366</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function gets the document name</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the current document name                   for the xml</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_root_name
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodpush" id="push"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">push</span> (line <span class="line-number">229</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Same as add().</p>
+<p class="description"><p>NOTE: only exists for 1.1.x compatibility</p></p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			push
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$content</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$content</span><span class="var-description">: - either string, or tag object.</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../phpHtmlLib/Container.html#methodpush">Container::push()</a></dt>
+						<dd>Same as add().</dd>
+					</dl>
+			
+	</div>
+<a name="methodpush_reference" id="push_reference"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">push_reference</span> (line <span class="line-number">268</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Same as add_reference  NOTE : only exists for compatibility with 1.1.x</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> </li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			push_reference
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">&$content</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">&$content</span><span class="var-description">: - a reference to some variable.</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../phpHtmlLib/Container.html#methodpush_reference">Container::push_reference()</a></dt>
+						<dd>Same as add_reference  NOTE : only exists for compatibility with 1.1.x</dd>
+					</dl>
+			
+	</div>
+<a name="methodrender" id="render"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">render</span> (line <span class="line-number">185</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">function that will render the XML Document.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the raw html output.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			render
+		</span>
+					([<span class="var-type">int</span>&nbsp;<span class="var-name">$indent_level</span> = <span class="var-default">0</span>], <span class="var-type">int</span>&nbsp;<span class="var-name">1</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">1</span><span class="var-description">: - the output debug flag to               maintain compatibility w/ the API.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$indent_level</span><span class="var-description">: - the indentation level for               the container.</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../phpHtmlLib/Container.html#methodrender">Container::render()</a></dt>
+						<dd>This function is compatible with the  rest of the phpHtmllib API spec.</dd>
+					</dl>
+			
+	</div>
+<a name="methodreset_content" id="reset_content"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">reset_content</span> (line <span class="line-number">304</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">we override this class to make sure  we push all content inside the  local _xml_obj tag</p>
+<p class="description"><p>destroy existing content and start with new content.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			reset_content
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$content</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$content</span><span class="var-description">: can be tag object, or raw (string).</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../phpHtmlLib/Container.html#methodreset_content">Container::reset_content()</a></dt>
+						<dd>destroy existing content and start with new content.</dd>
+					</dl>
+			
+	</div>
+<a name="methodset_doctype_link" id="set_doctype_link"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_doctype_link</span> (line <span class="line-number">405</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method is used to set the link attributes</p>
+<p class="description"><p>for the DOCTYPE tag</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_doctype_link
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$link</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$link</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_doctype_source" id="set_doctype_source"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_doctype_source</span> (line <span class="line-number">477</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">this function is used to change the  DOCTYPE tag's source attribute.  By  default it is set to SYSTEM.</p>
+<p class="description"><p>(ie &lt;!DOCTYPE html SYSTEM &gt; )                     ^^^^^^</p><p>NOTE: only 2 valid values 'SYSTEM', 'PUBLIC'</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_doctype_source
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$source</span><span class="var-description">: - the new source attribute</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_encoding" id="set_encoding"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_encoding</span> (line <span class="line-number">336</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">set the character set</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_encoding
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$charset</span><span class="var-description">: - the charset for the meta tag</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_http_content_type" id="set_http_content_type"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_http_content_type</span> (line <span class="line-number">439</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set the  http header content-type for output to browsers</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_http_content_type
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;application/xml&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_root_attribute" id="set_root_attribute"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_root_attribute</span> (line <span class="line-number">386</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This sets 1 root tag attribute value pair</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_root_attribute
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - the attribute name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: - the attribute value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_root_attributes" id="set_root_attributes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_root_attributes</span> (line <span class="line-number">376</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set the  root xml tag's attributes</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_root_attributes
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$attributes</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$attributes</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_root_name" id="set_root_name"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_root_name</span> (line <span class="line-number">356</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the document name  and the root tag's name.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_root_name
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$root_name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$doc_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$doc_name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$root_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshow_character_encoding" id="show_character_encoding"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">show_character_encoding</span> (line <span class="line-number">418</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">method to update the flag that lets us know  to show/render the character encoding string  in the xml tag or not</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			show_character_encoding
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$flag</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshow_http_header" id="show_http_header"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">show_http_header</span> (line <span class="line-number">429</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">this function is used to set the flag  that tells this class to automatically  output the content type in the http header</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			show_http_header
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$flag</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_build_doctype" id="_build_doctype"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_doctype</span> (line <span class="line-number">505</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method builds the DOCTYPE tag for the document</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_build_doctype
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_build_root_tag" id="_build_root_tag"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_root_tag</span> (line <span class="line-number">327</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function builds the root xml</p>
+<p class="description"><p>tag that will contain all of the Document's  xml tags</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_build_root_tag
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_build_xml_stylesheet_container" id="_build_xml_stylesheet_container"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_xml_stylesheet_container</span> (line <span class="line-number">290</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function builds the _xml_stylesheet_container</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_build_xml_stylesheet_container
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_create_xml_obj" id="_create_xml_obj"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_create_xml_obj</span> (line <span class="line-number">317</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function builds the local</p>
+<p class="description"><p>xml container object that holds  all xml tags that are pushed into  this class</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> object</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../phpHtmlLib/XMLtag.html">XMLtag</a></span>
+		<span class="method-name">
+			_create_xml_obj
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_render_header" id="_render_header"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_render_header</span> (line <span class="line-number">148</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">function that will render the XML Document header  portion upto the root tag.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the raw html output.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_render_header
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../phpHtmlLib/Container.html">Container</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodContainer">Container::Container()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodadd">Container::add()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodadd_reference">Container::add_reference()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodcount_content">Container::count_content()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodget_element">Container::get_element()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodget_indent_flag">Container::get_indent_flag()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodpush">Container::push()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodpush_reference">Container::push_reference()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodrender">Container::render()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodreset_content">Container::reset_content()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodset_collapse">Container::set_collapse()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodset_indent_flag">Container::set_indent_flag()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 28 Jan 2011 08:53:28 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

@@ -1,0 +1,38 @@
+This file is just a reminder to myself of the things I know I have yet to do.
+It is by no means comprehensive.
+
+3.x
+-----
+ Start work on a PHP5 specific version of phphtmllib taking advantage
+ of the rich set of OOP symantics.
+ 
+
+2.x.x
+-----
+- add a function/widget for automatically dumping a db table/schema
+  to an xml file.
+- Add the display() ability to the base classes to directly output 
+  the contents to the output buffer.  This is much better for HUGE pages.
+  
+- Add a widget repository on the web site.
+- build a simple CalendarWidget for showing a nice simple
+  calendar with today's date selected
+  
+- Finish the FormWizard class.
+- Add pre_js and post_js methods to the FormProcessor to allow a FormContent and
+  FormElement to place JS before and after the <form> tag, instead of the always
+  before <form> as it is now
+- Add the ability to automatically create a hidden form field in the FormProcessor
+  when a FormElement has been disabled.  When a <input> is disabled in the browser,
+  the browser never sends it's value when a form is submitted.
+  
+- Add proper JOIN clause support in the SQLDataListSource to support outer joins.
+
+- Start work on new documentation tutorials to help build a php.net/manual/en style
+  of documentation.
+  
+
+- Check out the ZZ/OSS php app installer.  Maybe this is a good alternative to 
+  the PEAR package installer.  We could use this for 'pluggable' widgets.
+  http://www.zzoss.com/phpwiki/index.php/ZzossInstaller
+

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs for page phphtmllib.php</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="file-name">/phphtmllib.php</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+									<a href="#sec-includes">Includes</a>
+			|											<a href="#sec-functions">Functions</a>
+			</div>
+	<div class="info-box-body">	
+		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Plugin Name: phpHtmlLib  Plugin URI: http://phphtmllib.newsblob.com  Description: WordPress plugin to bind the phpHtmlLib library to WordPress.  The phpHtmlLib library contains a set of PHP classes and library functions to help facilitate building, debugging, and rendering of XML, HTML, XHTML, WAP/WML Documents, and SVG (Scalable Vector Graphics) images as well as complex html Widgets.  These classes, library functions and widgets can be used to build other WordPress plugins.</p>
+<p class="description"><p>Version: 2.6.1.$WCREV$  Last Modified: $WCDATE$  Author: Mike Walsh  Author URI: http://www.michaelwalsh.org/  License: GPL</p><p>$Id$</p><p>(c) 2008 by Mike Walsh</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Mike Walsh &lt;<a href="mailto:mike_walsh@mindspring.com">mike_walsh@mindspring.com</a>&gt;</li>
+				<li><span class="field">version:</span> $Rev$</li>
+				<li><span class="field">since:</span> 2.6.0</li>
+			</ul>
+		
+			</div>
+</div>
+		
+
+	<a name="sec-includes"></a>	
+	<div class="info-box">
+		<div class="info-box-title">Includes</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Includes</span>
+			|													<a href="#sec-functions">Functions</a>
+					</div>
+		<div class="info-box-body">	
+			<a name="_PHPHTMLLIB_ABSPATH_/version_inc"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<span class="include-title">
+			<span class="include-type">require_once</span>
+			(<span class="include-name">PHPHTMLLIB_ABSPATH."/version.inc"</span>)
+			(line <span class="line-number">36</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	
+</div>
+		</div>
+	</div>
+	
+	
+	
+	<a name="sec-functions"></a>	
+	<div class="info-box">
+		<div class="info-box-title">Functions</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-includes">Includes</a>
+				|												<span class="disabled">Functions</span>
+		</div>
+		<div class="info-box-body">	
+			<a name="functionphphtmllib_admin_head" id="functionphphtmllib_admin_head"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<span class="method-title">phphtmllib_admin_head</span> (line <span class="line-number">57</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add admin_head action</p>
+<p class="description"><p>This function adds the CSS link and Javascript  references required by the phpHtmlLib plugin.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			phphtmllib_admin_head
+		</span>
+				()
+			</div>
+
+		
+	
+</div>
+<a name="functionphphtmllib_install" id="functionphphtmllib_install"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<span class="method-title">phphtmllib_install</span> (line <span class="line-number">79</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">phphtmllib_install - set up when the plugin is activated</p>
+<p class="description"><p>Store the absolute and relative paths to phpHtmlLib  in the options table so other plugins can use them.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			phphtmllib_install
+		</span>
+				()
+			</div>
+
+		
+	
+</div>
+<a name="functionphphtmllib_plugin_installed" id="functionphphtmllib_plugin_installed"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<span class="method-title">phphtmllib_plugin_installed</span> (line <span class="line-number">67</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">phphtmllib_plugin_installed()</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> boolean</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">-</span>
+		<span class="method-name">
+			phphtmllib_plugin_installed
+		</span>
+				()
+			</div>
+
+		
+	
+</div>
+<a name="functionphphtmllib_uninstall" id="functionphphtmllib_uninstall"><!-- --></a>
+<div class="oddrow">
+	
+	<div>
+		<span class="method-title">phphtmllib_uninstall</span> (line <span class="line-number">90</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">phphtmllib_uninstall - clean up when the plugin is deactivated</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			phphtmllib_uninstall
+		</span>
+				()
+			</div>
+
+		
+	
+</div>
+<a name="functionphphtmllib_wp_head" id="functionphphtmllib_wp_head"><!-- --></a>
+<div class="evenrow">
+	
+	<div>
+		<span class="method-title">phphtmllib_wp_head</span> (line <span class="line-number">45</span>)
+	</div> 
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add wp_head action</p>
+<p class="description"><p>This function adds the CSS link and Javascript  references required by the phpHtmlLib plugin.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			phphtmllib_wp_head
+		</span>
+				()
+			</div>
+
+		
+	
+</div>
+		</div>
+	</div>
+	
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 28 Jan 2011 08:53:12 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

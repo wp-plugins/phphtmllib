@@ -1,0 +1,128 @@
+<refentry id="{@id}">
+  <refnamediv>
+    <refname>HTML Forms</refname>
+    <refpurpose>How to Use Forms in phpHtmlLib</refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <refsynopsisdivinfo>
+      <author>
+        by Culley Harrelson
+        <authorblurb>{@link mailto:culley@fastmail.fm}</authorblurb>
+      </author>
+      <copyright>&copy; September 2005, Walter A. Boring IV</copyright>
+      <releaseinfo>phpHtmlLib 2.6.0</releaseinfo>
+    </refsynopsisdivinfo>
+  </refsynopsisdiv>
+ {@toc}
+  <refsect1 id="{@id overview}">
+    <title>Overview</title>
+    <para>
+        phpHtmlLib includes a mature html forms engine that handles, among
+        other things, rendering and validation.  There are a number of example
+        forms on the phpHtmlLib web site and you are highly recommended to
+        review these examples.  The intention of this tutorial is to explain
+        the phpHtmlLib forms engine without extensively using language specific
+        to phpHtmlLib.  If you are looking for detailed information please see
+        the relavant sections of the api reference.
+    </para>
+  </refsect1>
+  <refsect1 id="{@id features}">
+    <title>Features</title>
+    <orderedlist>
+      <listitem>
+        Build a form quickly and easily from over 40 pre-defined form elements.
+      </listitem>
+      <listitem>
+        Data validation is handled automatically depending on the type of form
+        element selected.
+      </listitem>
+      <listitem>
+        Data validation against exteral sources such as a database is performed
+        when the form element validation passes.  For example, if you have
+        included a {@see FENumber} form element in your form, the form validator will
+        first require the user to enter a valid number in this field.  If you
+        also need to compare the number entered with a number extracted from
+        your database the form validator will perform whatever processing
+        needed for this look up after the basic element validation is complete.
+      </listitem>
+      <listitem>
+        When the data validation process is unsuccessful do to user error the
+        labels of the form elements involved in the problem are highlighted.
+        Additionaly a complete description of all errors is displayed at the
+        top of the form.  This error display defaults to a two column table
+        listing the field name and the error that occurred.  If more than one
+        error occurs for a given field there will be more than one row for that
+        field.  The error display is completely customizable and can be
+        rendered however you like.
+      </listitem>
+    </orderedlist>
+  </refsect1>
+  <refsect1 id="{@id template}">
+    <title>Blank Form Template</title>
+    <para>
+        laundry list of all you can do with the forms
+    </para>
+  </refsect1>
+  <refsect1 id="{@id form-content}">
+    <title>Form Handling</title>
+    <para>
+        Overview of FormContent basically.  How much do we want to talk about FormProcessor?  FormElements?
+    </para>
+    <refsect2 id="{@id fc-init-elements}">
+      <title>Placing Fields on the Form</title>
+      <para>
+        element selection handles front end validation.  Do we want to detail
+        elements here or put them in another section?  Just cover the most
+        common elements?
+      </para>
+    </refsect2>
+    <refsect2 id="{@id fc-init-elements-data}">
+      <title>Default Values for Form Elements</title>
+      <para>
+        what is going on here
+      </para>
+    </refsect2>
+    <refsect2 id="{@id fc-rendering}">
+      <title>Form Layout</title>
+      <para>
+        what is going on here
+      </para>
+    </refsect2>
+    <refsect2 id="{@id fc-backend-validation}">
+      <title>Backend Form Validation</title>
+      <para>
+        what is going on here
+      </para>
+    </refsect2>
+    <refsect2 id="{@id fc-action}">
+      <title>Processing Form Results</title>
+      <para>
+        what is going on here
+      </para>
+    </refsect2>
+  </refsect1>
+  <refsect1 id="{@id customizing}">
+    <title>Customizing</title>
+    <para>
+        Various customizations
+    </para>
+    <refsect2 id="{@id fc-custom-confirmation}">
+      <title>Form Confirmation Display</title>
+      <para>
+        How to build a customized confirmation display
+      </para>
+    </refsect2>
+    <refsect2 id="{@id fc-custom-error}">
+      <title>Form Errors Display</title>
+      <para>
+        How to build a customized error display
+      </para>
+    </refsect2>
+  </refsect1>
+  <refsect1 id="{@id multi-forms}">
+    <title>Multiple forms on 1 page</title>
+    <para>
+        This section will discuss what is necessary for multiple forms on the same page.
+    </para>
+  </refsect1>
+</refentry>

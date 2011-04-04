@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Getting Started</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+	<table class="tutorial-nav-box">
+	<tr>
+		<td style="width: 30%">
+							<a href="../phpHtmlLib/tutorial_phpHtmlLib.pkg.html" class="nav-button">Previous</a>
+					</td>
+		<td style="text-align: center">
+							<a href="../phpHtmlLib/tutorial_phpHtmlLib.pkg.html" class="nav-button">Up</a>
+					</td>
+		<td style="text-align: right; width: 30%">
+							<a href="../phpHtmlLib/tutorial_htmlforms.pkg.html" class="nav-button">Next</a>
+					</td>
+	</tr>
+	<tr>
+		<td style="width: 30%">
+							<span class="detail">phpHtmlLib Guide</span>
+					</td>
+		<td style="text-align: center">
+							<span class="detail">phpHtmlLib Guide</span>
+					</td>
+		<td style="text-align: right; width: 30%">
+							<span class="detail">HTML Forms</span>
+					</td>
+	</tr>
+</table>
+	
+<div><a name=""></a><div class="ref-title-box"><h1 class="ref-title">Getting Started</h1>
+    <h2 class="ref-purpose">how to begin with phpHtmlLib package</h2></div>
+  <div class="ref-synopsis"><span class="author">by Walter A. Boring IV
+        <div class="author-blurb"><a href="mailto:waboring@3gstech.com">mailto:waboring@3gstech.com</a></div></span>
+      <div class="notes">&copy; September 2005, Walter A. Boring IV</div>
+      <div class="release-info">(phpHtmlLib 2.6.0)</div></div>
+ <h1 class="title">Table of Contents</h1>
+<ul class="toc">
+	
+			
+					<li><a href="../phpHtmlLib/tutorial_gettingstarted.pkg.html#installing">Installing</a></li>
+					
+					<li><a href="../phpHtmlLib/tutorial_gettingstarted.pkg.html#impatient">Overview for the impatient</a></li>
+					
+					<li><a href="../phpHtmlLib/tutorial_gettingstarted.pkg.html#intro">Introduction</a></li>
+					
+					<li><a href="../phpHtmlLib/tutorial_gettingstarted.pkg.html#pkg-overview">Package Overview</a></li>
+					
+				  				<ul class="toc">
+					<li><a href="../phpHtmlLib/tutorial_gettingstarted.pkg.html#pkg-overview.class-bar">Global Classes</a></li>
+						
+					
+					<li><a href="../phpHtmlLib/tutorial_gettingstarted.pkg.html#pkg-overview.class-dm">Document/Page Classes</a></li>
+					
+					<li><a href="../phpHtmlLib/tutorial_gettingstarted.pkg.html#pkg-overview.class-ui">HTML Widgets</a></li>
+					
+					<li><a href="../phpHtmlLib/tutorial_gettingstarted.pkg.html#pkg-overview.class-forms">HTML Forms</a></li>
+						</ul>
+		</ul>
+
+  <span><a name="installing"></a><h2 class="title">Installing</h2><ol><li><p>For most people that use Linux with Apache, the install will be
+    very easy.  You just need to copy the untared package directory phphtmllib-2.6.0
+    to somewhere in your DOCUMENT_ROOT, where phphtmllib is located what the
+    the actual top level directory name is are not important.</p>
+        <p>Once phpHtmlLib is installed, you need to tell your scripts how
+    to find it.  To do this, you must define two constants:
+          <p>Windows (it is a good idea to escape backslashes on Windows)</p>
+          <div class="src-code"><pre>&lt;?php
+        define(&quot;PHPHTMLLIB_ABSPATH&quot;,
+            &quot;C:\\inetpub\\wwwroot\\extlib\\phphtmllib_2.6.0&quot;);
+        define(&quot;PHPHTMLLIB_RELPATH&quot;, &quot;/extlib/phphtmllib_2.6.0&quot;);
+?&gt;</pre></div>
+          <p>Unix/Linux</p>
+          <div class="src-code"><pre>&lt;?php
+        define(&quot;PHPHTMLLIB_ABSPATH&quot;,
+            &quot;/var/www/html/extlib/phphtmllib_2.6.0&quot;);
+        define(&quot;PHPHTMLLIB_RELPATH&quot;, &quot;/extlib/phphtmllib_2.6.0&quot;);
+?&gt;</pre></div></p></li>
+      <li><p>Then you just include the main include file inside phphtmllib.
+          <div class="src-code"><pre>&lt;?php
+        include_once(PHPHTMLLIB_ABSPATH . &quot;/includes.inc&quot;) ;
+?&gt;</pre></div></p></li>
+      <li><p>phpHtmlLib is now installed</p></li></ol></span>
+  <span><a name="impatient"></a><h2 class="title">Overview for the impatient</h2><p>You can't wait to read the full documentation and tutorials, so you write few lines
+    of code as below ...</p>
+    <p><li><p>From the shell move the phphtmllib directory to your DOCUMENT_ROOT</p></li>
+        <li><p>Create an include script.</p>
+          <p><p>Windows (it is a good idea to escape backslashes on Windows)</p>
+            <div class="src-code"><pre>&lt;?php
+        define(&quot;PHPHTMLLIB_ABSPATH&quot;,
+            &quot;C:\\inetpub\\wwwroot\\extlib\\phphtmllib_2.6.0&quot;);
+        define(&quot;PHPHTMLLIB_RELPATH&quot;, &quot;/extlib/phphtmllib_2.6.0&quot;);
+        include_once(PHPHTMLLIB_ABSPATH . &quot;/includes.inc&quot;) ;
+?&gt;</pre></div>
+            <p>Unix/Linux</p>
+            <div class="src-code"><pre>&lt;?php
+        define(&quot;PHPHTMLLIB_ABSPATH&quot;,
+            &quot;/var/www/html/extlib/phphtmllib_2.6.0&quot;);
+        define(&quot;PHPHTMLLIB_RELPATH&quot;, &quot;/extlib/phphtmllib_2.6.0&quot;);
+include_once(PHPHTMLLIB_ABSPATH . &quot;/includes.inc&quot;) ;
+?&gt;</pre></div></p></li>
+        <li><p>phpHtmlLib is now installed and ready to be used.</p></li></p></span>
+  <span><a name="intro"></a><h2 class="title">Introduction</h2><p>I have tried to make the phpHtmlLib fairly easy to install
+  and to use on anyone's current running site.  There are a few assumptions
+  I've made, but it shouldn't be a problem for 99% of the folks out there.
+  If you encounter any issues, please let me know.  I welcome any and all
+ feedback.</p></span>
+  <span><a name="pkg-overview"></a><h2 class="title">Package Overview</h2><p>phpHtmlLib provides 3 main classes to help you build Tags:</p>
+    <span><a name="pkg-overview.class-bar"></a><h3 class="title">Global Classes</h3><p><li>Container
+            <p>This class is nothing more then a container widget.  It lets you
+      add data into it, and it will render each item indented properly
+      so it works with the rest of the libs.</p></li>
+          <li>XMLTagClass
+            <p>This class is a child of the Container class and is for building and rendering
+      an XML tag. This class is the base class for the HTMLTagClass.</p></li>
+          <li>HTMLTagClass
+            <p>Base class for all HTML Tag classes. Tag class renders an html tag, its
+       attributes, the content (if any), and close tag (if needed).</p></li></p></span>
+    <span><a name="pkg-overview.class-dm"></a><h3 class="title">Document/Page Classes</h3><p><li>XMLDocumentClass
+            <p>This class lets you build a complete xml document and render it.</p></li>
+          <li>HTMLPageClass
+            <p>class the constructs and renders an entire HTML/XHTML document.</p></li>
+          <li>PageWidget
+            <p>This child class of the HTMLPageClass is used to build content
+          for an entire page.  It uses the HTMLPageClass widget from phphtmllib
+          to render the final output.</p></li></p></span>
+    <span><a name="pkg-overview.class-ui"></a><h3 class="title">HTML Widgets</h3><p><li>BaseWidget
+            <p>this is the base widget class, that all widgets
+       are based off of.  It provides some basic members and methods.</p></li>
+          <li>CSSBuilder
+            <p>This class is a widget for constructing and rendering css.
+      It exports API's for adding classes, ids and their attributes.
+      It can render as either a stand alone foo.css type of file, with the appropriate
+      httpd header, or as part of a
+              style tag's content that lives as part of an html
+      document.</p></li>
+            <li>CSSContainer
+            <p>This class is a container for CSSBuilder objects.
+            It is meant to make the theming of many CSSBuilder objects easy to manage.</p></li></p></span>
+    <span><a name="pkg-overview.class-forms"></a><h3 class="title">HTML Forms</h3><p><li>FormContent
+            <p>This class is used to build and render the form.  It builds a form
+            by creating FormElement objects which have automatic validation. It
+            leaves the layout of the form up to the child class. It has a
+            mechanism in place to automagically show a confirmation 'page'
+            after the data has been submitted and validated. It also provides a
+            hook for any 'back end' validation of data. Finally, it provides a
+            function for handling the action of the form, which only gets call
+            after ALL validation has passed.</p></li>
+          <li>FormProcessor
+            <p>This is the main engine for the processing of forms. It builds the
+            form tag, and calls the appropriate FormContent methods to build
+            the FormElement's and validation, as well as backend processing to
+            do the action after the data has been validated.</p></li>
+            <li>FormValidation
+            <p>This is the base validation class that contains some basic
+            FormElement validation methods.  You will find that this class is
+            rarely accessed directly.</p></li>
+            <li>FormElement
+            <p>This is the base FormElement object. It can be single form field
+            such as a text input field, or a complex object.  All of the FE*
+            classes are derived from this class.</p></li></p></span></span></div>
+
+	<table class="tutorial-nav-box">
+	<tr>
+		<td style="width: 30%">
+							<a href="../phpHtmlLib/tutorial_phpHtmlLib.pkg.html" class="nav-button">Previous</a>
+					</td>
+		<td style="text-align: center">
+							<a href="../phpHtmlLib/tutorial_phpHtmlLib.pkg.html" class="nav-button">Up</a>
+					</td>
+		<td style="text-align: right; width: 30%">
+							<a href="../phpHtmlLib/tutorial_htmlforms.pkg.html" class="nav-button">Next</a>
+					</td>
+	</tr>
+	<tr>
+		<td style="width: 30%">
+							<span class="detail">phpHtmlLib Guide</span>
+					</td>
+		<td style="text-align: center">
+							<span class="detail">phpHtmlLib Guide</span>
+					</td>
+		<td style="text-align: right; width: 30%">
+							<span class="detail">HTML Forms</span>
+					</td>
+	</tr>
+</table>
+	
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 28 Jan 2011 08:52:35 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

@@ -1,0 +1,142 @@
+
+  phpHtmlLib INSTALLATION
+
+
+  Introduction
+  ============
+
+  I have tried to make the phpHtmlLib fairly easy to install and to use on
+  anyone's current running site.  There are a few assumptions I've made, but
+  it shouldn't be a problem for 99% of the folks out there.  I haven't tested
+  the libs in a Windows environment, as I don't have a M$ O.S.  installed
+  anywhere in my house.  If you encounter any issues, please let me know.
+  I welcome any and all feedback.
+  
+  Thanks and enjoy,
+  Walt A. Boring IV
+  waboring@newsblob.com
+
+  Update
+  ======
+
+  The 2.6.0 release introduces several significant changes to phpHtmlLib,
+  please read the CHANGELOG for additional details.  The most significant
+  change is the elimination of the $phphtmllib global variable which is 
+  replaced by two constants (see below).  Several new widgest have been
+  added along with new examples.
+
+  The 2.6.0 release of phpHtmlLib has been tested with PHP4.4.x with
+  Windows/IIS (5 & 7) as well as RHEL4 Linux and Solaris 2.8 running
+  Apache 2.x.
+
+  As of 2.6.0 phpHtmlLib has also been tested with PHP5 running under
+  Windows IIS (5 & 7).  All new functionality has been coded with PHP4.
+
+  Questions, comments, concerns, etc. should be raised on the phpHtmlLib
+  Community Forums at http://phphtmllib.newsblob.com.
+
+  Mike Walsh
+  mike_walsh@mindspring.com
+  
+
+
+  Installing the libs
+  ================================================
+
+  1. Overview for the impatient
+     --------------------------
+
+     $ mv phphtmllib <your webdir DOCUMENT_ROOT[/optional/path]>
+
+     Example:
+
+     $ mv phpthmllib /var/www/html/extlib/phphtmllib_2.6.0
+     
+     NOTE: As of v2.6.0, the global variable $phphtmllib is no longer
+           used.  Instead, use PHPTHMLLIB_ABSPATH and PHPHTMLLIB_RELPATH.
+
+     Windows (it is a good idea to escape backslashes on Windows):
+         <?php
+             define("PHPHTMLLIB_ABSPATH",
+                 "C:\\inetpub\\wwwroot\\extlib\\phphtmllib_2.6.0");
+             define("PHPHTMLLIB_RELPATH", "/extlib/phphtmllib_2.6.0");
+
+             include_once(PHPHTMLLIB_ABSPATH . "/includes.inc") ;
+         ?>
+
+     Unix/Linux:
+         <?php
+             define("PHPHTMLLIB_ABSPATH",
+                  "/var/www/html/extlib/phphtmllib_2.6.0");
+             define("PHPHTMLLIB_RELPATH", "/extlib/phphtmllib_2.6.0");
+
+             include_once(PHPHTMLLIB_ABSPATH . "/includes.inc") ;
+         ?>
+
+  2. Requirements
+     ------------
+
+     The following requirements exist for using phpHtmlLib :
+
+     o  PHP version 4.4.x (should work with 4.2.x)
+     o  PHP version 5.2.x
+     
+     Optional
+     o  One of phpHtmlLib's DataListSource Classes can work with
+        PEAR and/or ADODB DB abstraction layer classes.  PEAR should
+	already be installed if you have a proper PHP install.  You 
+	can get ADODB (much better IMHO) from 
+	http://php.weblogs.com/ADODB
+
+
+  3. Installing
+     ----------
+
+     1. Copy the entire phphtmllib directory into your website's source
+        tree.  The library can be called whatever you like, by default it
+        is distributed as "phphtmllib".  You don't have to have it installed
+        in the document root, but that is where I normally install it.
+	
+     2. As of v2.6.0, the global variable $phphtmllib is no longer
+           used.  Instead, use PHPTHMLLIB_ABSPATH and PHPHTMLLIB_RELPATH.
+           You must define these two constants at the beginning of your
+           PHP file(s) before you reference the phpHtmlLib include files.
+
+        After that you should be able to include the main includes file
+	  include_once(PHPHTMLLIB_ABSPATH . "/includes.inc"); to include
+          all of the files in the lib, or you can include each file that
+          you need individually to save include processing.
+
+        Windows (it is a good idea to escape backslashes on Windows):
+            <?php
+                define("PHPHTMLLIB_ABSPATH",
+                    "C:\\inetpub\\wwwroot\\extlib\\phphtmllib_2.6.0");
+                define("PHPHTMLLIB_RELPATH", "/extlib/phphtmllib_2.6.0");
+
+                include_once(PHPHTMLLIB_ABSPATH . "/includes.inc") ;
+            ?>
+
+        Unix/Linux:
+            <?php
+                define("PHPHTMLLIB_ABSPATH",
+                     "/var/www/html/extlib/phphtmllib_2.6.0");
+                define("PHPHTMLLIB_RELPATH", "/extlib/phphtmllib_2.6.0");
+
+                include_once(PHPHTMLLIB_ABSPATH . "/includes.inc") ;
+            ?>
+
+     3. Optionally, review the SECURITY file if you are installing 
+        phphtmllib into a production environment.
+
+  9. Contacts
+     --------
+
+     o All the latest updates and news will be posted on phpHtmlLib's project
+       website at http://phphtmllib.newsblob.com
+
+     o You can always contact me by sending an email to: Walt Boring
+       waboring@newsblob.com
+
+
+     Thanks for trying phpHtmlLib.
+                                          Walt Boring IV

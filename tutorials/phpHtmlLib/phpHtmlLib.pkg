@@ -1,0 +1,58 @@
+<refentry id="{@id}">
+ <refnamediv>
+  <refname>phpHtmlLib Guide</refname>
+  <refpurpose>introduction to phpHtmlLib</refpurpose>
+ </refnamediv>
+ <refsynopsisdiv>
+  <refsynopsisdivinfo>
+   <author>
+    by Walter A. Boring IV
+    <authorblurb>{@link mailto:waboring@3gstech.com}</authorblurb>
+   </author>
+   <copyright>&copy; September 2005, Walter A. Boring IV</copyright>
+   <releaseinfo>phpHtmlLib 2.6.0</releaseinfo>
+  </refsynopsisdivinfo>
+ </refsynopsisdiv>
+ {@toc}
+ <refsect1 id="{@id whatisit}">
+  <title>What is phpHtmlLib ?</title>
+  <para>
+      phpHtmlLib is a set of PHP classes and library functions to build, debug,
+      and render XML, HTML, XHTML, WAP/WML Documents, and SVG (Scalable Vector Graphics)
+      images as well as complex html 'widgets' for {@link http://www.php.net PHP} 4.2 or better.
+  </para>
+  <para>
+      It provides a mechanism to output perfectly indented/readable XML/HTML/XHTML/WML/SVG source,
+      and a programmatic API to generating XML/HTML/XHTML/WML/SVG tags and fully compliant documents.
+      The API provides a 'phpHtmlLib' standard API for creating documents by using powerfull widgets.
+      Every object has an add() method for inserting data, and a render() method for building the output.
+  </para>
+ </refsect1>
+ <refsect1 id="{@id features}">
+  <title>Features</title>
+   <unorderedlist>
+    <listitem><para>PHP classes and functions to build XML/HTML/XHTML/WML/SVG tags.</para></listitem>
+    <listitem><para>Every XML/HTML/XHTML/WML/SVG tag is a PHP class. Common, standardized
+    API for building tags, their attributes, and adding content to the tag (object).</para></listitem>
+    <listitem><para>Renders nicely indented XML/HTML/XHTML/WML/SVG source code, for
+    easy reading/debugging. To see this in action, view source on this page.</para></listitem>
+    <listitem><para>"Debugging" capability - The lib renders a viewable
+    version of source code in color-coded output with clickable links to help validate urls.
+    </para></listitem>
+    <listitem><para>Render an entire document in HTML 4.0 or XHTML 1.0
+    (STRICT, TRANSITIONAL, or FRAMESET) compatible source, by setting 1 flag.</para></listitem>
+    <listitem><para>Render an entire properly formatted XML/WML/SVG document</para></listitem>
+    <listitem><para>Notifies the programmer, which HTML tags are deprecated by the W3C.</para></listitem>
+    <listitem><para>Utility/library functions that help build some of the more common tag objects.</para></listitem>
+    <listitem><para>'Widget' system for building complex HTML/XHTML 'widgets'
+    into easy to use php classes.</para></listitem>
+    <listitem><para>Feature rich Form Building/Processing engine.</para></listitem>
+    <listitem><para>CSS Builder object set to dynamically build CSS documents that are easily theme-able.</para></listitem>
+   </unorderedlist>
+ </refsect1>
+ <refsect1 id="{@id license}">
+  <title>Software license</title>
+   <para>phpHtmlLib is released under
+    {@link http://www.gnu.org/copyleft/lesser.html GNU LGPL}</para>
+ </refsect1>
+</refentry>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class SVGXYLineGraph</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class SVGXYLineGraph</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is the base Graph class for doing XY coordinate  system based graphs in SVG.</p>
+<p class="description"><p>$Id: SVGXYLineGraph.html 3543 2011-01-28 14:07:31Z mpwalsh8 $</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Walter A. Boring IV &lt;<a href="mailto:waboring@newsblob.com">waboring@newsblob.com</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_widgets---svg---SVGXYLineGraph.inc.html">/widgets/svg/SVGXYLineGraph.inc</a> (line <span class="field">28</span>)
+		</p>
+		
+				
+		<pre><a href="../../phpHtmlLib/Container.html">Container</a>
+   |
+   --<a href="../../phpHtmlLib/BaseWidget.html">BaseWidget</a>
+      |
+      --<a href="../../phpHtmlLib/SVG/SVGGraph.html">SVGGraph</a>
+         |
+         --<a href="../../phpHtmlLib/SVG/SVGXYGraph.html">SVGXYGraph</a>
+            |
+            --<a href="../../phpHtmlLib/SVG/SVGXYPlotGraph.html">SVGXYPlotGraph</a>
+               |
+               --SVGXYLineGraph</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_line_colors" title="details" class="var-name">$_line_colors</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																						
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_line" title="details" class="method-name">add_line</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$x_values</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$y_values</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$color</span> = <span class="var-default">&quot;red&quot;</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">Container</span>
+										<a href="#graph_data" title="details" class="method-name">graph_data</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_build_line" title="details" class="method-name">_build_line</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$x_data</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$y_data</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$color</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_line_colors" id="$_line_colors"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_line_colors</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">35</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">holds the colors for each of</p>
+<p class="description"><p>the lines</p></p>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html">SVGXYGraph</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#var$_colors">SVGXYGraph::$_colors</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#var$_max_x">SVGXYGraph::$_max_x</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#var$_max_y">SVGXYGraph::$_max_y</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#var$_min_x">SVGXYGraph::$_min_x</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#var$_min_y">SVGXYGraph::$_min_y</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#var$_x_data">SVGXYGraph::$_x_data</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#var$_y_data">SVGXYGraph::$_y_data</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/SVG/SVGGraph.html">SVGGraph</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#var$_draw">SVGGraph::$_draw</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#var$_options">SVGGraph::$_options</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/BaseWidget.html">BaseWidget</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/BaseWidget.html#var$title">BaseWidget::$title</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/BaseWidget.html#var$width">BaseWidget::$width</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/BaseWidget.html#var$_image_prefix">BaseWidget::$_image_prefix</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodadd_line" id="add_line"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_line</span> (line <span class="line-number">45</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This enables you to add another line  to the graph</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_line
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$x_values</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$y_values</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$color</span> = <span class="var-default">&quot;red&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$x_values</span><span class="var-description">: - the x coordinates</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$y_values</span><span class="var-description">: - the y coordinates</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$color</span><span class="var-description">: - the color for the line</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgraph_data" id="graph_data"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">graph_data</span> (line <span class="line-number">58</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function does the work of  building the graph itself</p>
+	
+	<div class="method-signature">
+		<span class="method-result">Container</span>
+		<span class="method-name">
+			graph_data
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/SVG/SVGXYPlotGraph.html#methodgraph_data">SVGXYPlotGraph::graph_data()</a></dt>
+						<dd>This function does the work of  building the graph itself</dd>
+					</dl>
+			
+	</div>
+<a name="method_build_line" id="_build_line"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_line</span> (line <span class="line-number">71</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_build_line
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$x_data</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$y_data</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$color</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$x_data</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$y_data</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$color</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/SVG/SVGXYPlotGraph.html">SVGXYPlotGraph</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYPlotGraph.html#methodSVGXYPlotGraph">SVGXYPlotGraph::SVGXYPlotGraph()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYPlotGraph.html#methodadd_point">SVGXYPlotGraph::add_point()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYPlotGraph.html#methodgraph_data">SVGXYPlotGraph::graph_data()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYPlotGraph.html#method_build_point">SVGXYPlotGraph::_build_point()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html">SVGXYGraph</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#methodSVGXYGraph">SVGXYGraph::SVGXYGraph()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#methodadd_x_values">SVGXYGraph::add_x_values()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#methodadd_y_values">SVGXYGraph::add_y_values()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#methodget_x_position">SVGXYGraph::get_x_position()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#methodget_y_position">SVGXYGraph::get_y_position()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#methodset_axis_grid_points">SVGXYGraph::set_axis_grid_points()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#methodset_grid_line_color">SVGXYGraph::set_grid_line_color()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#methodset_grid_line_flag">SVGXYGraph::set_grid_line_flag()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#methodset_x_title">SVGXYGraph::set_x_title()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#methodset_y_title">SVGXYGraph::set_y_title()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#method_add_options">SVGXYGraph::_add_options()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#method_background">SVGXYGraph::_background()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#method_build_graph">SVGXYGraph::_build_graph()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#method_build_titles">SVGXYGraph::_build_titles()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#method_build_x_axis">SVGXYGraph::_build_x_axis()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#method_build_y_axis">SVGXYGraph::_build_y_axis()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#method_prepare_data">SVGXYGraph::_prepare_data()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#method_x_axis_title">SVGXYGraph::_x_axis_title()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGXYGraph.html#method_y_axis_title">SVGXYGraph::_y_axis_title()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/SVG/SVGGraph.html">SVGGraph</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#methodSVGGraph">SVGGraph::SVGGraph()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#methodformat_label">SVGGraph::format_label()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#methodget_option">SVGGraph::get_option()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#methodget_options">SVGGraph::get_options()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#methodrender">SVGGraph::render()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#methodset_axis_font_height">SVGGraph::set_axis_font_height()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#methodset_axis_font_width">SVGGraph::set_axis_font_width()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#methodset_height">SVGGraph::set_height()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#methodset_option">SVGGraph::set_option()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#methodset_title">SVGGraph::set_title()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#methodset_title_font_height">SVGGraph::set_title_font_height()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#methodset_title_font_width">SVGGraph::set_title_font_width()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#methodset_title_style">SVGGraph::set_title_style()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#methodset_width">SVGGraph::set_width()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#method_build_graph">SVGGraph::_build_graph()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#method_build_title">SVGGraph::_build_title()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#method_build_titles">SVGGraph::_build_titles()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/SVG/SVGGraph.html#method_prepare_data">SVGGraph::_prepare_data()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/BaseWidget.html">BaseWidget</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodget_align">BaseWidget::get_align()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodget_css">BaseWidget::get_css()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodget_javascript">BaseWidget::get_javascript()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodget_title">BaseWidget::get_title()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodget_width">BaseWidget::get_width()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodset_align">BaseWidget::set_align()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodset_image_path_prefix">BaseWidget::set_image_path_prefix()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodset_title">BaseWidget::set_title()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/BaseWidget.html#methodset_width">BaseWidget::set_width()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/Container.html">Container</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodContainer">Container::Container()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodadd">Container::add()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodadd_reference">Container::add_reference()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodcount_content">Container::count_content()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodget_element">Container::get_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodget_indent_flag">Container::get_indent_flag()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodpush">Container::push()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodpush_reference">Container::push_reference()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodrender">Container::render()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodreset_content">Container::reset_content()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodset_collapse">Container::set_collapse()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/Container.html#methodset_indent_flag">Container::set_indent_flag()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 28 Jan 2011 08:53:23 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

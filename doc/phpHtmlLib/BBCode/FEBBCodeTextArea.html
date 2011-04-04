@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class FEBBCodeTextArea</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class FEBBCodeTextArea</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">BBCodeTeatArea class widget.  A text area widget to  input and parse BBCode formatted text.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Mike Walsh &lt;<a href="mailto:mike_walsh@mindspring.com">mike_walsh@mindspring.com</a>&gt;</li>
+				<li><span class="field">copyright:</span> LGPL - See LICENCE</li>
+				<li><span class="field">see:</span> <a href="../../phpHtmlLib/FormProcessing/FETextArea.html#methodFETextArea">FETextArea::FETextArea()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_widgets---BBCode.inc.html">/widgets/BBCode.inc</a> (line <span class="field">37</span>)
+		</p>
+		
+				
+		<pre><a href="../../phpHtmlLib/FormProcessing/FormElement.html">FormElement</a>
+   |
+   --<a href="../../phpHtmlLib/FormProcessing/FEBoxElement.html">FEBoxElement</a>
+      |
+      --<a href="../../phpHtmlLib/FormProcessing/FETextArea.html">FETextArea</a>
+         |
+         --FEBBCodeTextArea</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_header_size" title="details" class="var-name">$_header_size</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_nl2br" title="details" class="var-name">$_nl2br</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_strip_tags" title="details" class="var-name">$_strip_tags</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_wrapper_class" title="details" class="var-name">$_wrapper_class</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																						
+				<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#get_header_size" title="details" class="method-name">get_header_size</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#get_nl2br" title="details" class="method-name">get_nl2br</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_parsed_value" title="details" class="method-name">get_parsed_value</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#get_strip_tags" title="details" class="method-name">get_strip_tags</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#get_value" title="details" class="method-name">get_value</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_value_text" title="details" class="method-name">get_value_text</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_wrapper_class" title="details" class="method-name">get_wrapper_class</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">none</span>
+										<a href="#set_header_size" title="details" class="method-name">set_header_size</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$size</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_nl2br" title="details" class="method-name">set_nl2br</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$nl2br</span> = <span class="var-default">true</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_strip_tags" title="details" class="method-name">set_strip_tags</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$strip_tags</span> = <span class="var-default">true</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_wrapper_class" title="details" class="method-name">set_wrapper_class</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$wrapper_class</span> = <span class="var-default">null</span>])
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_header_size" id="$_header_size"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_header_size</span>
+			 = <span class="var-default"> 3 </span>			(line <span class="line-number">58</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Default header size</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_nl2br" id="$_nl2br"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_nl2br</span>
+			 = <span class="var-default"> false </span>			(line <span class="line-number">42</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Newline breaking property</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_strip_tags" id="$_strip_tags"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_strip_tags</span>
+			 = <span class="var-default"> true </span>			(line <span class="line-number">47</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">HTML tag stripping property</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_wrapper_class" id="$_wrapper_class"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_wrapper_class</span>
+			 = <span class="var-default"> null </span>			(line <span class="line-number">52</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">CSS class to wrap parsed text in</p>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FETextArea.html">FETextArea</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FETextArea.html#var$_limit_char_count">FETextArea::$_limit_char_count</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FEBoxElement.html">FEBoxElement</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FEBoxElement.html#var$_height">FEBoxElement::$_height</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FEBoxElement.html#var$_width">FEBoxElement::$_width</a></span><br>
+							</span>
+											</blockquote> 
+									<p>Inherited from <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FormElement.html">FormElement</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onBlurJS">FormElement::$onBlurJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onChangeJS">FormElement::$onChangeJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onClickJS">FormElement::$onClickJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onFocusJS">FormElement::$onFocusJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$onSubmitJS">FormElement::$onSubmitJS</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_attributes">FormElement::$_attributes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_element_name">FormElement::$_element_name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_errors">FormElement::$_errors</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_error_message">FormElement::$_error_message</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_form_name">FormElement::$_form_name</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_has_error">FormElement::$_has_error</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_has_form_on_submit">FormElement::$_has_form_on_submit</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_is_disabled">FormElement::$_is_disabled</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_is_readonly">FormElement::$_is_readonly</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_is_required">FormElement::$_is_required</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_label_colon_flag">FormElement::$_label_colon_flag</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_label_text">FormElement::$_label_text</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_required_field_marker">FormElement::$_required_field_marker</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_slave_elements">FormElement::$_slave_elements</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_stripslashes">FormElement::$_stripslashes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_style_attributes">FormElement::$_style_attributes</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_validation_enabled">FormElement::$_validation_enabled</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#var$_value">FormElement::$_value</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodget_header_size" id="get_header_size"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_header_size</span> (line <span class="line-number">141</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the header size</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - header size 1-6 (h1-h6)</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			get_header_size
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_nl2br" id="get_nl2br"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_nl2br</span> (line <span class="line-number">74</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the flag for handling newlines</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - true to map newlines to BR tags</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			get_nl2br
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_parsed_value" id="get_parsed_value"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_parsed_value</span> (line <span class="line-number">185</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parse the BBCode text value</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the parsed text</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_parsed_value
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_strip_tags" id="get_strip_tags"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_strip_tags</span> (line <span class="line-number">93</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the flag for stripping HTML tags in the input</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - true to strip tags</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			get_strip_tags
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_value" id="get_value"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_value</span> (line <span class="line-number">168</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function will return the elements value</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			get_value
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_value">FormElement::get_value()</a></dt>
+						<dd>This function will return the  elements value</dd>
+					</dl>
+			
+	</div>
+<a name="methodget_value_text" id="get_value_text"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_value_text</span> (line <span class="line-number">157</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This provides an overridden method for the FormContent  to get access to the text associated with a field.  This  is only available on FEBBCodeTextArea elements.</p>
+<p class="description"><p>It is used during Confirmation and parses the BBCode so  the confirmation page displays the text as it will appear  when rendered as HTML.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the text associated</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_value_text
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">0</span><span class="var-description">: the value to look up</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_value_text">FormElement::get_value_text()</a></dt>
+						<dd>This provides a method</dd>
+					</dl>
+			
+	</div>
+<a name="methodget_wrapper_class" id="get_wrapper_class"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_wrapper_class</span> (line <span class="line-number">112</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the class for wrapping parsed text in</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - name of the class</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_wrapper_class
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodset_header_size" id="set_header_size"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_header_size</span> (line <span class="line-number">125</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the size of header text used by the [h] tag</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Mike Walsh  &lt;<a href="mailto:mike_walsh@mindspring.com">mike_walsh@mindspring.com</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">none</span>
+		<span class="method-name">
+			set_header_size
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$size</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$size</span><span class="var-description">: - size of header (1-6)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_nl2br" id="set_nl2br"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_nl2br</span> (line <span class="line-number">64</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the flag for handling newlines</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_nl2br
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$nl2br</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nl2br</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_strip_tags" id="set_strip_tags"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_strip_tags</span> (line <span class="line-number">83</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the flag for stripping HTML tags in the input</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_strip_tags
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$strip_tags</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$strip_tags</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_wrapper_class" id="set_wrapper_class"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_wrapper_class</span> (line <span class="line-number">102</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the class for wrapping parsed text in</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_wrapper_class
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$wrapper_class</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$wrapper_class</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FETextArea.html">FETextArea</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FETextArea.html#methodFETextArea">FETextArea::FETextArea()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FETextArea.html#methodget_element">FETextArea::get_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FETextArea.html#methodset_cols">FETextArea::set_cols()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FETextArea.html#methodset_rows">FETextArea::set_rows()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FETextArea.html#methodvalidate">FETextArea::validate()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FEBoxElement.html">FEBoxElement</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FEBoxElement.html#methodFEBoxElement">FEBoxElement::FEBoxElement()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../phpHtmlLib/FormProcessing/FormElement.html">FormElement</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodFormElement">FormElement::FormElement()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodbuild_id_name">FormElement::build_id_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodcreate_element_name">FormElement::create_element_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodenable_validation">FormElement::enable_validation()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodform_tag_onsubmit">FormElement::form_tag_onsubmit()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_attribute">FormElement::get_attribute()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_confirm_element">FormElement::get_confirm_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_element">FormElement::get_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_element_name">FormElement::get_element_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_errors">FormElement::get_errors()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_error_message">FormElement::get_error_message()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_form_element">FormElement::get_form_element()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_init_value">FormElement::get_init_value()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_label">FormElement::get_label()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_label_text">FormElement::get_label_text()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_required_symbol">FormElement::get_required_symbol()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_slave_elements">FormElement::get_slave_elements()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_tabindex">FormElement::get_tabindex()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_value">FormElement::get_value()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodget_value_text">FormElement::get_value_text()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodhas_error">FormElement::has_error()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodis_disabled">FormElement::is_disabled()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodis_readonly">FormElement::is_readonly()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodis_required">FormElement::is_required()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodjavascript">FormElement::javascript()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonBlur">FormElement::onBlur()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonChange">FormElement::onChange()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonClick">FormElement::onClick()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonFocus">FormElement::onFocus()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodonSubmit">FormElement::onSubmit()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_attribute">FormElement::set_attribute()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_colon_flag">FormElement::set_colon_flag()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_data_all_slaves">FormElement::set_data_all_slaves()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_disabled">FormElement::set_disabled()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_element_name">FormElement::set_element_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_error_message">FormElement::set_error_message()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_form_name">FormElement::set_form_name()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_label_text">FormElement::set_label_text()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onBlur">FormElement::set_onBlur()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onChange">FormElement::set_onChange()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onClick">FormElement::set_onClick()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onFocus">FormElement::set_onFocus()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_onSubmit">FormElement::set_onSubmit()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_readonly">FormElement::set_readonly()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_required">FormElement::set_required()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_required_symbol">FormElement::set_required_symbol()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_slave_data">FormElement::set_slave_data()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_slave_elements">FormElement::set_slave_elements()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_stripslashes">FormElement::set_stripslashes()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_style_attribute">FormElement::set_style_attribute()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_tabindex">FormElement::set_tabindex()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_title">FormElement::set_title()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodset_value">FormElement::set_value()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#methodvalidate">FormElement::validate()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#method_build_element_attributes">FormElement::_build_element_attributes()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#method_build_javascript">FormElement::_build_javascript()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#method_do_validation">FormElement::_do_validation()</a></span><br>
+													<span class="method-name"><a href="../../phpHtmlLib/FormProcessing/FormElement.html#method_sanitize_string">FormElement::_sanitize_string()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 28 Jan 2011 08:52:49 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

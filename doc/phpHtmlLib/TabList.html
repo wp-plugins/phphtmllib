@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class TabList</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class TabList</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This class implements a set of multiple tabs holding  data objects</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Suren Markossian</li>
+				<li><span class="field">author:</span> Walter A. Boring IV</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_widgets---TabWidget.inc.html">/widgets/TabWidget.inc</a> (line <span class="field">111</span>)
+		</p>
+		
+				
+		<pre><a href="../phpHtmlLib/Container.html">Container</a>
+   |
+   --<a href="../phpHtmlLib/BaseWidget.html">BaseWidget</a>
+      |
+      --TabList</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_icons" title="details" class="var-name">$_icons</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_icon_flag" title="details" class="var-name">$_icon_flag</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_save_vars" title="details" class="var-name">$_save_vars</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_subtab_flag" title="details" class="var-name">$_subtab_flag</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_tabs" title="details" class="var-name">$_tabs</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_tab_line_flag" title="details" class="var-name">$_tab_line_flag</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_tab_num" title="details" class="var-name">$_tab_num</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_tab_row" title="details" class="var-name">$_tab_row</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_tab_selected" title="details" class="var-name">$_tab_selected</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_ui_wrapper" title="details" class="var-name">$_ui_wrapper</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_valid_tab" title="details" class="var-name">$_valid_tab</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																						
+				<div class="method-definition">
+											<span class="method-result">TabList</span>
+										<a href="#TabList" title="details" class="method-name">TabList</a>
+											(<span class="var-type">the</span>&nbsp;<span class="var-name">$title</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add" title="details" class="method-name">add</a>
+											(<span class="var-type">title</span>&nbsp;<span class="var-name">&$tab_obj</span>, <span class="var-type">data</span>&nbsp;<span class="var-name">1</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addicon" title="details" class="method-name">addicon</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$icon</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_icon" title="details" class="method-name">add_icon</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$icon</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$width</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$height</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$onclick</span> = <span class="var-default">''</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#get_title" title="details" class="method-name">get_title</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#name" title="details" class="method-name">name</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#queryvar" title="details" class="method-name">queryvar</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#render" title="details" class="method-name">render</a>
+											([<span class="var-type">int</span>&nbsp;<span class="var-name">$indent_level</span> = <span class="var-default">0</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$output_debug</span> = <span class="var-default">0</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setTabLine" title="details" class="method-name">setTabLine</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$display</span> = <span class="var-default">false</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_save_vars" title="details" class="method-name">set_save_vars</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$vars</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_add_line_spacing" title="details" class="method-name">_add_line_spacing</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_add_tab_spacer" title="details" class="method-name">_add_tab_spacer</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$last_spacer</span> = <span class="var-default">false</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_build_icons" title="details" class="method-name">_build_icons</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_build_save_vars" title="details" class="method-name">_build_save_vars</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_build_subtab" title="details" class="method-name">_build_subtab</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$tab_name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$subtab_name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">none</span>
+										<a href="#_build_subtab_ui" title="details" class="method-name">_build_subtab_ui</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_build_tab" title="details" class="method-name">_build_tab</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$tab_name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">none</span>
+										<a href="#_build_top_tab_ui" title="details" class="method-name">_build_top_tab_ui</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_build_url" title="details" class="method-name">_build_url</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$tab_name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$subtab_name</span> = <span class="var-default">null</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">Container</span>
+										<a href="#_invalid_tab" title="details" class="method-name">_invalid_tab</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_set_subtab_flag" title="details" class="method-name">_set_subtab_flag</a>
+											(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_icons" id="$_icons"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_icons</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">165</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">array of icons that have been added</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_icon_flag" id="$_icon_flag"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_icon_flag</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">170</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean to tell whether icons have been added</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_save_vars" id="$_save_vars"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_save_vars</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">141</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This holds a list of  name=&gt;value vars that the  caller/child wants to propogate  automatically.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_subtab_flag" id="$_subtab_flag"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_subtab_flag</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">147</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag to let us know we are a subtab</p>
+<p class="description"><p>list or not</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_tabs" id="$_tabs"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_tabs</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">127</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">array of tabs that have been added</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_tab_line_flag" id="$_tab_line_flag"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_tab_line_flag</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">175</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean to tell whether to display line after tab</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_tab_num" id="$_tab_num"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_tab_num</span>
+						(line <span class="line-number">116</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The number of tabs</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_tab_row" id="$_tab_row"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_tab_row</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">132</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">the TR object for the tabs</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_tab_selected" id="$_tab_selected"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_tab_selected</span>
+			 = <span class="var-default">null</span>			(line <span class="line-number">122</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The selected tab</p>
+<p class="description"><p>from the list</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_ui_wrapper" id="$_ui_wrapper"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_ui_wrapper</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">155</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The outer wrapper for the ui.</p>
+<p class="description"><p>So we can build top level and  sublevels</p></p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_valid_tab" id="$_valid_tab"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_valid_tab</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">160</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">valid selected tab?</p>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../phpHtmlLib/BaseWidget.html">BaseWidget</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpHtmlLib/BaseWidget.html#var$title">BaseWidget::$title</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpHtmlLib/BaseWidget.html#var$width">BaseWidget::$width</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../phpHtmlLib/BaseWidget.html#var$_image_prefix">BaseWidget::$_image_prefix</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodTabList" id="TabList"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor TabList</span> (line <span class="line-number">182</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The constructor.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">TabList</span>
+		<span class="method-name">
+			TabList
+		</span>
+					(<span class="var-type">the</span>&nbsp;<span class="var-name">$title</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">the</span>
+				<span class="var-name">$title</span><span class="var-description">: title of the tablist.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd" id="add"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add</span> (line <span class="line-number">219</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This public method adds a new tab to the table</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add
+		</span>
+					(<span class="var-type">title</span>&nbsp;<span class="var-name">&$tab_obj</span>, <span class="var-type">data</span>&nbsp;<span class="var-name">1</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">data</span>
+				<span class="var-name">1</span><span class="var-description">: object - data container for this tab</span>			</li>
+					<li>
+				<span class="var-type">title</span>
+				<span class="var-name">&$tab_obj</span><span class="var-description">: string - tab title</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../phpHtmlLib/Container.html#methodadd">Container::add()</a></dt>
+						<dd>add content onto content stack</dd>
+					</dl>
+			
+	</div>
+<a name="methodaddicon" id="addicon"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addicon</span> (line <span class="line-number">253</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Alias for add_icon</p>
+<p class="description"><p>Note, this method name does not follow the standard method naming  convention and has been deprecated</p></p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addicon
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$icon</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$icon</span><span class="var-description">: icon SRC to display</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$title</span><span class="var-description">: link verbage</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: link URL</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_icon" id="add_icon"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_icon</span> (line <span class="line-number">268</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This public method adds a new tab icon to the table</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_icon
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$icon</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$width</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$height</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$onclick</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$icon</span><span class="var-description">: icon SRC to display</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$title</span><span class="var-description">: link verbage</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: link URL</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$width</span><span class="var-description">: width of icon image</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$height</span><span class="var-description">: height of icon image</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$onclick</span><span class="var-description">: onclick javascript event handler for a tag</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_title" id="get_title"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_title</span> (line <span class="line-number">281</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return the title</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			get_title
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../phpHtmlLib/BaseWidget.html#methodget_title">BaseWidget::get_title()</a></dt>
+						<dd>Function for accessing the  title of this widget</dd>
+					</dl>
+			
+	</div>
+<a name="methodname" id="name"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">name</span> (line <span class="line-number">348</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method creates the name of the tab</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the tab name</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			name
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$title</span><span class="var-description">: - the tab display string</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodqueryvar" id="queryvar"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">queryvar</span> (line <span class="line-number">361</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method builds the query string  'tab_selected=&lt;name&gt;' for you  to place in a url</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> - the query var assigned to tab name</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			queryvar
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$title</span><span class="var-description">: - the tab title</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrender" id="render"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">render</span> (line <span class="line-number">193</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The render method</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the output html</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			render
+		</span>
+					([<span class="var-type">int</span>&nbsp;<span class="var-name">$indent_level</span> = <span class="var-default">0</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$output_debug</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$indent_level</span><span class="var-description">: the html indentation level</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$output_debug</span><span class="var-description">: the html debug level</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../phpHtmlLib/Container.html#methodrender">Container::render()</a></dt>
+						<dd>This function is compatible with the  rest of the phpHtmllib API spec.</dd>
+					</dl>
+			
+	</div>
+<a name="methodsetTabLine" id="setTabLine"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setTabLine</span> (line <span class="line-number">210</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets display line after tab</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setTabLine
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$display</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$display</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_save_vars" id="set_save_vars"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_save_vars</span> (line <span class="line-number">293</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function sets the save variables  that the user/child wants to automatically  propogate</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_save_vars
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$vars</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$vars</span><span class="var-description">: - name=&gt;value pairs of the data                 that they want to propogate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_add_line_spacing" id="_add_line_spacing"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_add_line_spacing</span> (line <span class="line-number">642</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method adds a new spacing between the tabs and the tab contents</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_add_line_spacing
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_add_tab_spacer" id="_add_tab_spacer"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_add_tab_spacer</span> (line <span class="line-number">570</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method adds a new spacer in between  the tabs.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_add_tab_spacer
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$last_spacer</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$last_spacer</span><span class="var-description">: - is this the last spacer?</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_build_icons" id="_build_icons"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_icons</span> (line <span class="line-number">607</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method builds the icons to the right of the tabs</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_build_icons
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_build_save_vars" id="_build_save_vars"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_save_vars</span> (line <span class="line-number">304</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">this function builds a partial  query string with the  $this-&gt;_save_vars</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_build_save_vars
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_build_subtab" id="_build_subtab"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_subtab</span> (line <span class="line-number">538</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method builds a single subtab</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_build_subtab
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$tab_name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$subtab_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$title</span><span class="var-description">: the title</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tab_name</span><span class="var-description">: the tab name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$subtab_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_build_subtab_ui" id="_build_subtab_ui"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_subtab_ui</span> (line <span class="line-number">441</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method builds the outer wrapper UI  for the subtab</p>
+	
+	<div class="method-signature">
+		<span class="method-result">none</span>
+		<span class="method-name">
+			_build_subtab_ui
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_build_tab" id="_build_tab"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_tab</span> (line <span class="line-number">499</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method is used to build a top level  tab</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_build_tab
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$tab_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$title</span><span class="var-description">: - the tab title</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$tab_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_build_top_tab_ui" id="_build_top_tab_ui"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_top_tab_ui</span> (line <span class="line-number">372</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method builds the outer wrapper UI  for the top level tab list.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">none</span>
+		<span class="method-name">
+			_build_top_tab_ui
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_build_url" id="_build_url"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_url</span> (line <span class="line-number">323</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">this private function builds the url  for the main tab script and adss the  needed query string params</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> url</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_build_url
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$tab_name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$subtab_name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tab_name</span><span class="var-description">: - the tab name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$subtab_name</span><span class="var-description">: - the subtab name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_invalid_tab" id="_invalid_tab"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_invalid_tab</span> (line <span class="line-number">599</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method builds a message for an invalid  selected tab/subtab</p>
+	
+	<div class="method-signature">
+		<span class="method-result">Container</span>
+		<span class="method-name">
+			_invalid_tab
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_set_subtab_flag" id="_set_subtab_flag"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_set_subtab_flag</span> (line <span class="line-number">338</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method is used to set the  subtab bit</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_set_subtab_flag
+		</span>
+					(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$flag</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../phpHtmlLib/BaseWidget.html">BaseWidget</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodget_align">BaseWidget::get_align()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodget_css">BaseWidget::get_css()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodget_javascript">BaseWidget::get_javascript()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodget_title">BaseWidget::get_title()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodget_width">BaseWidget::get_width()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodset_align">BaseWidget::set_align()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodset_image_path_prefix">BaseWidget::set_image_path_prefix()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodset_title">BaseWidget::set_title()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/BaseWidget.html#methodset_width">BaseWidget::set_width()</a></span><br>
+											</blockquote>
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../phpHtmlLib/Container.html">Container</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodContainer">Container::Container()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodadd">Container::add()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodadd_reference">Container::add_reference()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodcount_content">Container::count_content()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodget_element">Container::get_element()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodget_indent_flag">Container::get_indent_flag()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodpush">Container::push()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodpush_reference">Container::push_reference()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodrender">Container::render()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodreset_content">Container::reset_content()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodset_collapse">Container::set_collapse()</a></span><br>
+													<span class="method-name"><a href="../phpHtmlLib/Container.html#methodset_indent_flag">Container::set_indent_flag()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 28 Jan 2011 08:53:24 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

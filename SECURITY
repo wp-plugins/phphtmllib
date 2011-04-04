@@ -1,0 +1,23 @@
+#
+# $Id: SECURITY 1170 2004-03-08 20:27:03Z culley $
+#
+# DESCRIPTION
+#   These are the apache directives to "lock down" phphtmllib after installation in 
+#   the web root on your production machine.  This doesn't *have* to happen-- no 
+#   critical information will be displayed if it is not done.
+#
+# USAGE
+#   1. rename this file to .htaccess (for this to work AllowOverride All needs to be set some-
+#      where in httpd.conf) You can also place these directives in the appropriate directory 
+#      block in your httpd.conf file if you have access.
+#   2. You can delete these directories:  test, doc, examples.  They are not needed in production.
+# 
+#
+
+<files *.inc>
+    Deny from All
+</files>
+
+<files ~ "(CHANGELOG|INSTALL|LICENSE|TODO)">
+    Deny from All
+</files>

@@ -1,0 +1,2100 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class FormValidation</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class FormValidation</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is the base validation class that  contains some basic FormElement validation  methods.</p>
+		<p class="notes">
+			Located in <a class="field" href="_form---FormValidation.inc.html">/form/FormValidation.inc</a> (line <span class="field">33</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_error_code" title="details" class="var-name">$_error_code</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_error_message" title="details" class="var-name">$_error_message</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_FormErrors" title="details" class="var-name">$_FormErrors</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+				<div class="method-definition">
+											<span class="method-result">FormValidation</span>
+										<a href="#FormValidation" title="details" class="method-name">FormValidation</a>
+											(<span class="var-type"><a href="../../phpHtmlLib/FormProcessing/FormErrors.html">FormErrors</a></span>&nbsp;<span class="var-name">&$error_obj</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#array_hasempty" title="details" class="method-name">array_hasempty</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$a</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_error_code" title="details" class="method-name">get_error_code</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#get_error_message" title="details" class="method-name">get_error_message</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#is_alphanum" title="details" class="method-name">is_alphanum</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$from</span> = <span class="var-default">&quot;&quot;</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_alphanumstring" title="details" class="method-name">is_alphanumstring</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_ccexp" title="details" class="method-name">is_ccexp</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$split_by</span> = <span class="var-default">&quot;-&quot;</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_companyname" title="details" class="method-name">is_companyname</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_confirm_password" title="details" class="method-name">is_confirm_password</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$confirmpassword</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$password</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_countrycode" title="details" class="method-name">is_countrycode</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_date" title="details" class="method-name">is_date</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$split_by</span> = <span class="var-default">&quot;-&quot;</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_dateday" title="details" class="method-name">is_dateday</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$day</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_datemonth" title="details" class="method-name">is_datemonth</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$month</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_datetime" title="details" class="method-name">is_datetime</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_dateyear" title="details" class="method-name">is_dateyear</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$year</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_domainname" title="details" class="method-name">is_domainname</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$forbid_www</span> = <span class="var-default">FALSE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_email" title="details" class="method-name">is_email</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$allow_name</span> = <span class="var-default">true</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_firstname" title="details" class="method-name">is_firstname</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$firstname</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_float" title="details" class="method-name">is_float</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$number</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_higherzeronumber" title="details" class="method-name">is_higherzeronumber</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#is_host" title="details" class="method-name">is_host</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$host</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_hostemail" title="details" class="method-name">is_hostemail</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_hostip" title="details" class="method-name">is_hostip</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$hostip</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#is_hostlist" title="details" class="method-name">is_hostlist</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$hostlist</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_hostname" title="details" class="method-name">is_hostname</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_ip" title="details" class="method-name">is_ip</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$ip</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_lastname" title="details" class="method-name">is_lastname</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$lastname</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_leapyear" title="details" class="method-name">is_leapyear</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$yyyy</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_manyemails" title="details" class="method-name">is_manyemails</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$emails</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_money" title="details" class="method-name">is_money</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$money</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_name" title="details" class="method-name">is_name</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$maxsize</span> = <span class="var-default">VALIDATE_MAXSIZE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_notempty" title="details" class="method-name">is_notempty</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#is_num" title="details" class="method-name">is_num</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$from</span> = <span class="var-default">&quot;&quot;</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_number" title="details" class="method-name">is_number</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_partial_domainname" title="details" class="method-name">is_partial_domainname</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_partial_ip" title="details" class="method-name">is_partial_ip</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$ip</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_password" title="details" class="method-name">is_password</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_path" title="details" class="method-name">is_path</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_price" title="details" class="method-name">is_price</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$price</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#is_range" title="details" class="method-name">is_range</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$value</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$size</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$min</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$max</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_regex" title="details" class="method-name">is_regex</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_standalone_hostname" title="details" class="method-name">is_standalone_hostname</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_strict_url" title="details" class="method-name">is_strict_url</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_time" title="details" class="method-name">is_time</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_title" title="details" class="method-name">is_title</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_url" title="details" class="method-name">is_url</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_urlpath" title="details" class="method-name">is_urlpath</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_username" title="details" class="method-name">is_username</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_valid_domain" title="details" class="method-name">is_valid_domain</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$domain_value</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$allow_www</span> = <span class="var-default">false</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_within_range" title="details" class="method-name">is_within_range</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$size</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$start</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$end</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$error</span> = <span class="var-default">FALSE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_zero_onehundred" title="details" class="method-name">is_zero_onehundred</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">TRUE</span>
+										<a href="#is_zip" title="details" class="method-name">is_zip</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$zip</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../../phpHtmlLib/FormProcessing/FormValidation.html">FormValidation</a></span>
+										<a href="#singleton" title="details" class="method-name">&amp;singleton</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">FALSE</span>
+										<a href="#_error" title="details" class="method-name">_error</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$message</span> = <span class="var-default">NULL</span>])
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_error_code" id="$_error_code"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_error_code</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">38</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This holds the last error code found</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_error_message" id="$_error_message"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_error_message</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">43</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This holds the last error message</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_FormErrors" id="$_FormErrors"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_FormErrors</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">48</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is the FormErrors object</p>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodFormValidation" id="FormValidation"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor FormValidation</span> (line <span class="line-number">58</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The constructor used to set the  form errors object used by this class  to do error text lookups</p>
+	
+	<div class="method-signature">
+		<span class="method-result">FormValidation</span>
+		<span class="method-name">
+			FormValidation
+		</span>
+					(<span class="var-type"><a href="../../phpHtmlLib/FormProcessing/FormErrors.html">FormErrors</a></span>&nbsp;<span class="var-name">&$error_obj</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../phpHtmlLib/FormProcessing/FormErrors.html">FormErrors</a></span>
+				<span class="var-name">&$error_obj</span><span class="var-description">: object</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodarray_hasempty" id="array_hasempty"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">array_hasempty</span> (line <span class="line-number">87</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method checks to make sure an array doesn't have  an empty element.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			array_hasempty
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$a</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$a</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_error_code" id="get_error_code"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_error_code</span> (line <span class="line-number">127</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method returns the error code from the  last validation error found.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_error_code
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodget_error_message" id="get_error_message"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_error_message</span> (line <span class="line-number">138</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method returns the error  message from the last validation  error found.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			get_error_message
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodis_alphanum" id="is_alphanum"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_alphanum</span> (line <span class="line-number">170</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function checks if the given string contains  alphabetical characters or numbers.</p>
+<p class="description"><p>It also checks for the allowed additional characters.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> FALSE - if any other extraneous                          characters are found                  TRUE upon succes.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			is_alphanum
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$from</span> = <span class="var-default">&quot;&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: - the string to check</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$from</span><span class="var-description">: - list of individual characters to allow                  besides a-zA-Z</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_alphanumstring" id="is_alphanumstring"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_alphanumstring</span> (line <span class="line-number">288</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method validates a string as containing  only letters and numbers</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_alphanumstring
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_ccexp" id="is_ccexp"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_ccexp</span> (line <span class="line-number">1045</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This tests a string as a valid  credit card expiration date.</p>
+<p class="description"><p>You can pass in an optional date delimiter  string.  The default is -</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_ccexp
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$split_by</span> = <span class="var-default">&quot;-&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: - the value to validate</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$split_by</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_companyname" id="is_companyname"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_companyname</span> (line <span class="line-number">659</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This validates a string as a valid Company name.</p>
+<p class="description"><p>It is the same as is_name, with the exception  of allowing .</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_companyname
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_confirm_password" id="is_confirm_password"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_confirm_password</span> (line <span class="line-number">715</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This makes sure that 2 password strings are exactly alike.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_confirm_password
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$confirmpassword</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$password</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$confirmpassword</span><span class="var-description">: - the value to validate</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$password</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_countrycode" id="is_countrycode"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_countrycode</span> (line <span class="line-number">1076</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This validates a string as a valid &quot;country code&quot;  which is a 2 alphanumerical character string</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_countrycode
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_date" id="is_date"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_date</span> (line <span class="line-number">861</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This validates a atring as a valid date format  You can provide a seperator string that seperates  the fields</p>
+<p class="description"><p>NOTE: date is in YYYY-MO-DY format</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_date
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$split_by</span> = <span class="var-default">&quot;-&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: - the value to validate</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$split_by</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_dateday" id="is_dateday"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_dateday</span> (line <span class="line-number">900</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This validates a string as a valid day of a month  It has to be greater then 0 and less then 31</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_dateday
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$day</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$day</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_datemonth" id="is_datemonth"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_datemonth</span> (line <span class="line-number">913</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This validates a string as a valid month of the year  between 1 and 12 inclusive  is_datemonth - checks whether its a proper month</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_datemonth
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$month</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$month</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_datetime" id="is_datetime"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_datetime</span> (line <span class="line-number">946</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This validates an array of values as a  valid date time</p>
+<p class="description"><p>NOTE: array must contain        array(              &quot;month&quot; =&gt; VALUE,              &quot;day&quot; =&gt; VALUE,              &quot;year&quot; =&gt; VALUE,              &quot;hour&quot; =&gt; VALUE,              &quot;minutes&quot; =&gt; VALUE,              &quot;seconds&quot; =&gt; VALUE);</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_datetime
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_dateyear" id="is_dateyear"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_dateyear</span> (line <span class="line-number">925</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">See if the year is within  1800 and 3000</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_dateyear
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$year</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$year</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_domainname" id="is_domainname"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_domainname</span> (line <span class="line-number">335</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method validates a string for a valid  hostname for a machine.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_domainname
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$forbid_www</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - the value to validate</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$forbid_www</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_email" id="is_email"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_email</span> (line <span class="line-number">749</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function validates a single email address.</p>
+<p class="description"><p>It supports email addresses in the format of  jane@blah.com or &quot;Jane Doe &lt;jane@blah.com&gt;&quot;</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_email
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$allow_name</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span><span class="var-description">: - the value to validate</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$allow_name</span><span class="var-description">: - allows long email name format</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_firstname" id="is_firstname"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_firstname</span> (line <span class="line-number">1005</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is just a wrapper for</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_firstname
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$firstname</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$firstname</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_float" id="is_float"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_float</span> (line <span class="line-number">537</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method validates a string as a valid  float formatted number.  x.xx</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_float
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$number</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$number</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_higherzeronumber" id="is_higherzeronumber"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_higherzeronumber</span> (line <span class="line-number">585</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method validates a string as a number  greater then 0.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_higherzeronumber
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_host" id="is_host"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_host</span> (line <span class="line-number">1186</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">no comment</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			is_host
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$host</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$host</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_hostemail" id="is_hostemail"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_hostemail</span> (line <span class="line-number">731</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method tests a string as a valid  hostname value or a valid email string</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_hostemail
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_hostip" id="is_hostip"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_hostip</span> (line <span class="line-number">455</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method tries to validate a string  as a valid IP address or a hostname</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_hostip
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$hostip</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$hostip</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_hostlist" id="is_hostlist"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_hostlist</span> (line <span class="line-number">1194</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">no comment</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			is_hostlist
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$hostlist</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$hostlist</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_hostname" id="is_hostname"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_hostname</span> (line <span class="line-number">379</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is just a wrapper for is_domainname</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_hostname
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_ip" id="is_ip"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_ip</span> (line <span class="line-number">391</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This validates a string as an IP address  This should work with either IPv4 or IPv6</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_ip
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$ip</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ip</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_lastname" id="is_lastname"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_lastname</span> (line <span class="line-number">1016</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is just a wrapper for</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_lastname
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$lastname</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$lastname</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_leapyear" id="is_leapyear"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_leapyear</span> (line <span class="line-number">843</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method validates a string as a  leap year.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_leapyear
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$yyyy</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$yyyy</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_manyemails" id="is_manyemails"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_manyemails</span> (line <span class="line-number">822</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function tests a string that may  contain many email addresses seperated by  commas</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_manyemails
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$emails</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$emails</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_money" id="is_money"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_money</span> (line <span class="line-number">489</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method tests a string to make sure it is  in a valid money format.</p>
+<p class="description"><p>either $x or $x.cents</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_money
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$money</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$money</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_name" id="is_name"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_name</span> (line <span class="line-number">637</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This validates a string as a valid proper name.</p>
+<p class="description"><p>The string can't be longer then VALIDATE_MAXSIZE in  length, and it can only contain letters and numbers</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_name
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$maxsize</span> = <span class="var-default">VALIDATE_MAXSIZE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - the value to validate</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$maxsize</span><span class="var-description">: - the maximum allowable length               DEFAULT : VALIDATE_MAXSIZE</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_notempty" id="is_notempty"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_notempty</span> (line <span class="line-number">150</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function makes sure the  data is not empty</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = not empty</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_notempty
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_num" id="is_num"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_num</span> (line <span class="line-number">204</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function checks if the given string contains  numerical digit characters.</p>
+<p class="description"><p>It also checks for the allowed additional characters.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> FALSE - if any other extraneous                          characters are found                  TRUE upon succes.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			is_num
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$from</span> = <span class="var-default">&quot;&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: - the string to check</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$from</span><span class="var-description">: - list of individual characters to allow                  besides a-zA-Z</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_number" id="is_number"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_number</span> (line <span class="line-number">473</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This tests a string to make sure it is a  valid number.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_number
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_partial_domainname" id="is_partial_domainname"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_partial_domainname</span> (line <span class="line-number">353</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method validates a string for a valid  partial hostname for a machine.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_partial_domainname
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_partial_ip" id="is_partial_ip"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_partial_ip</span> (line <span class="line-number">426</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This validates a string as a portion  of an  IP address.</p>
+<p class="description"><p>This should work with either IPv4 or IPv6</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_partial_ip
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$ip</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$ip</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_password" id="is_password"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_password</span> (line <span class="line-number">700</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This tries to validate a string as a password  It can't be empty and has to be less then  VALIDATE_MAXSIZE characters in length</p>
+<p class="description"><p>NOTE: password is case sensitive, and spaces are        ignored.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_password
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$password</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_path" id="is_path"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_path</span> (line <span class="line-number">602</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method validates a string as a  path to a file.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_path
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$path</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_price" id="is_price"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_price</span> (line <span class="line-number">515</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method tries to validate a string as  a valid price.  It can't be zero (a la free!)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_price
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$price</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$price</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_range" id="is_range"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_range</span> (line <span class="line-number">241</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">is_range</p>
+<p class="description"><p>This is the range check that the can be used in checks_array.  Valarray should be:     array('val'  =&gt; $val,           'size' =&gt; $size  OPTIONAL           'min'  =&gt; $min,           'max'  =&gt; $max,           )</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			is_range
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$value</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$size</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$min</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$max</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$value</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$size</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$min</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$max</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_regex" id="is_regex"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_regex</span> (line <span class="line-number">1211</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validate if the string matches a regex</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_regex
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$regex</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$str</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$regex</span><span class="var-description">: - the regex string</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$str</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_standalone_hostname" id="is_standalone_hostname"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_standalone_hostname</span> (line <span class="line-number">303</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">this method tests to see if this is a valid  hostname value minus the domain name portion.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_standalone_hostname
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_strict_url" id="is_strict_url"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_strict_url</span> (line <span class="line-number">1133</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method validates a strict url.</p>
+<p class="description"><p>It is the same as is_url, except that it requires  the prefix http://</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_strict_url
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_time" id="is_time"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_time</span> (line <span class="line-number">978</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This validates an array of fields as a  valid time of the day</p>
+<p class="description"><p>NOTE: array must contain        array(              &quot;hour&quot; =&gt; VALUE,              &quot;minutes&quot; =&gt; VALUE,              &quot;seconds&quot; =&gt; VALUE);</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_time
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_title" id="is_title"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_title</span> (line <span class="line-number">1151</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validate if the string is a good candidate  to become an Title</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_title
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_url" id="is_url"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_url</span> (line <span class="line-number">1094</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method validates a string as a valid url  It inclues the prefix, hostname/ip, port number  and path.</p>
+<p class="description"><p>NOTE: format is in        [http://] hostip [:port number] [path]</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_url
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_urlpath" id="is_urlpath"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_urlpath</span> (line <span class="line-number">618</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method validates a string as a valid  url path to a file</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_urlpath
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$path</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_username" id="is_username"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_username</span> (line <span class="line-number">674</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method tests to see if a string value</p>
+<p class="description"><p>is a valid 'account' name.  The string can't  be larger then VALIDATE_MAXSIZE, and can only  contain alphanum characters</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_username
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$username</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_valid_domain" id="is_valid_domain"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_valid_domain</span> (line <span class="line-number">1166</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validate domain  Will check if a domain is valid</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_valid_domain
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$domain_value</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$allow_www</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$domain_value</span><span class="var-description">: - the value to validate</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$allow_www</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_within_range" id="is_within_range"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_within_range</span> (line <span class="line-number">260</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method makes sure a value lies within  a given range of values.</p>
+<p class="description"><p>The error message can be customized by passing in  a customer error code</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_within_range
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$size</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$start</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$end</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$error</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$value</span><span class="var-description">: - the value u want to check</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$size</span><span class="var-description">: - the size</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$start</span><span class="var-description">: - the lower bound value</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$end</span><span class="var-description">: - the upper bound value</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$error</span><span class="var-description">: - the error code if any</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_zero_onehundred" id="is_zero_onehundred"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_zero_onehundred</span> (line <span class="line-number">564</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This validates a string as a valid number  between 0 and 100</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_zero_onehundred
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_zip" id="is_zip"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_zip</span> (line <span class="line-number">1029</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This validates a string as a valid zipcode</p>
+<p class="description"><p>numbers, whitespace allowed</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> = succes  FALSE = failed</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">TRUE</span>
+		<span class="method-name">
+			is_zip
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$zip</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$zip</span><span class="var-description">: - the value to validate</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsingleton" id="singleton"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">singleton</span> (line <span class="line-number">70</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A singleton method for only  creating one instance of this  per request.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> object</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../phpHtmlLib/FormProcessing/FormValidation.html">FormValidation</a></span>
+		<span class="method-name">
+			&amp;singleton
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_error" id="_error"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_error</span> (line <span class="line-number">108</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A wrapper method to set the error message and  error code before returning FALSE</p>
+	
+	<div class="method-signature">
+		<span class="method-result">FALSE</span>
+		<span class="method-name">
+			_error
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$message</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$code</span><span class="var-description">: - error code</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$message</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 28 Jan 2011 08:53:07 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>

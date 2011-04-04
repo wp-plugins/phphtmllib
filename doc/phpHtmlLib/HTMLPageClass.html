@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class HTMLPageClass</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class HTMLPageClass</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">class the constructs and renders an entire  HTML/XHTML document.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Walter A. Boring IV &lt;<a href="mailto:waboring@newsblob.com">waboring@newsblob.com</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_widgets---HTMLPageClass.inc.html">/widgets/HTMLPageClass.inc</a> (line <span class="field">26</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../phpHtmlLib/PageWidget.html">PageWidget</a></td>
+					<td>
+											This class is used to build content  for an entire page.  It uses the  HTMLPageClass widget from phphtmllib  to render the final output.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../phpHtmlLib/HTMLRedirectPage.html">HTMLRedirectPage</a></td>
+					<td>
+											This builds an entire HTML Page  with the sole purpose of doing a redirect to another url.
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_favicon" title="details" class="var-name">$_favicon</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_html_attributes" title="details" class="var-name">$_html_attributes</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$_html_render_type" title="details" class="var-name">$_html_render_type</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$_indent_style" title="details" class="var-name">$_indent_style</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_widget_css_auto" title="details" class="var-name">$_widget_css_auto</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_widget_js_auto" title="details" class="var-name">$_widget_js_auto</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$_xml_encoding" title="details" class="var-name">$_xml_encoding</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																														
+				<div class="method-definition">
+											<span class="method-result">HTMLPageClass</span>
+										<a href="#HTMLPageClass" title="details" class="method-name">HTMLPageClass</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$title</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$html_type</span> = <span class="var-default">HTML</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$indent_style</span> = <span class="var-default">INDENT_NICE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add" title="details" class="method-name">add</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_css_link" title="details" class="method-name">add_css_link</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$link</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$media</span> = <span class="var-default">FALSE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_head_content" title="details" class="method-name">add_head_content</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">0</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_head_css" title="details" class="method-name">add_head_css</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$css</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_head_js" title="details" class="method-name">add_head_js</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$content</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_js_link" title="details" class="method-name">add_js_link</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$link</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_reference" title="details" class="method-name">add_reference</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$content</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$content</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#build_doctype" title="details" class="method-name">build_doctype</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$link1</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$link2</span> = <span class="var-default">NULL</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">array();</span>
+										<a href="#get_html_attributes" title="details" class="method-name">get_html_attributes</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#push" title="details" class="method-name">push</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#push_css_link" title="details" class="method-name">push_css_link</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$link</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#push_head_content" title="details" class="method-name">push_head_content</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#push_head_js" title="details" class="method-name">push_head_js</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$content</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#push_js_link" title="details" class="method-name">push_js_link</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$link</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#push_reference" title="details" class="method-name">push_reference</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$content</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#render" title="details" class="method-name">render</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_body_attributes" title="details" class="method-name">set_body_attributes</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$attributes</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_charset" title="details" class="method-name">set_charset</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_encoding" title="details" class="method-name">set_encoding</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$encoding</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_favicon" title="details" class="method-name">set_favicon</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;image/x-ico&quot;</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_favicon_flag" title="details" class="method-name">set_favicon_flag</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_frameset" title="details" class="method-name">set_frameset</a>
+											(<span class="var-type"><a href="../phpHtmlLib/FRAMESETtag.html">FRAMESETtag</a></span>&nbsp;<span class="var-name">$frameset</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_html_attributes" title="details" class="method-name">set_html_attributes</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$attributes</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_language" title="details" class="method-name">set_language</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$language</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_refresh" title="details" class="method-name">set_refresh</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$time</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span> = <span class="var-default">NULL</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_text_debug" title="details" class="method-name">set_text_debug</a>
+											(<span class="var-type">$flag</span>&nbsp;<span class="var-name">$flag</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set_title" title="details" class="method-name">set_title</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$title</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_build_content_type_tag" title="details" class="method-name">_build_content_type_tag</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_build_head" title="details" class="method-name">_build_head</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_create_body" title="details" class="method-name">_create_body</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result"><a href="../phpHtmlLib/NOFRAMEStag.html">NOFRAMEStag</a></span>
+										<a href="#_frameset_wrap_body" title="details" class="method-name">_frameset_wrap_body</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_favicon" id="$_favicon"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_favicon</span>
+			 = <span class="var-default">array(&quot;href&quot; =&gt; &quot;/favicon.ico&quot;,<br />                          &quot;type&quot; =&gt; &quot;images/x-ico&quot;,<br />                          &quot;enabled&quot; =&gt; FALSE)</span>			(line <span class="line-number">171</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The favicon params</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_html_attributes" id="$_html_attributes"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_html_attributes</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">131</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This holds the attributes for the  &lt;html&gt; tag.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_html_render_type" id="$_html_render_type"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_html_render_type</span>
+			 = <span class="var-default"> HTML</span>			(line <span class="line-number">165</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">keeps track of the html  render type.</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_indent_style" id="$_indent_style"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$_indent_style</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">157</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Holds the value of the indent  style the user wants to render  the page w/</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_widget_css_auto" id="$_widget_css_auto"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_widget_css_auto</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">139</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">keeps track of which widgets we have  automatically pulled in css for</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_widget_js_auto" id="$_widget_js_auto"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_widget_js_auto</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">147</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">keeps track of which widgets we have  automatically pulled in js for</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$_xml_encoding" id="$_xml_encoding"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_xml_encoding</span>
+			 = <span class="var-default"> &quot;UTF-8&quot;</span>			(line <span class="line-number">75</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The encoding of the XHTML</p>
+<p class="description"><p>XML tag</p></p>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodHTMLPageClass" id="HTMLPageClass"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor HTMLPageClass</span> (line <span class="line-number">201</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Class Constructor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">HTMLPageClass</span>
+		<span class="method-name">
+			HTMLPageClass
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$title</span> = <span class="var-default">NULL</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$html_type</span> = <span class="var-default">HTML</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$indent_style</span> = <span class="var-default">INDENT_NICE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$title</span><span class="var-description">: - $title Title string or TITLEtag object for the page.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$html_type</span><span class="var-description">: - one of 3 types of html to render.  Setting this will                    make the object declare the gobal define which tells                    all of the tag objects what type of html tags to render.                    some tags support special features.  such as the &lt;IMG&gt;                    tag.  If xhtml is selected, the the IMGtag object and all                    utility functions will not render &quot;border=0&quot; as a default                    attribute, since this is not proper xhtml.                    &quot;html&quot; - HTML 4.0 (default)                    &quot;xhtml_transitional&quot; - render xhtml instead of html <ul><li>doctype is XHTML transitional.</li></ul>                   &quot;xhtml_strict&quot; - render xhtml instead of html 4.0. <ul><li>doctype is XHTML strict.</li></ul></span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$indent_style</span><span class="var-description">: - one of 2 types.  INDENT_NICE or INDENT_LEFT_JUSTIFY                   This tells the page how to render the indenting of the                   output.  By default it is set to INDENT_NICE, which nicely                   indents each nested tag.  You can have all tags rendered                   left justified (smaller size in output) by using                   INDENT_LEFT_JUSTIFY</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd" id="add"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add</span> (line <span class="line-number">509</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function adds content to the &lt;body&gt;  area of the page.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">0</span><span class="var-description">: - any # of parameters</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_css_link" id="add_css_link"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_css_link</span> (line <span class="line-number">333</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">pushes a css external reference to the head area</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_css_link
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$link</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$media</span> = <span class="var-default">FALSE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$link</span><span class="var-description">: - link tag object or $url for a css.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$media</span><span class="var-description">: the media attribute (if any)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_head_content" id="add_head_content"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_head_content</span> (line <span class="line-number">261</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">this adds content to the head tag  of the page</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_head_content
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">0</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">0</span><span class="var-description">: - any content to add</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_head_css" id="add_head_css"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_head_css</span> (line <span class="line-number">305</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">this function adds raw css to the  &lt;head&gt; tag.  It will automatically  be wrapped in a &lt;style type=&quot;text/css&quot;&gt;</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_head_css
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$css</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$css</span><span class="var-description">: - the raw css</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_head_js" id="add_head_js"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_head_js</span> (line <span class="line-number">285</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">adds raw javascript to the head which  will automatically get wrapped in a  &lt;script language=&quot;JavaScript&quot;&gt; tag.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_head_js
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$content</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$content</span><span class="var-description">: - raw javascript code to add to the head</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_js_link" id="add_js_link"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_js_link</span> (line <span class="line-number">361</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This adds a link to an external Javascript  file, which will get rendered in the head.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_js_link
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$link</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$link</span><span class="var-description">: - script tag object or $url of .js file.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_reference" id="add_reference"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_reference</span> (line <span class="line-number">546</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds the content reference to the &lt;body&gt;  tag for later use.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_reference
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$content</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$content</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$content</span><span class="var-description">: - content to add</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$content</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbuild_doctype" id="build_doctype"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">build_doctype</span> (line <span class="line-number">595</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to build the DOCTYPE</p>
+<p class="description"><p>tag for the page.  It will automatically  create a DOCTYPE with a document_element of &quot;html&quot;  and a source of &quot;PUBLIC&quot;</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			build_doctype
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$link1</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$link2</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$link1</span><span class="var-description">: - link1</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$link2</span><span class="var-description">: - link2</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_html_attributes" id="get_html_attributes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_html_attributes</span> (line <span class="line-number">445</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function returns the  attributes to be used for the  &lt;html&gt; tag.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">array();</span>
+		<span class="method-name">
+			get_html_attributes
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodpush" id="push"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">push</span> (line <span class="line-number">535</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Same as add()</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> - use add()</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			push
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodpush_css_link" id="push_css_link"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">push_css_link</span> (line <span class="line-number">350</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Same ass add_css_link()</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> - use add_css_link();</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			push_css_link
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$link</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$link</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodpush_head_content" id="push_head_content"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">push_head_content</span> (line <span class="line-number">273</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Same ass add_head_content()</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> - use add_head_content();</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			push_head_content
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodpush_head_js" id="push_head_js"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">push_head_js</span> (line <span class="line-number">294</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Same ass add_head_js()</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> - use add_head_js();</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			push_head_js
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$content</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$content</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodpush_js_link" id="push_js_link"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">push_js_link</span> (line <span class="line-number">375</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">same as add_js_link()</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			push_js_link
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$link</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$link</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodpush_reference" id="push_reference"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">push_reference</span> (line <span class="line-number">556</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Same as add()</p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> - use add()</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			push_reference
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$content</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$content</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrender" id="render"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">render</span> (line <span class="line-number">662</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">render the page.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the raw html output.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			render
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../phpHtmlLib/PageWidget.html#methodrender">PageWidget::render()</a>
+								: This is the function that renders the HTML  for this widget.
+							</li>
+				</ul>
+	</div>
+<a name="methodset_body_attributes" id="set_body_attributes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_body_attributes</span> (line <span class="line-number">579</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">set attributes of body tag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_body_attributes
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$attributes</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$attributes</span><span class="var-description">: the name=&gt;value pairs</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_charset" id="set_charset"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_charset</span> (line <span class="line-number">396</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">set the character set</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_charset
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$charset</span><span class="var-description">: - the charset for the meta tag</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_encoding" id="set_encoding"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_encoding</span> (line <span class="line-number">406</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This sets the encoding type for  XHTML documents</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_encoding
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$encoding</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encoding</span><span class="var-description">: - the encoding parameter</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_favicon" id="set_favicon"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_favicon</span> (line <span class="line-number">492</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This allows you to change the default url/path  for where the favicon.ico lives.</p>
+<p class="description"><p>NOTE: calling this method automatically enables the        link in the head to be created.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_favicon
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;image/x-ico&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$path</span><span class="var-description">: the url to the favicon.ico file</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: the type of the image.                NOTE: Default is image/x-ico</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_favicon_flag" id="set_favicon_flag"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_favicon_flag</span> (line <span class="line-number">478</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is used to enable the ability to add the  favicon link in the head of the document.</p>
+<p class="description"><p>By default it is off.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_favicon_flag
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$flag</span><span class="var-description">: TRUE = enable</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_frameset" id="set_frameset"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_frameset</span> (line <span class="line-number">429</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is used to set the FRAMSETtag  object for this page.  This automatically  sets the output for this page object to  be a frameset.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_frameset
+		</span>
+					(<span class="var-type"><a href="../phpHtmlLib/FRAMESETtag.html">FRAMESETtag</a></span>&nbsp;<span class="var-name">$frameset</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../phpHtmlLib/FRAMESETtag.html">FRAMESETtag</a></span>
+				<span class="var-name">$frameset</span><span class="var-description">: object - $frameset</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_html_attributes" id="set_html_attributes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_html_attributes</span> (line <span class="line-number">457</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function sets the attributes  for the &lt;html&gt; tag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_html_attributes
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$attributes</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$attributes</span><span class="var-description">: - the name=&gt;value                 pair for the                attributes</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_language" id="set_language"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_language</span> (line <span class="line-number">416</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method sets the lang, and xml:lang  setting in the HTML tag.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_language
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$language</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$language</span><span class="var-description">: - the language</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_refresh" id="set_refresh"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_refresh</span> (line <span class="line-number">384</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Automatically set a page meta tag refresh</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_refresh
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$time</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span> = <span class="var-default">NULL</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$time</span><span class="var-description">: - time in seconds to refresh</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: - the url to go to.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_text_debug" id="set_text_debug"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_text_debug</span> (line <span class="line-number">607</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">set the $_text_debug flag</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_text_debug
+		</span>
+					(<span class="var-type">$flag</span>&nbsp;<span class="var-name">$flag</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$flag</span>
+				<span class="var-name">$flag</span><span class="var-description">: - boolean.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_title" id="set_title"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_title</span> (line <span class="line-number">315</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">set the title of the page output.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set_title
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$title</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$title</span><span class="var-description">: - the title of the html page                           can be TITLEtag object.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_build_content_type_tag" id="_build_content_type_tag"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_content_type_tag</span> (line <span class="line-number">466</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">this builds the content type meta tag.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_build_content_type_tag
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_build_head" id="_build_head"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_build_head</span> (line <span class="line-number">620</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">builds the head object and its content.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_build_head
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_create_body" id="_create_body"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_create_body</span> (line <span class="line-number">567</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is responsible for creating the  BODYtag object.  We only will  create a new $this-&gt;_body if it doesn't  already exist.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_create_body
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_frameset_wrap_body" id="_frameset_wrap_body"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_frameset_wrap_body</span> (line <span class="line-number">648</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This builds a frameset body tag  wrapped in a &lt;noframes&gt; tag.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> object.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../phpHtmlLib/NOFRAMEStag.html">NOFRAMEStag</a></span>
+		<span class="method-name">
+			_frameset_wrap_body
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Fri, 28 Jan 2011 08:53:08 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>
