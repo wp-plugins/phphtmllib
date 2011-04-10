@@ -4,7 +4,7 @@
  * This file holds the error codes and error messages
  * associated with those codes for English
  *
- * $Id: FormErrors.inc 1444 2005-05-12 01:24:05Z hemna $
+ * $Id: FormErrors.inc 3546 2011-04-10 02:49:37Z mpwalsh8 $
  *
  * @author Walter A. Boring IV <waboring@newsblob.com>
  * @package phpHtmlLib
@@ -34,7 +34,7 @@ class FormErrors {
 
          "INVALID_PATH_LENGTH" => "The path field does not meet the requirements. It must be less than 40 characters.",
          "INVALID_PATH_EMPTY" => "The path field must not be blank.",
-         "INVALID_PATH_CHARACTERS " => "The path field may contain only letters and numbers.",
+         "INVALID_PATH_CHARACTERS" => "The path field may contain only letters and numbers.",
 
          "INVALID_NUMBER" => "This field must contain a valid number.",
          "INVALID_LENGTH" => "Entry has exceeded allowed length.",
