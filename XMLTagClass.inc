@@ -3,7 +3,7 @@
 /**
  * Holds the XMLTagClass
  *
- * $Id: XMLTagClass.inc 3130 2008-08-12 14:07:41Z mpwalsh8 $
+ * $Id: XMLTagClass.inc 3556 2012-03-11 11:26:12Z mpwalsh8 $
  *
  * @author Walter A. Boring IV <waboring@newsblob.com>
  * @package phpHtmlLib
@@ -85,13 +85,13 @@ class XMLTagClass extends Container {
 	 * This function is responsible
 	 * for rendering the tag and
 	 * its contents
-     *
-     * {@source }
+     	 *
+     	 * {@source }
 	 *
 	 * @param int - the current indentation
 	 *              level for the tag
 	 */
-	function render( $indent_level=0 ) {
+	function render( $indent_level=0, $output_debug=0 ) {
 		
 		//try and guess the indentation flags
 		//based on the data

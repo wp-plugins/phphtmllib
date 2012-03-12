@@ -2,7 +2,7 @@
 /**
  * This file contains the FEListBoxMaster
  *
- * $Id: FEListBoxMaster.inc 1265 2004-06-04 20:08:58Z hemna $
+ * $Id: FEListBoxMaster.inc 3556 2012-03-11 11:26:12Z mpwalsh8 $
  *
  * @author Sumedh Thakar <sumedh_thakar@yahoo.com>
  * @package phpHtmlLib
@@ -32,7 +32,7 @@ class FEListBoxMaster extends FEListBox {
      *
      * @param array data_list - list of data elements (name=>value)
      */
-    function set_list_data($data) {
+    function set_list_data($data =array()) {
         
         $this->_mdata = $data;
         

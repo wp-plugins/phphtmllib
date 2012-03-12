@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: ButtonPanel.inc 1444 2005-05-12 01:24:05Z hemna $
+ * $Id: ButtonPanel.inc 3556 2012-03-11 11:26:12Z mpwalsh8 $
  * 
  * a button panel for a dialog box window
  * 
@@ -54,7 +54,7 @@ class ButtonPanel extends BaseWidget {
      * render the entire table.
      *
      */
-    function render($indent_level, $output_debug=0) {
+    function render($indent_level=0, $output_debug=0) {
 
         $div =& $this->_build_wrapper();
 

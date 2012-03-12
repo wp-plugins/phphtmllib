@@ -3,7 +3,7 @@
 /**
  * This contains the XMLDocumentClass
  *
- * $Id: XMLDocumentClass.inc 1444 2005-05-12 01:24:05Z hemna $
+ * $Id: XMLDocumentClass.inc 3556 2012-03-11 11:26:12Z mpwalsh8 $
  *
  * @author Walter A. Boring IV <waboring@newsblob.com>
  * @package phpHtmlLib
@@ -182,7 +182,7 @@ class XMLDocumentClass extends Container {
 	 *
 	 * @return string the raw html output.
 	 */
-	function render( $indent_level = 0) {
+	function render( $indent_level = 0, $output_debug=0) {
 
 	    //render the http header and xml header
 	    $output = $this->_render_header();
@@ -315,7 +315,7 @@ class XMLDocumentClass extends Container {
 	 * @return XMLtag object
 	 */
 	function _create_xml_obj() {
-		$this->_xml_obj = &new XMLtag( array("version" => "1.0") );
+		$this->_xml_obj = new XMLtag( array("version" => "1.0") );
 	}
 
 	/**

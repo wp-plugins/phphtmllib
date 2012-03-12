@@ -6,8 +6,8 @@
  * Description: WordPress plugin to bind the phpHtmlLib library to WordPress.  The phpHtmlLib library contains a set of PHP classes and library functions to help facilitate building, debugging, and rendering of XML, HTML, XHTML, WAP/WML Documents, and SVG (Scalable Vector Graphics) images as well as complex html Widgets.  These classes, library functions and widgets can be used to build other WordPress plugins.
  *
  * 
- * Version: 2.6.2.3546
- * Last Modified: 2011/04/10 03:49:37
+ * Version: 2.6.3.3556
+ * Last Modified: 2012/03/11 12:26:12
  * Author: Mike Walsh
  * Author URI: http://www.michaelwalsh.org/
  * License: GPL

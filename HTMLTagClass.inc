@@ -3,7 +3,7 @@
 /**
  * Holds the HTMLTagClass
  *
- * $Id: HTMLTagClass.inc 3130 2008-08-12 14:07:41Z mpwalsh8 $
+ * $Id: HTMLTagClass.inc 3556 2012-03-11 11:26:12Z mpwalsh8 $
  * 
  * @author Walter A. Boring IV <waboring@newsblob.com>
  * @package phpHtmlLib
@@ -216,7 +216,7 @@ class HTMLTagClass extends XMLTagClass {
 			//lets call the special render tag debug function
 			return $this->_render_tag_debug( $indent_level );            
 		} else {
-            return XMLTag::_render_open_tag($indent_level, $this->_flags & _XHTMLCOMPLIANT);
+            		return parent::_render_open_tag($indent_level, $this->_flags & _XHTMLCOMPLIANT);
 		}
 	}
 
@@ -234,7 +234,7 @@ class HTMLTagClass extends XMLTagClass {
 		if ( $output_debug ) {
 			return $this->_render_content_debug( $indent_level );            
 		} else {
-			return XMLTag::_render_content( $indent_level, $output_debug);
+			return parent::_render_content( $indent_level, $output_debug);
 		}
 	}
 
@@ -251,7 +251,7 @@ class HTMLTagClass extends XMLTagClass {
 		if ( $output_debug ) {
 			return $this->_render_close_tag_debug( $indent_level );            
 		} else {
-			return XMLTag::_render_close_tag($indent_level);
+			return parent::_render_close_tag($indent_level);
 		}
 	}
 

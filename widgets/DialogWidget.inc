@@ -2,7 +2,7 @@
 /**
  * This contains the TextNav widget
  *
- * $Id: DialogWidget.inc 3130 2008-08-12 14:07:41Z mpwalsh8 $
+ * $Id: DialogWidget.inc 3556 2012-03-11 11:26:12Z mpwalsh8 $
  *
  * @author Walter A. Boring IV <waboring@newsblob.com>
  * @package phpHtmlLib
@@ -59,7 +59,7 @@ class DialogWidget extends BaseWidget {
      * data and the buttons
      *
      */
-    function render($indent_level, $output_debug=0) {
+    function render($indent_level=0, $output_debug=0) {
 
         $table = html_table($this->get_width(), 0, 0, 0, $this->get_align());
        

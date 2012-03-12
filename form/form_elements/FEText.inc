@@ -3,7 +3,7 @@
  * This file contains the FEText, FEName, FEEmail,
  * FEDomainName classes
  *
- * $Id: FEText.inc 1463 2005-07-12 21:52:07Z hemna $
+ * $Id: FEText.inc 3556 2012-03-11 11:26:12Z mpwalsh8 $
  *
  * @author Walter A. Boring IV <waboring@buildabetterweb.com>
  * @author Suren Markosyan <suren@bcsweb.com>
@@ -128,7 +128,7 @@ class FEEmail extends FEText {
      * It validates as is_email().
      * @param FormValidation object.
      */
-    function validate($_FormValidation) {
+    function validate(&$_FormValidation) {
         if (!$_FormValidation->is_email($this->get_value(), $this->_allow_name)) {
             $this->set_error_message( $_FormValidation->get_error_message() );
             return FALSE;

@@ -1060,7 +1060,8 @@ class DefaultGUIDatalist extends DataList {
         if ($col == "FIRST") {
             $td->set_tag_attribute("align", "left");
             if ($this->_has_action_column("FIRST") &&
-                $this->_datasource->get_total_rows()) {
+                ($this->_datasource->get_total_rows() ||
+                $this->_show_empty_datalist_actionbar)) {
                 $td->add(html_img($this->get_image_path()."/arrow_right.gif"));
             } else {
                 $td->add("&nbsp;");
@@ -1068,7 +1069,8 @@ class DefaultGUIDatalist extends DataList {
         } else {
             $td->set_tag_attribute("align", "right");
             if ($this->_has_action_column("LAST") &&
-                $this->_datasource->get_total_rows()) {
+                ($this->_datasource->get_total_rows() ||
+                $this->_show_empty_datalist_actionbar)) {
                 $td->add(html_img($this->get_image_path()."/arrow_left.gif"));
             } else {
                 $td->add("&nbsp;");
