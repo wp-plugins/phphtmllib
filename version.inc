@@ -18,7 +18,7 @@
  * This is the version of the libs
  * @var string - the version string.
  */
-define("PHPHTMLLIB_VERSION", '2.6.3.3563');
+define("PHPHTMLLIB_VERSION", '2.6.3.3566');
 
 
 /**

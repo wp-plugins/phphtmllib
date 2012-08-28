@@ -2,7 +2,7 @@
 /**
  * This file contains the FEListBox, FEMultiListBox
  *
- * $Id: FEListBox.inc 3545 2011-02-04 15:19:12Z mpwalsh8 $
+ * $Id: FEListBox.inc 3564 2012-08-28 18:47:32Z mpwalsh8 $
  *
  * @author Walter A. Boring IV <waboring@buildabetterweb.com>
  * @author Suren Markosyan <suren@bcsweb.com>
@@ -59,6 +59,16 @@ class FEListBox extends FEDataList {
             $tag->add(new OPTIONtag($attributes, htmlspecialchars($name)));
         }
         return $tag;
+    }
+
+    /**
+     * Constructor - needed for early PHP 5.3.x compatibility
+     *
+     * @param Parent Constructor
+     * @param array of Constructor Arguments
+     */
+    function FEListBox() {
+	    call_user_func_array('parent::FEDataList', func_get_args()) ;
     }
 }
 
@@ -1258,8 +1268,6 @@ class FEMonths extends FEListBox {
         }
 
 	parent::FEListBox($label, $required, $width, $height, array_flip($months));
-
-
     }
 }
 
@@ -2025,7 +2033,7 @@ class FEDay extends FEBoxElement {
  *
  * @author Walter A. Boring IV
  */
-class FEHoursListBox extends FEListbox {
+class FEHoursListBox extends FEListBox {
 
     /**
      * Flag to tell us to use 12 or 24 hour format
@@ -2060,7 +2068,7 @@ class FEHoursListBox extends FEListbox {
  *
  * @author Walter A. Boring IV
  */
-class FEMinutesListBox extends FEListbox {
+class FEMinutesListBox extends FEListBox {
 
     /**
      * The constructor

@@ -1309,7 +1309,15 @@ class DefaultGUIDatalist extends DataList {
         return $js;
     }
 
-
+    /**
+     * Constructor - needed for early PHP 5.3.x compatibility
+     *
+     * @param Parent Constructor
+     * @param array of Constructor Arguments
+     */
+    function DefaultGUIDataList() {
+	    call_user_func_array('parent::DataList', func_get_args()) ;
+    }
 }
 
 /**
