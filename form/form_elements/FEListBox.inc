@@ -2,7 +2,7 @@
 /**
  * This file contains the FEListBox, FEMultiListBox
  *
- * $Id: FEListBox.inc 3564 2012-08-28 18:47:32Z mpwalsh8 $
+ * $Id: FEListBox.inc 3568 2012-09-03 13:47:40Z mpwalsh8 $
  *
  * @author Walter A. Boring IV <waboring@buildabetterweb.com>
  * @author Suren Markosyan <suren@bcsweb.com>
@@ -68,7 +68,8 @@ class FEListBox extends FEDataList {
      * @param array of Constructor Arguments
      */
     function FEListBox() {
-	    call_user_func_array('parent::FEDataList', func_get_args()) ;
+	    $args = func_get_args() ;
+	    call_user_func_array(array('FEDataList', 'FEDataList'), $args) ;
     }
 }
 

@@ -1316,7 +1316,8 @@ class DefaultGUIDatalist extends DataList {
      * @param array of Constructor Arguments
      */
     function DefaultGUIDataList() {
-	    call_user_func_array('parent::DataList', func_get_args()) ;
+	    $args = func_get_args() ;
+        call_user_func_array(array('DataList', 'DataList'), $args) ;
     }
 }
 

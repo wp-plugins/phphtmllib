@@ -40,6 +40,9 @@ The [phpHtmlLib page](http://michaelwalsh.org/wordpress/wordpress-plugins/phphtm
 full details on changes, bugs, enhancesments, future developments and much more and is the definitive
 source for the Change Log.
 
+= 2.6.5 =
+* Fixed recently added child constructors which addressed PHP5.3 compatibility issues so they play nice with PHP5.2.x as well.
+
 = 2.6.4 =
 * Added child constructors which are needed by some versions of PHP (e.g. 5.3.1) to allow proper constructor chain calling.  A missing constructor in the middle of a grandchild->child->parent class results in a PHP error in SOME PHP releases.
 
