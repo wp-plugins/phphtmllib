@@ -3,7 +3,7 @@
 /**
  * Holds the Container class.
  *
- * $Id: ContainerClass.inc 1444 2005-05-12 01:24:05Z hemna $
+ * $Id: ContainerClass.inc 3570 2013-02-26 14:41:37Z mpwalsh8 $
  *
  * @author Walter A. Boring IV <waboring@newsblob.com>
  * @package phpHtmlLib
@@ -112,11 +112,12 @@ class Container {
 	 * @return string the raw html output.
 	 */
 	function render($indent_level=0, $output_debug=0) {
+		
 		$html = '';
         
         for ($x=0; $x<=$this->_data_count-1; $x++) {
             $item = &$this->_content[$x];
-			if (method_exists($item, "render") ) {
+			if (is_object($item) && method_exists($item, "render") ) {
 				if (($this->_flags & _COLLAPSE) && method_exists($item, "set_collapse")) {
 					$item->set_collapse(TRUE, FALSE);
 				}
@@ -133,6 +134,7 @@ class Container {
                 }                
 			}
 		}
+	    
         if ($this->_flags & _COLLAPSE) {
             $indent = $this->_render_indent($indent_level, $output_debug);
             if ($this->_flags & _NEWLINEAFTERCONTENT) {
@@ -146,6 +148,7 @@ class Container {
             }
 			
         }
+	    
 		return $html;
 	}
 

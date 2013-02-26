@@ -3,7 +3,7 @@ Contributors: mpwalsh8
 Donate link: http://sourceforge.net/project/project_donations.php?group_id=32790
 Tags: HTML, Forms, XHTML, XML, Widgets
 Requires at least: 3.1
-Tested up to: 3.3.1
+Tested up to: 3.5.1
 Stable tag: trunk
 
 The phpHtmlLib library contains a set of PHP classes and library functions to help
@@ -39,6 +39,9 @@ plugin page.
 The [phpHtmlLib page](http://michaelwalsh.org/wordpress/wordpress-plugins/phphtmllib/) provides
 full details on changes, bugs, enhancesments, future developments and much more and is the definitive
 source for the Change Log.
+
+= 2.6.6 =
+* Fixed compatibility problem with PHP method_exists() function which caused PHP to crash with some versions of PHP 5.3.x on certain platforms (e.g. PHP 5.3.13 on Linux).
 
 = 2.6.5 =
 * Fixed recently added child constructors which addressed PHP5.3 compatibility issues so they play nice with PHP5.2.x as well.
