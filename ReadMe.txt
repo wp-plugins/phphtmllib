@@ -40,6 +40,10 @@ The [phpHtmlLib page](http://michaelwalsh.org/wordpress/wordpress-plugins/phphtm
 full details on changes, bugs, enhancesments, future developments and much more and is the definitive
 source for the Change Log.
 
+= 2.6.7 =
+* Fixed spacing issues with radio buttons and check boxes.
+* Checked for existing styling before overloading it with CheckBoxList DIVs.
+
 = 2.6.6 =
 * Fixed compatibility problem with PHP method_exists() function which caused PHP to crash with some versions of PHP 5.3.x on certain platforms (e.g. PHP 5.3.13 on Linux).
 

@@ -2,7 +2,7 @@
 /**
  * This file contains the Text FormElement class.
  *
- * $Id: FERadioGroup.inc 3251 2009-07-18 12:56:01Z mpwalsh8 $
+ * $Id: FERadioGroup.inc 3574 2013-09-30 13:18:38Z mpwalsh8 $
  *
  * @author Walter A. Boring IV <waboring@newsblob.com>
  * @author Suren Markosyan <suren@bcsweb.com>
@@ -139,6 +139,8 @@ class FERadioGroup extends FormElement {
     function _get_index_element($index) {
         $attributes = $this->_build_element_attributes();
         $attributes["type"] = "radio";
+	$attributes["style"] = "vertical-align: middle;margin-right: 5px;";
+
 
         list($name, $value) = each($this->_data_list[$index]);
         $attributes["value"] = $value;

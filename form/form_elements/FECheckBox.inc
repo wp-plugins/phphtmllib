@@ -2,7 +2,7 @@
 /**
  * This file contains the base FECheckBox class.
  *
- * $Id: FECheckBox.inc 1460 2005-06-23 20:44:35Z hemna $
+ * $Id: FECheckBox.inc 3574 2013-09-30 13:18:38Z mpwalsh8 $
  *
  * @author Walter A. Boring IV <waboring@newsblob.com>
  * @author Suren Markosyan <suren@bcsweb.com>
@@ -177,9 +177,12 @@ JSEND;
     function get_element() {
 
         if ($this->_height || $this->_width) {
-            $this->set_style_attribute("overflow", "auto");
-            $this->set_style_attribute("border", "1px inset");
-            $this->set_style_attribute("background-color", "white");
+	    if (is_null($this->get_style_attribute('overflow')))
+                $this->set_style_attribute("overflow", "auto");
+	    if (is_null($this->get_style_attribute('border')))
+                $this->set_style_attribute("border", "1px inset");
+	    if (is_null($this->get_style_attribute('background-color')))
+                $this->set_style_attribute("background-color", "white");
         }
 
         $attributes = $this->_build_element_attributes();
@@ -195,6 +198,7 @@ JSEND;
             $id = str_replace('_','','id'.str_replace('[]','',$element_name).$x);
             $x++;
             $attributes = array("type"=>"checkbox",
+		    		"style"=>"vertical-align: middle;margin-right: 5px;",
                                 "name"=>$name,
                                 "id"=>$id,
                                 "value"=>$value);

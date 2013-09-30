@@ -2,7 +2,7 @@
 /**
  * This file contains the base FormElement class.
  *
- * $Id: FormElement.inc 1687 2006-04-12 04:13:18Z hemna $
+ * $Id: FormElement.inc 3574 2013-09-30 13:18:38Z mpwalsh8 $
  *
  * @author Walter A. Boring IV <waboring@newsblob.com>
  * @author Suren Markosyan <suren@bcsweb.com>
@@ -496,6 +496,16 @@ class FormElement {
      */
     function set_style_attribute($name, $value) {
         $this->_style_attributes[$name] = $value;
+    }
+
+    /**
+     * Returns elements css attribute
+     *
+     * @param   string  $name   attribute name
+     * @return   mixe   $value  the value or null
+     */
+    function get_style_attribute($name) {
+        return array_key_exists($name, $this->_style_attributes) ? $this->_style_attributes[$name] : null;
     }
 
     /**
