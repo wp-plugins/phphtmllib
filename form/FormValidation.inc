@@ -1,7 +1,7 @@
 <?php
 
 /**
- * $Id: FormValidation.inc 1477 2005-08-23 17:33:00Z hemna $
+ * $Id: FormValidation.inc 3577 2015-05-19 01:09:35Z mpwalsh8 $
  *
  * This class handles the validation of form fields
  * This is used in conjunction with the FormProcessing
@@ -67,7 +67,7 @@ class FormValidation {
 	 * 
 	 * @return FormValidation object
 	 */
-	function &singleton() {
+	static function &singleton() {
 		static $obj=NULL;
 
 		if (is_null($obj)) {

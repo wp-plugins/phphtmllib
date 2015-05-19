@@ -2,8 +2,8 @@
 Contributors: mpwalsh8
 Donate link: http://sourceforge.net/project/project_donations.php?group_id=32790
 Tags: HTML, Forms, XHTML, XML, Widgets
-Requires at least: 3.1
-Tested up to: 3.5.1
+Requires at least: 3.8
+Tested up to: 4.2.2
 Stable tag: trunk
 
 The phpHtmlLib library contains a set of PHP classes and library functions to help
@@ -39,6 +39,9 @@ plugin page.
 The [phpHtmlLib page](http://michaelwalsh.org/wordpress/wordpress-plugins/phphtmllib/) provides
 full details on changes, bugs, enhancesments, future developments and much more and is the definitive
 source for the Change Log.
+
+= 2.6.8 =
+* Resolved a number of PHP Strict Standard notices resulting from calling non-static functions statically and/or mismatched method signatures between parent and child classes.
 
 = 2.6.7 =
 * Fixed spacing issues with radio buttons and check boxes.

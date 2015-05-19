@@ -3,7 +3,7 @@
  * This is the base class for managing a list
  * of data points.
  *
- * $Id: DataList.inc 3130 2008-08-12 14:07:41Z mpwalsh8 $
+ * $Id: DataList.inc 3577 2015-05-19 01:09:35Z mpwalsh8 $
  *
  * @author Walter A. Boring IV <waboring@newsblob.com>
  * @package phpHtmlLib
@@ -350,7 +350,7 @@ class DataList extends BaseWidget {
      * widget
      *
      */
-    function render($indent_level, $output_debug) {
+    function render($indent_level=0, $output_debug=0) {
 
         //setup the columns in their sorts
         $this->setup_columns();
@@ -563,7 +563,7 @@ class DataList extends BaseWidget {
      *                  is the last cell for the current row.
      *
      */
-    function child_add_row_cell($obj, $col_name, $last_in_row_flag) {
+    function child_add_row_cell($obj, $col_name, $last_in_row_flag, $row_data, $even_row) {
         user_error("DataList::child_add_row_cell() - ".
                    "child class must override this method ".
                    "to build the object that will be the ".
